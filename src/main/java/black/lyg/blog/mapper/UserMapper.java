@@ -13,11 +13,12 @@ public interface UserMapper extends Mapper<User> {
     @Select("select * from user where username = #{username} and password = #{password}")
     User selectUserNameByNameAndPassWord(String username,String password);
 
-
     @Select("select * from user where user_id = #{id}")
     @ResultType(User.class)
     User selectUserByUserId(@Param(value = "id") String id);
 
-    @Override
-    int insert(User user);
+    @Select("select * from user where username = #{username}")
+    @ResultType(User.class)
+    User selectUserByUsername(@Param(value = "username") String username);
+
 }

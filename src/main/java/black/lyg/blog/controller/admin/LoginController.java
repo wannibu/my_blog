@@ -2,6 +2,7 @@ package black.lyg.blog.controller.admin;
 
 import black.lyg.blog.po.User;
 import black.lyg.blog.service.UserService;
+import black.lyg.blog.util.DateUtil;
 import black.lyg.blog.util.MD5Util;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
@@ -52,26 +53,25 @@ public class LoginController {
                             @RequestParam String nickname,
                             @RequestParam String email,
                             RedirectAttributes attributes){
-        //没有user  创建user给user赋值  写我们要添加的数据
-        User user=new User();
-        user.setUsername(username);
-        user.setPassword(MD5Util.md5(password));
-        user.setNickName(nickname);
-        user.setEmail(email);
         //检查一下  你输入的用户名存在不存在
-        User user1 = userService.checkUser(username, password);
+        User user1 = userService.checkUserByName(username);
         //不等空  说明用户存在
         if (user1!=null){
             attributes.addFlashAttribute("message","用户已经存在");
             //如果用户存在 我们返回当前页面
             return "redirect:/admin/add";
-
         }else {
+            //给user写入我们要添加的数据
+            User user=new User();
+            user.setUsername(username);
+            user.setPassword(MD5Util.md5(password));
+            user.setNickName(nickname);
+            user.setEmail(email);
+            user.setCreateTime(DateUtil.getNowDate());
             userService.addUser(user);
             return "redirect:/admin";
         }
     }
-
 
     @GetMapping(value = "/logout")
     public String logout(HttpSession session){

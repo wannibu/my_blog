@@ -1684,3 +1684,1354 @@ linux
 2021-07-24 18:23:43.243  INFO 2512 --- [http-nio-8080-exec-1] black.lyg.blog.aspect.LogAspect          : result : admin/login 
 2021-07-24 18:23:43.602 ERROR 2512 --- [http-nio-8080-exec-1] b.l.b.h.ControllerExceptionHandler       : Request URL : http://localhost:8080/admin/register, Exception : Required String parameter 'username' is not present
 2021-07-24 18:23:43.603  WARN 2512 --- [http-nio-8080-exec-1] .m.m.a.ExceptionHandlerExceptionResolver : Resolved [org.springframework.web.bind.MissingServletRequestParameterException: Required String parameter 'username' is not present]
+2021-07-24 19:11:00.950  INFO 14072 --- [restartedMain] black.lyg.blog.BlogApplication           : Starting BlogApplication on Administraror with PID 14072 (D:\Desktop\blog\blog-master\target\classes started by Administrator in D:\Desktop\blog\blog-master)
+2021-07-24 19:11:00.950 DEBUG 14072 --- [restartedMain] black.lyg.blog.BlogApplication           : Running with Spring Boot v2.2.6.RELEASE, Spring v5.2.5.RELEASE
+2021-07-24 19:11:00.950  INFO 14072 --- [restartedMain] black.lyg.blog.BlogApplication           : The following profiles are active: dev
+2021-07-24 19:11:00.997  INFO 14072 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2021-07-24 19:11:00.997  INFO 14072 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2021-07-24 19:11:01.606  INFO 14072 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode!
+2021-07-24 19:11:01.622  INFO 14072 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2021-07-24 19:11:01.653  INFO 14072 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 17ms. Found 0 Redis repository interfaces.
+2021-07-24 19:11:01.747  WARN 14072 --- [restartedMain] o.m.s.mapper.ClassPathMapperScanner      : No MyBatis mapper was found in '[black.lyg.blog]' package. Please check your configuration.
+2021-07-24 19:11:02.327  INFO 14072 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2021-07-24 19:11:02.327  INFO 14072 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2021-07-24 19:11:02.327  INFO 14072 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.33]
+2021-07-24 19:11:02.327  INFO 14072 --- [restartedMain] o.a.catalina.core.AprLifecycleListener   : An older version [1.2.14] of the APR based Apache Tomcat Native library is installed, while Tomcat recommends a minimum version of [1.2.23]
+2021-07-24 19:11:02.327  INFO 14072 --- [restartedMain] o.a.catalina.core.AprLifecycleListener   : Loaded APR based Apache Tomcat Native library [1.2.14] using APR version [1.6.2].
+2021-07-24 19:11:02.327  INFO 14072 --- [restartedMain] o.a.catalina.core.AprLifecycleListener   : APR capabilities: IPv6 [true], sendfile [true], accept filters [false], random [true].
+2021-07-24 19:11:02.327  INFO 14072 --- [restartedMain] o.a.catalina.core.AprLifecycleListener   : APR/OpenSSL configuration: useAprConnector [false], useOpenSSL [true]
+2021-07-24 19:11:03.358  INFO 14072 --- [restartedMain] o.a.catalina.core.AprLifecycleListener   : OpenSSL successfully initialized [OpenSSL 1.0.2l  25 May 2017]
+2021-07-24 19:11:03.467  INFO 14072 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2021-07-24 19:11:03.467  INFO 14072 --- [restartedMain] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 2470 ms
+2021-07-24 19:11:03.514  INFO 14072 --- [restartedMain] o.s.boot.web.servlet.RegistrationBean    : Filter webStatFilter was not registered (possibly already registered?)
+2021-07-24 19:11:04.528  INFO 14072 --- [restartedMain] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2021-07-24 19:11:04.622  INFO 14072 --- [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2021-07-24 19:11:05.012  INFO 14072 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2021-07-24 19:11:05.059  INFO 14072 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2021-07-24 19:11:05.059  INFO 14072 --- [restartedMain] black.lyg.blog.BlogApplication           : Started BlogApplication in 4.507 seconds (JVM running for 5.881)
+2021-07-24 19:11:05.106  INFO 14072 --- [restartedMain] com.alibaba.druid.pool.DruidDataSource   : {dataSource-1} inited
+2021-07-24 19:11:08.170 DEBUG 14072 --- [restartedMain] b.l.blog.mapper.BlogMapper.findBlogAll   : ==>  Preparing: select * from blog order by update_time desc 
+2021-07-24 19:11:08.208 DEBUG 14072 --- [restartedMain] b.l.blog.mapper.BlogMapper.findBlogAll   : ==> Parameters: 
+2021-07-24 19:11:08.373 DEBUG 14072 --- [restartedMain] b.l.b.mapper.TypeMapper.selectTypeById   : ====>  Preparing: select * from type where type_id = ? 
+2021-07-24 19:11:08.374 DEBUG 14072 --- [restartedMain] b.l.b.mapper.TypeMapper.selectTypeById   : ====> Parameters: 6(String)
+2021-07-24 19:11:08.419 DEBUG 14072 --- [restartedMain] b.l.b.mapper.TypeMapper.selectTypeById   : <====      Total: 1
+2021-07-24 19:11:08.420 DEBUG 14072 --- [restartedMain] b.l.b.m.UserMapper.selectUserByUserId    : ====>  Preparing: select * from user where user_id = ? 
+2021-07-24 19:11:08.420 DEBUG 14072 --- [restartedMain] b.l.b.m.UserMapper.selectUserByUserId    : ====> Parameters: 1(String)
+2021-07-24 19:11:08.466 DEBUG 14072 --- [restartedMain] b.l.b.m.UserMapper.selectUserByUserId    : <====      Total: 1
+2021-07-24 19:11:08.467 DEBUG 14072 --- [restartedMain] b.l.b.mapper.TypeMapper.selectTypeById   : ====>  Preparing: select * from type where type_id = ? 
+2021-07-24 19:11:08.467 DEBUG 14072 --- [restartedMain] b.l.b.mapper.TypeMapper.selectTypeById   : ====> Parameters: 16(String)
+2021-07-24 19:11:08.507 DEBUG 14072 --- [restartedMain] b.l.b.mapper.TypeMapper.selectTypeById   : <====      Total: 1
+2021-07-24 19:11:08.508 DEBUG 14072 --- [restartedMain] b.l.b.mapper.TypeMapper.selectTypeById   : ====>  Preparing: select * from type where type_id = ? 
+2021-07-24 19:11:08.508 DEBUG 14072 --- [restartedMain] b.l.b.mapper.TypeMapper.selectTypeById   : ====> Parameters: 4(String)
+2021-07-24 19:11:08.545 DEBUG 14072 --- [restartedMain] b.l.b.mapper.TypeMapper.selectTypeById   : <====      Total: 1
+2021-07-24 19:11:08.548 DEBUG 14072 --- [restartedMain] b.l.blog.mapper.BlogMapper.findBlogAll   : <==      Total: 9
+2021-07-24 19:11:08.696  INFO 14072 --- [restartedMain] io.lettuce.core.EpollProvider            : Starting without optional epoll library
+2021-07-24 19:11:08.697  INFO 14072 --- [restartedMain] io.lettuce.core.KqueueProvider           : Starting without optional kqueue library
+2021-07-24 19:11:10.254  INFO 14072 --- [restartedMain] black.lyg.blog.config.StartupRunner      : 将blog数据添加到redis的AllBlog中，其博客标题为：Java常见关键字final、static、super、abstract、this
+2021-07-24 19:11:10.285  INFO 14072 --- [restartedMain] black.lyg.blog.config.StartupRunner      : 将blog数据添加到redis的AllBlog中，其博客标题为：山东菏泽曹县流弊六六六，卧底宝贝儿
+2021-07-24 19:11:10.317  INFO 14072 --- [restartedMain] black.lyg.blog.config.StartupRunner      : 将blog数据添加到redis的AllBlog中，其博客标题为：随笔
+2021-07-24 19:11:10.349  INFO 14072 --- [restartedMain] black.lyg.blog.config.StartupRunner      : 将blog数据添加到redis的AllBlog中，其博客标题为：欢迎使用 Markdown在线编辑器 MdEditor
+2021-07-24 19:11:10.388  INFO 14072 --- [restartedMain] black.lyg.blog.config.StartupRunner      : 将blog数据添加到redis的AllBlog中，其博客标题为：Java中 equals() 和 hashCode()的关系
+2021-07-24 19:11:10.419  INFO 14072 --- [restartedMain] black.lyg.blog.config.StartupRunner      : 将blog数据添加到redis的AllBlog中，其博客标题为：redis学习笔记（二）：Hash
+2021-07-24 19:11:10.451  INFO 14072 --- [restartedMain] black.lyg.blog.config.StartupRunner      : 将blog数据添加到redis的AllBlog中，其博客标题为：redis学习笔记（一）：String
+2021-07-24 19:11:10.479  INFO 14072 --- [restartedMain] black.lyg.blog.config.StartupRunner      : 将blog数据添加到redis的AllBlog中，其博客标题为：Java合并两个int数组
+2021-07-24 19:11:10.512  INFO 14072 --- [restartedMain] black.lyg.blog.config.StartupRunner      : 将blog数据添加到redis的AllBlog中，其博客标题为：条件注解@Conditional
+2021-07-24 19:11:10.542  INFO 14072 --- [restartedMain] black.lyg.blog.config.StartupRunner      : 初始化redis中blogCount的数量为：9
+2021-07-24 19:11:12.026  INFO 14072 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2021-07-24 19:11:12.026  INFO 14072 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2021-07-24 19:11:12.036  INFO 14072 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 10 ms
+2021-07-24 19:11:12.061  INFO 14072 --- [http-nio-8080-exec-1] black.lyg.blog.aspect.LogAspect          : Request : RequestLog{url='http://localhost:8080/admin', ip='0:0:0:0:0:0:0:1', classMethod='black.lyg.blog.controller.admin.LoginController.loginPage', args=[]}
+2021-07-24 19:11:12.064  INFO 14072 --- [http-nio-8080-exec-1] black.lyg.blog.aspect.LogAspect          : ////////after/////////
+2021-07-24 19:11:12.064  INFO 14072 --- [http-nio-8080-exec-1] black.lyg.blog.aspect.LogAspect          : result : admin/login 
+2021-07-24 19:11:12.482  INFO 14072 --- [http-nio-8080-exec-1] black.lyg.blog.aspect.LogAspect          : Request : RequestLog{url='http://localhost:8080/admin/', ip='0:0:0:0:0:0:0:1', classMethod='black.lyg.blog.controller.admin.LoginController.loginPage', args=[]}
+2021-07-24 19:11:12.482  INFO 14072 --- [http-nio-8080-exec-1] black.lyg.blog.aspect.LogAspect          : ////////after/////////
+2021-07-24 19:11:12.482  INFO 14072 --- [http-nio-8080-exec-1] black.lyg.blog.aspect.LogAspect          : result : admin/login 
+2021-07-24 19:11:16.304  INFO 14072 --- [http-nio-8080-exec-4] black.lyg.blog.aspect.LogAspect          : Request : RequestLog{url='http://localhost:8080/admin/add;jsessionid=CD865EF8EA905FEEF2AB17038CC163C6', ip='0:0:0:0:0:0:0:1', classMethod='black.lyg.blog.controller.admin.LoginController.add', args=[]}
+2021-07-24 19:11:16.304  INFO 14072 --- [http-nio-8080-exec-4] black.lyg.blog.aspect.LogAspect          : ////////after/////////
+2021-07-24 19:11:16.304  INFO 14072 --- [http-nio-8080-exec-4] black.lyg.blog.aspect.LogAspect          : result : admin/register 
+2021-07-24 19:11:18.873  INFO 14072 --- [http-nio-8080-exec-10] black.lyg.blog.aspect.LogAspect          : Request : RequestLog{url='http://localhost:8080/admin/add;jsessionid=CD865EF8EA905FEEF2AB17038CC163C6', ip='0:0:0:0:0:0:0:1', classMethod='black.lyg.blog.controller.admin.LoginController.add', args=[]}
+2021-07-24 19:11:18.874  INFO 14072 --- [http-nio-8080-exec-10] black.lyg.blog.aspect.LogAspect          : ////////after/////////
+2021-07-24 19:11:18.874  INFO 14072 --- [http-nio-8080-exec-10] black.lyg.blog.aspect.LogAspect          : result : admin/register 
+2021-07-24 19:11:36.090  INFO 14072 --- [http-nio-8080-exec-5] black.lyg.blog.aspect.LogAspect          : Request : RequestLog{url='http://localhost:8080/admin', ip='0:0:0:0:0:0:0:1', classMethod='black.lyg.blog.controller.admin.LoginController.loginPage', args=[]}
+2021-07-24 19:11:36.091  INFO 14072 --- [http-nio-8080-exec-5] black.lyg.blog.aspect.LogAspect          : ////////after/////////
+2021-07-24 19:11:36.091  INFO 14072 --- [http-nio-8080-exec-5] black.lyg.blog.aspect.LogAspect          : result : admin/login 
+2021-07-24 19:11:36.101 ERROR 14072 --- [http-nio-8080-exec-5] b.l.b.h.ControllerExceptionHandler       : Request URL : http://localhost:8080/admin/register, Exception : Required String parameter 'username' is not present
+2021-07-24 19:11:36.102  WARN 14072 --- [http-nio-8080-exec-5] .m.m.a.ExceptionHandlerExceptionResolver : Resolved [org.springframework.web.bind.MissingServletRequestParameterException: Required String parameter 'username' is not present]
+2021-07-24 19:12:29.921  INFO 14072 --- [Thread-13] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2021-07-24 19:12:30.032  INFO 14072 --- [Thread-13] com.alibaba.druid.pool.DruidDataSource   : {dataSource-1} closing ...
+2021-07-24 19:12:30.032  INFO 14072 --- [Thread-13] com.alibaba.druid.pool.DruidDataSource   : {dataSource-1} closed
+2021-07-24 19:12:31.000  INFO 14072 --- [restartedMain] black.lyg.blog.BlogApplication           : Starting BlogApplication on Administraror with PID 14072 (D:\Desktop\blog\blog-master\target\classes started by Administrator in D:\Desktop\blog\blog-master)
+2021-07-24 19:12:31.000 DEBUG 14072 --- [restartedMain] black.lyg.blog.BlogApplication           : Running with Spring Boot v2.2.6.RELEASE, Spring v5.2.5.RELEASE
+2021-07-24 19:12:31.000  INFO 14072 --- [restartedMain] black.lyg.blog.BlogApplication           : The following profiles are active: dev
+2021-07-24 19:12:31.156  INFO 14072 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode!
+2021-07-24 19:12:31.156  INFO 14072 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2021-07-24 19:12:31.172  INFO 14072 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 11ms. Found 0 Redis repository interfaces.
+2021-07-24 19:12:31.203  WARN 14072 --- [restartedMain] o.m.s.mapper.ClassPathMapperScanner      : No MyBatis mapper was found in '[black.lyg.blog]' package. Please check your configuration.
+2021-07-24 19:12:31.359  INFO 14072 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2021-07-24 19:12:31.359  INFO 14072 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2021-07-24 19:12:31.359  INFO 14072 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.33]
+2021-07-24 19:12:31.359  INFO 14072 --- [restartedMain] o.a.catalina.core.AprLifecycleListener   : An older version [1.2.14] of the APR based Apache Tomcat Native library is installed, while Tomcat recommends a minimum version of [1.2.23]
+2021-07-24 19:12:31.359  INFO 14072 --- [restartedMain] o.a.catalina.core.AprLifecycleListener   : Loaded APR based Apache Tomcat Native library [1.2.14] using APR version [1.6.2].
+2021-07-24 19:12:31.359  INFO 14072 --- [restartedMain] o.a.catalina.core.AprLifecycleListener   : APR capabilities: IPv6 [true], sendfile [true], accept filters [false], random [true].
+2021-07-24 19:12:31.359  INFO 14072 --- [restartedMain] o.a.catalina.core.AprLifecycleListener   : APR/OpenSSL configuration: useAprConnector [false], useOpenSSL [true]
+2021-07-24 19:12:31.359  INFO 14072 --- [restartedMain] o.a.catalina.core.AprLifecycleListener   : OpenSSL successfully initialized [OpenSSL 1.0.2l  25 May 2017]
+2021-07-24 19:12:31.375  INFO 14072 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2021-07-24 19:12:31.375  INFO 14072 --- [restartedMain] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 375 ms
+2021-07-24 19:12:31.391  INFO 14072 --- [restartedMain] o.s.boot.web.servlet.RegistrationBean    : Filter webStatFilter was not registered (possibly already registered?)
+2021-07-24 19:12:31.900  INFO 14072 --- [restartedMain] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2021-07-24 19:12:31.932  INFO 14072 --- [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2021-07-24 19:12:32.173  INFO 14072 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2021-07-24 19:12:32.189  INFO 14072 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2021-07-24 19:12:32.189  INFO 14072 --- [restartedMain] black.lyg.blog.BlogApplication           : Started BlogApplication in 1.22 seconds (JVM running for 93.008)
+2021-07-24 19:12:32.189  INFO 14072 --- [restartedMain] com.alibaba.druid.pool.DruidDataSource   : {dataSource-2} inited
+2021-07-24 19:12:33.800 DEBUG 14072 --- [restartedMain] b.l.blog.mapper.BlogMapper.findBlogAll   : ==>  Preparing: select * from blog order by update_time desc 
+2021-07-24 19:12:33.800 DEBUG 14072 --- [restartedMain] b.l.blog.mapper.BlogMapper.findBlogAll   : ==> Parameters: 
+2021-07-24 19:12:33.933 DEBUG 14072 --- [restartedMain] b.l.b.mapper.TypeMapper.selectTypeById   : ====>  Preparing: select * from type where type_id = ? 
+2021-07-24 19:12:33.934 DEBUG 14072 --- [restartedMain] b.l.b.mapper.TypeMapper.selectTypeById   : ====> Parameters: 6(String)
+2021-07-24 19:12:33.955 DEBUG 14072 --- [restartedMain] b.l.b.mapper.TypeMapper.selectTypeById   : <====      Total: 1
+2021-07-24 19:12:33.955 DEBUG 14072 --- [restartedMain] b.l.b.m.UserMapper.selectUserByUserId    : ====>  Preparing: select * from user where user_id = ? 
+2021-07-24 19:12:33.955 DEBUG 14072 --- [restartedMain] b.l.b.m.UserMapper.selectUserByUserId    : ====> Parameters: 1(String)
+2021-07-24 19:12:33.987 DEBUG 14072 --- [restartedMain] b.l.b.m.UserMapper.selectUserByUserId    : <====      Total: 1
+2021-07-24 19:12:33.987 DEBUG 14072 --- [restartedMain] b.l.b.mapper.TypeMapper.selectTypeById   : ====>  Preparing: select * from type where type_id = ? 
+2021-07-24 19:12:33.987 DEBUG 14072 --- [restartedMain] b.l.b.mapper.TypeMapper.selectTypeById   : ====> Parameters: 16(String)
+2021-07-24 19:12:34.019 DEBUG 14072 --- [restartedMain] b.l.b.mapper.TypeMapper.selectTypeById   : <====      Total: 1
+2021-07-24 19:12:34.019 DEBUG 14072 --- [restartedMain] b.l.b.mapper.TypeMapper.selectTypeById   : ====>  Preparing: select * from type where type_id = ? 
+2021-07-24 19:12:34.019 DEBUG 14072 --- [restartedMain] b.l.b.mapper.TypeMapper.selectTypeById   : ====> Parameters: 4(String)
+2021-07-24 19:12:34.050 DEBUG 14072 --- [restartedMain] b.l.b.mapper.TypeMapper.selectTypeById   : <====      Total: 1
+2021-07-24 19:12:34.050 DEBUG 14072 --- [restartedMain] b.l.blog.mapper.BlogMapper.findBlogAll   : <==      Total: 9
+2021-07-24 19:12:34.159  INFO 14072 --- [restartedMain] black.lyg.blog.config.StartupRunner      : 将blog数据添加到redis的AllBlog中，其博客标题为：Java常见关键字final、static、super、abstract、this
+2021-07-24 19:12:34.190  INFO 14072 --- [restartedMain] black.lyg.blog.config.StartupRunner      : 将blog数据添加到redis的AllBlog中，其博客标题为：山东菏泽曹县流弊六六六，卧底宝贝儿
+2021-07-24 19:12:34.222  INFO 14072 --- [restartedMain] black.lyg.blog.config.StartupRunner      : 将blog数据添加到redis的AllBlog中，其博客标题为：随笔
+2021-07-24 19:12:34.252  INFO 14072 --- [restartedMain] black.lyg.blog.config.StartupRunner      : 将blog数据添加到redis的AllBlog中，其博客标题为：欢迎使用 Markdown在线编辑器 MdEditor
+2021-07-24 19:12:34.283  INFO 14072 --- [restartedMain] black.lyg.blog.config.StartupRunner      : 将blog数据添加到redis的AllBlog中，其博客标题为：Java中 equals() 和 hashCode()的关系
+2021-07-24 19:12:34.315  INFO 14072 --- [restartedMain] black.lyg.blog.config.StartupRunner      : 将blog数据添加到redis的AllBlog中，其博客标题为：redis学习笔记（二）：Hash
+2021-07-24 19:12:34.362  INFO 14072 --- [restartedMain] black.lyg.blog.config.StartupRunner      : 将blog数据添加到redis的AllBlog中，其博客标题为：redis学习笔记（一）：String
+2021-07-24 19:12:34.393  INFO 14072 --- [restartedMain] black.lyg.blog.config.StartupRunner      : 将blog数据添加到redis的AllBlog中，其博客标题为：Java合并两个int数组
+2021-07-24 19:12:34.440  INFO 14072 --- [restartedMain] black.lyg.blog.config.StartupRunner      : 将blog数据添加到redis的AllBlog中，其博客标题为：条件注解@Conditional
+2021-07-24 19:12:34.455  INFO 14072 --- [restartedMain] black.lyg.blog.config.StartupRunner      : 初始化redis中blogCount的数量为：9
+2021-07-24 19:12:34.471  INFO 14072 --- [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2021-07-24 19:12:47.141  INFO 14072 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2021-07-24 19:12:47.142  INFO 14072 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2021-07-24 19:12:47.149  INFO 14072 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 7 ms
+2021-07-24 19:12:47.150 ERROR 14072 --- [http-nio-8080-exec-1] b.l.b.h.ControllerExceptionHandler       : Request URL : http://localhost:8080/admin/register, Exception : null
+2021-07-24 19:12:47.151  WARN 14072 --- [http-nio-8080-exec-1] .m.m.a.ExceptionHandlerExceptionResolver : Resolved [java.lang.NullPointerException]
+2021-07-24 19:13:25.255  INFO 14072 --- [http-nio-8080-exec-3] black.lyg.blog.aspect.LogAspect          : Request : RequestLog{url='http://localhost:8080/admin/add', ip='0:0:0:0:0:0:0:1', classMethod='black.lyg.blog.controller.admin.LoginController.add', args=[]}
+2021-07-24 19:13:25.257  INFO 14072 --- [http-nio-8080-exec-3] black.lyg.blog.aspect.LogAspect          : ////////after/////////
+2021-07-24 19:13:25.257  INFO 14072 --- [http-nio-8080-exec-3] black.lyg.blog.aspect.LogAspect          : result : admin/register 
+2021-07-24 19:17:04.163  INFO 3216 --- [restartedMain] black.lyg.blog.BlogApplication           : Starting BlogApplication on Administraror with PID 3216 (D:\Desktop\blog\blog-master\target\classes started by Administrator in D:\Desktop\blog\blog-master)
+2021-07-24 19:17:04.178 DEBUG 3216 --- [restartedMain] black.lyg.blog.BlogApplication           : Running with Spring Boot v2.2.6.RELEASE, Spring v5.2.5.RELEASE
+2021-07-24 19:17:04.178  INFO 3216 --- [restartedMain] black.lyg.blog.BlogApplication           : The following profiles are active: dev
+2021-07-24 19:17:04.210  INFO 3216 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2021-07-24 19:17:04.210  INFO 3216 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2021-07-24 19:17:04.725  INFO 3216 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode!
+2021-07-24 19:17:04.725  INFO 3216 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2021-07-24 19:17:04.756  INFO 3216 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 15ms. Found 0 Redis repository interfaces.
+2021-07-24 19:17:04.850  WARN 3216 --- [restartedMain] o.m.s.mapper.ClassPathMapperScanner      : No MyBatis mapper was found in '[black.lyg.blog]' package. Please check your configuration.
+2021-07-24 19:17:05.350  INFO 3216 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2021-07-24 19:17:05.350  INFO 3216 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2021-07-24 19:17:05.350  INFO 3216 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.33]
+2021-07-24 19:17:05.350  INFO 3216 --- [restartedMain] o.a.catalina.core.AprLifecycleListener   : An older version [1.2.14] of the APR based Apache Tomcat Native library is installed, while Tomcat recommends a minimum version of [1.2.23]
+2021-07-24 19:17:05.350  INFO 3216 --- [restartedMain] o.a.catalina.core.AprLifecycleListener   : Loaded APR based Apache Tomcat Native library [1.2.14] using APR version [1.6.2].
+2021-07-24 19:17:05.350  INFO 3216 --- [restartedMain] o.a.catalina.core.AprLifecycleListener   : APR capabilities: IPv6 [true], sendfile [true], accept filters [false], random [true].
+2021-07-24 19:17:05.350  INFO 3216 --- [restartedMain] o.a.catalina.core.AprLifecycleListener   : APR/OpenSSL configuration: useAprConnector [false], useOpenSSL [true]
+2021-07-24 19:17:06.381  INFO 3216 --- [restartedMain] o.a.catalina.core.AprLifecycleListener   : OpenSSL successfully initialized [OpenSSL 1.0.2l  25 May 2017]
+2021-07-24 19:17:06.475  INFO 3216 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2021-07-24 19:17:06.475  INFO 3216 --- [restartedMain] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 2265 ms
+2021-07-24 19:17:06.506  INFO 3216 --- [restartedMain] o.s.boot.web.servlet.RegistrationBean    : Filter webStatFilter was not registered (possibly already registered?)
+2021-07-24 19:17:07.396  INFO 3216 --- [restartedMain] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2021-07-24 19:17:07.459  INFO 3216 --- [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2021-07-24 19:17:07.818  INFO 3216 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2021-07-24 19:17:07.849  INFO 3216 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2021-07-24 19:17:07.865  INFO 3216 --- [restartedMain] black.lyg.blog.BlogApplication           : Started BlogApplication in 4.002 seconds (JVM running for 5.406)
+2021-07-24 19:17:07.896  INFO 3216 --- [restartedMain] com.alibaba.druid.pool.DruidDataSource   : {dataSource-1} inited
+2021-07-24 19:17:09.490 DEBUG 3216 --- [restartedMain] b.l.blog.mapper.BlogMapper.findBlogAll   : ==>  Preparing: select * from blog order by update_time desc 
+2021-07-24 19:17:09.505 DEBUG 3216 --- [restartedMain] b.l.blog.mapper.BlogMapper.findBlogAll   : ==> Parameters: 
+2021-07-24 19:17:09.677 DEBUG 3216 --- [restartedMain] b.l.b.mapper.TypeMapper.selectTypeById   : ====>  Preparing: select * from type where type_id = ? 
+2021-07-24 19:17:09.677 DEBUG 3216 --- [restartedMain] b.l.b.mapper.TypeMapper.selectTypeById   : ====> Parameters: 6(String)
+2021-07-24 19:17:09.725 DEBUG 3216 --- [restartedMain] b.l.b.mapper.TypeMapper.selectTypeById   : <====      Total: 1
+2021-07-24 19:17:09.725 DEBUG 3216 --- [restartedMain] b.l.b.m.UserMapper.selectUserByUserId    : ====>  Preparing: select * from user where user_id = ? 
+2021-07-24 19:17:09.725 DEBUG 3216 --- [restartedMain] b.l.b.m.UserMapper.selectUserByUserId    : ====> Parameters: 1(String)
+2021-07-24 19:17:09.756 DEBUG 3216 --- [restartedMain] b.l.b.m.UserMapper.selectUserByUserId    : <====      Total: 1
+2021-07-24 19:17:09.756 DEBUG 3216 --- [restartedMain] b.l.b.mapper.TypeMapper.selectTypeById   : ====>  Preparing: select * from type where type_id = ? 
+2021-07-24 19:17:09.756 DEBUG 3216 --- [restartedMain] b.l.b.mapper.TypeMapper.selectTypeById   : ====> Parameters: 16(String)
+2021-07-24 19:17:09.787 DEBUG 3216 --- [restartedMain] b.l.b.mapper.TypeMapper.selectTypeById   : <====      Total: 1
+2021-07-24 19:17:09.787 DEBUG 3216 --- [restartedMain] b.l.b.mapper.TypeMapper.selectTypeById   : ====>  Preparing: select * from type where type_id = ? 
+2021-07-24 19:17:09.787 DEBUG 3216 --- [restartedMain] b.l.b.mapper.TypeMapper.selectTypeById   : ====> Parameters: 4(String)
+2021-07-24 19:17:09.818 DEBUG 3216 --- [restartedMain] b.l.b.mapper.TypeMapper.selectTypeById   : <====      Total: 1
+2021-07-24 19:17:09.818 DEBUG 3216 --- [restartedMain] b.l.blog.mapper.BlogMapper.findBlogAll   : <==      Total: 9
+2021-07-24 19:17:09.912  INFO 3216 --- [restartedMain] io.lettuce.core.EpollProvider            : Starting without optional epoll library
+2021-07-24 19:17:09.912  INFO 3216 --- [restartedMain] io.lettuce.core.KqueueProvider           : Starting without optional kqueue library
+2021-07-24 19:17:11.459  INFO 3216 --- [restartedMain] black.lyg.blog.config.StartupRunner      : 将blog数据添加到redis的AllBlog中，其博客标题为：Java常见关键字final、static、super、abstract、this
+2021-07-24 19:17:11.490  INFO 3216 --- [restartedMain] black.lyg.blog.config.StartupRunner      : 将blog数据添加到redis的AllBlog中，其博客标题为：山东菏泽曹县流弊六六六，卧底宝贝儿
+2021-07-24 19:17:11.521  INFO 3216 --- [restartedMain] black.lyg.blog.config.StartupRunner      : 将blog数据添加到redis的AllBlog中，其博客标题为：随笔
+2021-07-24 19:17:11.552  INFO 3216 --- [restartedMain] black.lyg.blog.config.StartupRunner      : 将blog数据添加到redis的AllBlog中，其博客标题为：欢迎使用 Markdown在线编辑器 MdEditor
+2021-07-24 19:17:11.599  INFO 3216 --- [restartedMain] black.lyg.blog.config.StartupRunner      : 将blog数据添加到redis的AllBlog中，其博客标题为：Java中 equals() 和 hashCode()的关系
+2021-07-24 19:17:11.630  INFO 3216 --- [restartedMain] black.lyg.blog.config.StartupRunner      : 将blog数据添加到redis的AllBlog中，其博客标题为：redis学习笔记（二）：Hash
+2021-07-24 19:17:11.662  INFO 3216 --- [restartedMain] black.lyg.blog.config.StartupRunner      : 将blog数据添加到redis的AllBlog中，其博客标题为：redis学习笔记（一）：String
+2021-07-24 19:17:11.693  INFO 3216 --- [restartedMain] black.lyg.blog.config.StartupRunner      : 将blog数据添加到redis的AllBlog中，其博客标题为：Java合并两个int数组
+2021-07-24 19:17:11.724  INFO 3216 --- [restartedMain] black.lyg.blog.config.StartupRunner      : 将blog数据添加到redis的AllBlog中，其博客标题为：条件注解@Conditional
+2021-07-24 19:17:11.771  INFO 3216 --- [restartedMain] black.lyg.blog.config.StartupRunner      : 初始化redis中blogCount的数量为：9
+2021-07-24 19:17:17.357  INFO 3216 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2021-07-24 19:17:17.357  INFO 3216 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2021-07-24 19:17:17.365  INFO 3216 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 8 ms
+2021-07-24 19:17:17.368  INFO 3216 --- [http-nio-8080-exec-1] black.lyg.blog.aspect.LogAspect          : Request : RequestLog{url='http://localhost:8080/admin', ip='0:0:0:0:0:0:0:1', classMethod='black.lyg.blog.controller.admin.LoginController.loginPage', args=[]}
+2021-07-24 19:17:17.384  INFO 3216 --- [http-nio-8080-exec-1] black.lyg.blog.aspect.LogAspect          : ////////after/////////
+2021-07-24 19:17:17.384  INFO 3216 --- [http-nio-8080-exec-1] black.lyg.blog.aspect.LogAspect          : result : admin/login 
+2021-07-24 19:17:19.552  INFO 3216 --- [http-nio-8080-exec-2] black.lyg.blog.aspect.LogAspect          : Request : RequestLog{url='http://localhost:8080/admin/add', ip='0:0:0:0:0:0:0:1', classMethod='black.lyg.blog.controller.admin.LoginController.add', args=[]}
+2021-07-24 19:17:19.552  INFO 3216 --- [http-nio-8080-exec-2] black.lyg.blog.aspect.LogAspect          : ////////after/////////
+2021-07-24 19:17:19.552  INFO 3216 --- [http-nio-8080-exec-2] black.lyg.blog.aspect.LogAspect          : result : admin/register 
+2021-07-24 19:17:38.362  INFO 3216 --- [http-nio-8080-exec-3] black.lyg.blog.aspect.LogAspect          : Request : RequestLog{url='http://localhost:8080/admin/register', ip='0:0:0:0:0:0:0:1', classMethod='black.lyg.blog.controller.admin.LoginController.register', args=[zhangsan, 123456, 张三, 123456@qq.com, {}]}
+2021-07-24 19:17:38.363 DEBUG 3216 --- [http-nio-8080-exec-3] .l.b.m.U.selectUserNameByNameAndPassWord : ==>  Preparing: select * from user where username = ? and password = ? 
+2021-07-24 19:17:38.364 DEBUG 3216 --- [http-nio-8080-exec-3] .l.b.m.U.selectUserNameByNameAndPassWord : ==> Parameters: zhangsan(String), E10ADC3949BA59ABBE56E057F20F883E(String)
+2021-07-24 19:17:38.394 DEBUG 3216 --- [http-nio-8080-exec-3] .l.b.m.U.selectUserNameByNameAndPassWord : <==      Total: 0
+2021-07-24 19:17:38.395  INFO 3216 --- [http-nio-8080-exec-3] black.lyg.blog.aspect.LogAspect          : ////////after/////////
+2021-07-24 19:17:38.396 ERROR 3216 --- [http-nio-8080-exec-3] b.l.b.h.ControllerExceptionHandler       : Request URL : http://localhost:8080/admin/register, Exception : Invalid bound statement (not found): black.lyg.blog.mapper.UserMapper.insert
+2021-07-24 19:17:38.397  WARN 3216 --- [http-nio-8080-exec-3] .m.m.a.ExceptionHandlerExceptionResolver : Resolved [org.apache.ibatis.binding.BindingException: Invalid bound statement (not found): black.lyg.blog.mapper.UserMapper.insert]
+2021-07-24 19:18:38.464  INFO 3216 --- [http-nio-8080-exec-5] black.lyg.blog.aspect.LogAspect          : Request : RequestLog{url='http://localhost:8080/admin', ip='0:0:0:0:0:0:0:1', classMethod='black.lyg.blog.controller.admin.LoginController.loginPage', args=[]}
+2021-07-24 19:18:38.465  INFO 3216 --- [http-nio-8080-exec-5] black.lyg.blog.aspect.LogAspect          : ////////after/////////
+2021-07-24 19:18:38.465  INFO 3216 --- [http-nio-8080-exec-5] black.lyg.blog.aspect.LogAspect          : result : admin/login 
+2021-07-24 19:18:38.480 ERROR 3216 --- [http-nio-8080-exec-5] o.a.c.c.C.[.[.[/].[dispatcherServlet]    : Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed; nested exception is java.lang.IllegalStateException: Cannot call sendError() after the response has been committed] with root cause
+
+java.lang.IllegalStateException: Cannot call sendError() after the response has been committed
+	at org.apache.catalina.connector.ResponseFacade.sendError(ResponseFacade.java:472) ~[tomcat-embed-core-9.0.33.jar:9.0.33]
+	at javax.servlet.http.HttpServletResponseWrapper.sendError(HttpServletResponseWrapper.java:129) ~[tomcat-embed-core-9.0.33.jar:9.0.33]
+	at com.alibaba.druid.support.http.WebStatFilter$StatHttpServletResponseWrapper.sendError(WebStatFilter.java:343) ~[druid-1.1.16.jar:1.1.16]
+	at org.springframework.web.servlet.resource.ResourceHttpRequestHandler.handleRequest(ResourceHttpRequestHandler.java:488) ~[spring-webmvc-5.2.5.RELEASE.jar:5.2.5.RELEASE]
+	at org.springframework.web.servlet.mvc.HttpRequestHandlerAdapter.handle(HttpRequestHandlerAdapter.java:53) ~[spring-webmvc-5.2.5.RELEASE.jar:5.2.5.RELEASE]
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1040) ~[spring-webmvc-5.2.5.RELEASE.jar:5.2.5.RELEASE]
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:943) ~[spring-webmvc-5.2.5.RELEASE.jar:5.2.5.RELEASE]
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1006) ~[spring-webmvc-5.2.5.RELEASE.jar:5.2.5.RELEASE]
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:898) ~[spring-webmvc-5.2.5.RELEASE.jar:5.2.5.RELEASE]
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:634) ~[tomcat-embed-core-9.0.33.jar:9.0.33]
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:883) ~[spring-webmvc-5.2.5.RELEASE.jar:5.2.5.RELEASE]
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:741) ~[tomcat-embed-core-9.0.33.jar:9.0.33]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:231) ~[tomcat-embed-core-9.0.33.jar:9.0.33]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) ~[tomcat-embed-core-9.0.33.jar:9.0.33]
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53) ~[tomcat-embed-websocket-9.0.33.jar:9.0.33]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) ~[tomcat-embed-core-9.0.33.jar:9.0.33]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) ~[tomcat-embed-core-9.0.33.jar:9.0.33]
+	at com.alibaba.druid.support.http.WebStatFilter.doFilter(WebStatFilter.java:124) ~[druid-1.1.16.jar:1.1.16]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) ~[tomcat-embed-core-9.0.33.jar:9.0.33]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) ~[tomcat-embed-core-9.0.33.jar:9.0.33]
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100) ~[spring-web-5.2.5.RELEASE.jar:5.2.5.RELEASE]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119) ~[spring-web-5.2.5.RELEASE.jar:5.2.5.RELEASE]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) ~[tomcat-embed-core-9.0.33.jar:9.0.33]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) ~[tomcat-embed-core-9.0.33.jar:9.0.33]
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93) ~[spring-web-5.2.5.RELEASE.jar:5.2.5.RELEASE]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119) ~[spring-web-5.2.5.RELEASE.jar:5.2.5.RELEASE]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) ~[tomcat-embed-core-9.0.33.jar:9.0.33]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) ~[tomcat-embed-core-9.0.33.jar:9.0.33]
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201) ~[spring-web-5.2.5.RELEASE.jar:5.2.5.RELEASE]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119) ~[spring-web-5.2.5.RELEASE.jar:5.2.5.RELEASE]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) ~[tomcat-embed-core-9.0.33.jar:9.0.33]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) ~[tomcat-embed-core-9.0.33.jar:9.0.33]
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:202) ~[tomcat-embed-core-9.0.33.jar:9.0.33]
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:96) [tomcat-embed-core-9.0.33.jar:9.0.33]
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:541) [tomcat-embed-core-9.0.33.jar:9.0.33]
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:139) [tomcat-embed-core-9.0.33.jar:9.0.33]
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92) [tomcat-embed-core-9.0.33.jar:9.0.33]
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74) [tomcat-embed-core-9.0.33.jar:9.0.33]
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:343) [tomcat-embed-core-9.0.33.jar:9.0.33]
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:373) [tomcat-embed-core-9.0.33.jar:9.0.33]
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65) [tomcat-embed-core-9.0.33.jar:9.0.33]
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:868) [tomcat-embed-core-9.0.33.jar:9.0.33]
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1594) [tomcat-embed-core-9.0.33.jar:9.0.33]
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49) [tomcat-embed-core-9.0.33.jar:9.0.33]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149) [na:1.8.0_221]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624) [na:1.8.0_221]
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61) [tomcat-embed-core-9.0.33.jar:9.0.33]
+	at java.lang.Thread.run(Thread.java:748) [na:1.8.0_221]
+
+2021-07-24 19:18:38.485 ERROR 3216 --- [http-nio-8080-exec-5] s.e.ErrorMvcAutoConfiguration$StaticView : Cannot render error page for request [/admin/blog] and exception [Cannot call sendError() after the response has been committed] as the response has already been committed. As a result, the response may have the wrong status code.
+2021-07-24 19:19:27.884  INFO 11564 --- [restartedMain] black.lyg.blog.BlogApplication           : Starting BlogApplication on Administraror with PID 11564 (D:\Desktop\blog\blog-master\target\classes started by Administrator in D:\Desktop\blog\blog-master)
+2021-07-24 19:19:27.900 DEBUG 11564 --- [restartedMain] black.lyg.blog.BlogApplication           : Running with Spring Boot v2.2.6.RELEASE, Spring v5.2.5.RELEASE
+2021-07-24 19:19:27.900  INFO 11564 --- [restartedMain] black.lyg.blog.BlogApplication           : The following profiles are active: dev
+2021-07-24 19:19:27.931  INFO 11564 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2021-07-24 19:19:27.931  INFO 11564 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2021-07-24 19:19:28.449  INFO 11564 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode!
+2021-07-24 19:19:28.449  INFO 11564 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2021-07-24 19:19:28.480  INFO 11564 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 15ms. Found 0 Redis repository interfaces.
+2021-07-24 19:19:28.574  WARN 11564 --- [restartedMain] o.m.s.mapper.ClassPathMapperScanner      : No MyBatis mapper was found in '[black.lyg.blog]' package. Please check your configuration.
+2021-07-24 19:19:29.058  INFO 11564 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2021-07-24 19:19:29.058  INFO 11564 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2021-07-24 19:19:29.058  INFO 11564 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.33]
+2021-07-24 19:19:29.058  INFO 11564 --- [restartedMain] o.a.catalina.core.AprLifecycleListener   : An older version [1.2.14] of the APR based Apache Tomcat Native library is installed, while Tomcat recommends a minimum version of [1.2.23]
+2021-07-24 19:19:29.058  INFO 11564 --- [restartedMain] o.a.catalina.core.AprLifecycleListener   : Loaded APR based Apache Tomcat Native library [1.2.14] using APR version [1.6.2].
+2021-07-24 19:19:29.058  INFO 11564 --- [restartedMain] o.a.catalina.core.AprLifecycleListener   : APR capabilities: IPv6 [true], sendfile [true], accept filters [false], random [true].
+2021-07-24 19:19:29.058  INFO 11564 --- [restartedMain] o.a.catalina.core.AprLifecycleListener   : APR/OpenSSL configuration: useAprConnector [false], useOpenSSL [true]
+2021-07-24 19:19:30.089  INFO 11564 --- [restartedMain] o.a.catalina.core.AprLifecycleListener   : OpenSSL successfully initialized [OpenSSL 1.0.2l  25 May 2017]
+2021-07-24 19:19:30.183  INFO 11564 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2021-07-24 19:19:30.183  INFO 11564 --- [restartedMain] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 2252 ms
+2021-07-24 19:19:30.214  INFO 11564 --- [restartedMain] o.s.boot.web.servlet.RegistrationBean    : Filter webStatFilter was not registered (possibly already registered?)
+2021-07-24 19:19:31.120  INFO 11564 --- [restartedMain] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2021-07-24 19:19:31.183  INFO 11564 --- [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2021-07-24 19:19:31.558  INFO 11564 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2021-07-24 19:19:31.589  INFO 11564 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2021-07-24 19:19:31.589  INFO 11564 --- [restartedMain] black.lyg.blog.BlogApplication           : Started BlogApplication in 4.024 seconds (JVM running for 5.27)
+2021-07-24 19:19:31.620  INFO 11564 --- [restartedMain] com.alibaba.druid.pool.DruidDataSource   : {dataSource-1} inited
+2021-07-24 19:19:33.308 DEBUG 11564 --- [restartedMain] b.l.blog.mapper.BlogMapper.findBlogAll   : ==>  Preparing: select * from blog order by update_time desc 
+2021-07-24 19:19:33.323 DEBUG 11564 --- [restartedMain] b.l.blog.mapper.BlogMapper.findBlogAll   : ==> Parameters: 
+2021-07-24 19:19:33.479 DEBUG 11564 --- [restartedMain] b.l.b.mapper.TypeMapper.selectTypeById   : ====>  Preparing: select * from type where type_id = ? 
+2021-07-24 19:19:33.479 DEBUG 11564 --- [restartedMain] b.l.b.mapper.TypeMapper.selectTypeById   : ====> Parameters: 6(String)
+2021-07-24 19:19:33.511 DEBUG 11564 --- [restartedMain] b.l.b.mapper.TypeMapper.selectTypeById   : <====      Total: 1
+2021-07-24 19:19:33.511 DEBUG 11564 --- [restartedMain] b.l.b.m.UserMapper.selectUserByUserId    : ====>  Preparing: select * from user where user_id = ? 
+2021-07-24 19:19:33.511 DEBUG 11564 --- [restartedMain] b.l.b.m.UserMapper.selectUserByUserId    : ====> Parameters: 1(String)
+2021-07-24 19:19:33.542 DEBUG 11564 --- [restartedMain] b.l.b.m.UserMapper.selectUserByUserId    : <====      Total: 1
+2021-07-24 19:19:33.542 DEBUG 11564 --- [restartedMain] b.l.b.mapper.TypeMapper.selectTypeById   : ====>  Preparing: select * from type where type_id = ? 
+2021-07-24 19:19:33.542 DEBUG 11564 --- [restartedMain] b.l.b.mapper.TypeMapper.selectTypeById   : ====> Parameters: 16(String)
+2021-07-24 19:19:33.589 DEBUG 11564 --- [restartedMain] b.l.b.mapper.TypeMapper.selectTypeById   : <====      Total: 1
+2021-07-24 19:19:33.589 DEBUG 11564 --- [restartedMain] b.l.b.mapper.TypeMapper.selectTypeById   : ====>  Preparing: select * from type where type_id = ? 
+2021-07-24 19:19:33.589 DEBUG 11564 --- [restartedMain] b.l.b.mapper.TypeMapper.selectTypeById   : ====> Parameters: 4(String)
+2021-07-24 19:19:33.620 DEBUG 11564 --- [restartedMain] b.l.b.mapper.TypeMapper.selectTypeById   : <====      Total: 1
+2021-07-24 19:19:33.620 DEBUG 11564 --- [restartedMain] b.l.blog.mapper.BlogMapper.findBlogAll   : <==      Total: 9
+2021-07-24 19:19:33.729  INFO 11564 --- [restartedMain] io.lettuce.core.EpollProvider            : Starting without optional epoll library
+2021-07-24 19:19:33.729  INFO 11564 --- [restartedMain] io.lettuce.core.KqueueProvider           : Starting without optional kqueue library
+2021-07-24 19:19:35.260  INFO 11564 --- [restartedMain] black.lyg.blog.config.StartupRunner      : 将blog数据添加到redis的AllBlog中，其博客标题为：Java常见关键字final、static、super、abstract、this
+2021-07-24 19:19:35.291  INFO 11564 --- [restartedMain] black.lyg.blog.config.StartupRunner      : 将blog数据添加到redis的AllBlog中，其博客标题为：山东菏泽曹县流弊六六六，卧底宝贝儿
+2021-07-24 19:19:35.323  INFO 11564 --- [restartedMain] black.lyg.blog.config.StartupRunner      : 将blog数据添加到redis的AllBlog中，其博客标题为：随笔
+2021-07-24 19:19:35.354  INFO 11564 --- [restartedMain] black.lyg.blog.config.StartupRunner      : 将blog数据添加到redis的AllBlog中，其博客标题为：欢迎使用 Markdown在线编辑器 MdEditor
+2021-07-24 19:19:35.386  INFO 11564 --- [restartedMain] black.lyg.blog.config.StartupRunner      : 将blog数据添加到redis的AllBlog中，其博客标题为：Java中 equals() 和 hashCode()的关系
+2021-07-24 19:19:35.417  INFO 11564 --- [restartedMain] black.lyg.blog.config.StartupRunner      : 将blog数据添加到redis的AllBlog中，其博客标题为：redis学习笔记（二）：Hash
+2021-07-24 19:19:35.447  INFO 11564 --- [restartedMain] black.lyg.blog.config.StartupRunner      : 将blog数据添加到redis的AllBlog中，其博客标题为：redis学习笔记（一）：String
+2021-07-24 19:19:35.480  INFO 11564 --- [restartedMain] black.lyg.blog.config.StartupRunner      : 将blog数据添加到redis的AllBlog中，其博客标题为：Java合并两个int数组
+2021-07-24 19:19:35.510  INFO 11564 --- [restartedMain] black.lyg.blog.config.StartupRunner      : 将blog数据添加到redis的AllBlog中，其博客标题为：条件注解@Conditional
+2021-07-24 19:19:35.541  INFO 11564 --- [restartedMain] black.lyg.blog.config.StartupRunner      : 初始化redis中blogCount的数量为：9
+2021-07-24 19:19:40.369  INFO 11564 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2021-07-24 19:19:40.369  INFO 11564 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2021-07-24 19:19:40.378  INFO 11564 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 9 ms
+2021-07-24 19:19:40.401  INFO 11564 --- [http-nio-8080-exec-1] black.lyg.blog.aspect.LogAspect          : Request : RequestLog{url='http://localhost:8080/admin', ip='0:0:0:0:0:0:0:1', classMethod='black.lyg.blog.controller.admin.LoginController.loginPage', args=[]}
+2021-07-24 19:19:40.404  INFO 11564 --- [http-nio-8080-exec-1] black.lyg.blog.aspect.LogAspect          : ////////after/////////
+2021-07-24 19:19:40.404  INFO 11564 --- [http-nio-8080-exec-1] black.lyg.blog.aspect.LogAspect          : result : admin/login 
+2021-07-24 19:19:40.759  INFO 11564 --- [http-nio-8080-exec-1] black.lyg.blog.aspect.LogAspect          : Request : RequestLog{url='http://localhost:8080/admin/', ip='0:0:0:0:0:0:0:1', classMethod='black.lyg.blog.controller.admin.LoginController.loginPage', args=[]}
+2021-07-24 19:19:40.760  INFO 11564 --- [http-nio-8080-exec-1] black.lyg.blog.aspect.LogAspect          : ////////after/////////
+2021-07-24 19:19:40.760  INFO 11564 --- [http-nio-8080-exec-1] black.lyg.blog.aspect.LogAspect          : result : admin/login 
+2021-07-24 19:19:42.846  INFO 11564 --- [http-nio-8080-exec-5] black.lyg.blog.aspect.LogAspect          : Request : RequestLog{url='http://localhost:8080/admin/add', ip='0:0:0:0:0:0:0:1', classMethod='black.lyg.blog.controller.admin.LoginController.add', args=[]}
+2021-07-24 19:19:42.846  INFO 11564 --- [http-nio-8080-exec-5] black.lyg.blog.aspect.LogAspect          : ////////after/////////
+2021-07-24 19:19:42.846  INFO 11564 --- [http-nio-8080-exec-5] black.lyg.blog.aspect.LogAspect          : result : admin/register 
+2021-07-24 19:19:44.232  INFO 11564 --- [http-nio-8080-exec-8] black.lyg.blog.aspect.LogAspect          : Request : RequestLog{url='http://localhost:8080/admin', ip='0:0:0:0:0:0:0:1', classMethod='black.lyg.blog.controller.admin.LoginController.loginPage', args=[]}
+2021-07-24 19:19:44.232  INFO 11564 --- [http-nio-8080-exec-8] black.lyg.blog.aspect.LogAspect          : ////////after/////////
+2021-07-24 19:19:44.232  INFO 11564 --- [http-nio-8080-exec-8] black.lyg.blog.aspect.LogAspect          : result : admin/login 
+2021-07-24 19:19:46.150  INFO 11564 --- [http-nio-8080-exec-4] black.lyg.blog.aspect.LogAspect          : Request : RequestLog{url='http://localhost:8080/admin/add', ip='0:0:0:0:0:0:0:1', classMethod='black.lyg.blog.controller.admin.LoginController.add', args=[]}
+2021-07-24 19:19:46.150  INFO 11564 --- [http-nio-8080-exec-4] black.lyg.blog.aspect.LogAspect          : ////////after/////////
+2021-07-24 19:19:46.150  INFO 11564 --- [http-nio-8080-exec-4] black.lyg.blog.aspect.LogAspect          : result : admin/register 
+2021-07-24 19:19:55.026  INFO 11564 --- [http-nio-8080-exec-2] black.lyg.blog.aspect.LogAspect          : Request : RequestLog{url='http://localhost:8080/admin/register', ip='0:0:0:0:0:0:0:1', classMethod='black.lyg.blog.controller.admin.LoginController.register', args=[admin, 123456, 123456, 123456@qq.com, {}]}
+2021-07-24 19:19:55.028 DEBUG 11564 --- [http-nio-8080-exec-2] .l.b.m.U.selectUserNameByNameAndPassWord : ==>  Preparing: select * from user where username = ? and password = ? 
+2021-07-24 19:19:55.028 DEBUG 11564 --- [http-nio-8080-exec-2] .l.b.m.U.selectUserNameByNameAndPassWord : ==> Parameters: admin(String), E10ADC3949BA59ABBE56E057F20F883E(String)
+2021-07-24 19:19:55.058 DEBUG 11564 --- [http-nio-8080-exec-2] .l.b.m.U.selectUserNameByNameAndPassWord : <==      Total: 0
+2021-07-24 19:19:55.060  INFO 11564 --- [http-nio-8080-exec-2] black.lyg.blog.aspect.LogAspect          : ////////after/////////
+2021-07-24 19:19:55.062 ERROR 11564 --- [http-nio-8080-exec-2] b.l.b.h.ControllerExceptionHandler       : Request URL : http://localhost:8080/admin/register, Exception : Invalid bound statement (not found): black.lyg.blog.mapper.UserMapper.insert
+2021-07-24 19:19:55.062  WARN 11564 --- [http-nio-8080-exec-2] .m.m.a.ExceptionHandlerExceptionResolver : Resolved [org.apache.ibatis.binding.BindingException: Invalid bound statement (not found): black.lyg.blog.mapper.UserMapper.insert]
+2021-07-24 19:20:27.162  INFO 11564 --- [http-nio-8080-exec-6] black.lyg.blog.aspect.LogAspect          : Request : RequestLog{url='http://localhost:8080/admin/register', ip='0:0:0:0:0:0:0:1', classMethod='black.lyg.blog.controller.admin.LoginController.register', args=[admin, lyg0918, 123456, 123456@qq.com, {}]}
+2021-07-24 19:20:27.163 DEBUG 11564 --- [http-nio-8080-exec-6] .l.b.m.U.selectUserNameByNameAndPassWord : ==>  Preparing: select * from user where username = ? and password = ? 
+2021-07-24 19:20:27.163 DEBUG 11564 --- [http-nio-8080-exec-6] .l.b.m.U.selectUserNameByNameAndPassWord : ==> Parameters: admin(String), 89446CF944BBA2485A8562075A0E0BB7(String)
+2021-07-24 19:20:27.192 DEBUG 11564 --- [http-nio-8080-exec-6] .l.b.m.U.selectUserNameByNameAndPassWord : <==      Total: 1
+2021-07-24 19:20:27.192  INFO 11564 --- [http-nio-8080-exec-6] black.lyg.blog.aspect.LogAspect          : ////////after/////////
+2021-07-24 19:20:27.192  INFO 11564 --- [http-nio-8080-exec-6] black.lyg.blog.aspect.LogAspect          : result : redirect:/admin/add 
+2021-07-24 19:20:27.217  INFO 11564 --- [http-nio-8080-exec-7] black.lyg.blog.aspect.LogAspect          : Request : RequestLog{url='http://localhost:8080/admin/add', ip='0:0:0:0:0:0:0:1', classMethod='black.lyg.blog.controller.admin.LoginController.add', args=[]}
+2021-07-24 19:20:27.217  INFO 11564 --- [http-nio-8080-exec-7] black.lyg.blog.aspect.LogAspect          : ////////after/////////
+2021-07-24 19:20:27.217  INFO 11564 --- [http-nio-8080-exec-7] black.lyg.blog.aspect.LogAspect          : result : admin/register 
+2021-07-24 19:31:42.461  INFO 4320 --- [restartedMain] black.lyg.blog.BlogApplication           : Starting BlogApplication on Administraror with PID 4320 (D:\Desktop\blog\blog-master\target\classes started by Administrator in D:\Desktop\blog\blog-master)
+2021-07-24 19:31:42.461 DEBUG 4320 --- [restartedMain] black.lyg.blog.BlogApplication           : Running with Spring Boot v2.2.6.RELEASE, Spring v5.2.5.RELEASE
+2021-07-24 19:31:42.461  INFO 4320 --- [restartedMain] black.lyg.blog.BlogApplication           : The following profiles are active: dev
+2021-07-24 19:31:42.492  INFO 4320 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2021-07-24 19:31:42.492  INFO 4320 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2021-07-24 19:31:43.024  INFO 4320 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode!
+2021-07-24 19:31:43.024  INFO 4320 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2021-07-24 19:31:43.055  INFO 4320 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 15ms. Found 0 Redis repository interfaces.
+2021-07-24 19:31:43.133  WARN 4320 --- [restartedMain] o.m.s.mapper.ClassPathMapperScanner      : No MyBatis mapper was found in '[black.lyg.blog]' package. Please check your configuration.
+2021-07-24 19:31:43.633  INFO 4320 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2021-07-24 19:31:43.633  INFO 4320 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2021-07-24 19:31:43.633  INFO 4320 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.33]
+2021-07-24 19:31:43.633  INFO 4320 --- [restartedMain] o.a.catalina.core.AprLifecycleListener   : An older version [1.2.14] of the APR based Apache Tomcat Native library is installed, while Tomcat recommends a minimum version of [1.2.23]
+2021-07-24 19:31:43.633  INFO 4320 --- [restartedMain] o.a.catalina.core.AprLifecycleListener   : Loaded APR based Apache Tomcat Native library [1.2.14] using APR version [1.6.2].
+2021-07-24 19:31:43.633  INFO 4320 --- [restartedMain] o.a.catalina.core.AprLifecycleListener   : APR capabilities: IPv6 [true], sendfile [true], accept filters [false], random [true].
+2021-07-24 19:31:43.633  INFO 4320 --- [restartedMain] o.a.catalina.core.AprLifecycleListener   : APR/OpenSSL configuration: useAprConnector [false], useOpenSSL [true]
+2021-07-24 19:31:44.664  INFO 4320 --- [restartedMain] o.a.catalina.core.AprLifecycleListener   : OpenSSL successfully initialized [OpenSSL 1.0.2l  25 May 2017]
+2021-07-24 19:31:44.757  INFO 4320 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2021-07-24 19:31:44.757  INFO 4320 --- [restartedMain] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 2265 ms
+2021-07-24 19:31:44.789  INFO 4320 --- [restartedMain] o.s.boot.web.servlet.RegistrationBean    : Filter webStatFilter was not registered (possibly already registered?)
+2021-07-24 19:31:45.695  INFO 4320 --- [restartedMain] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2021-07-24 19:31:45.757  INFO 4320 --- [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2021-07-24 19:31:46.132  INFO 4320 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2021-07-24 19:31:46.163  INFO 4320 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2021-07-24 19:31:46.163  INFO 4320 --- [restartedMain] black.lyg.blog.BlogApplication           : Started BlogApplication in 4.019 seconds (JVM running for 5.221)
+2021-07-24 19:31:46.195  INFO 4320 --- [restartedMain] com.alibaba.druid.pool.DruidDataSource   : {dataSource-1} inited
+2021-07-24 19:31:47.552 DEBUG 4320 --- [restartedMain] b.l.blog.mapper.BlogMapper.findBlogAll   : ==>  Preparing: select * from blog order by update_time desc 
+2021-07-24 19:31:47.568 DEBUG 4320 --- [restartedMain] b.l.blog.mapper.BlogMapper.findBlogAll   : ==> Parameters: 
+2021-07-24 19:31:47.708 DEBUG 4320 --- [restartedMain] b.l.b.mapper.TypeMapper.selectTypeById   : ====>  Preparing: select * from type where type_id = ? 
+2021-07-24 19:31:47.708 DEBUG 4320 --- [restartedMain] b.l.b.mapper.TypeMapper.selectTypeById   : ====> Parameters: 6(String)
+2021-07-24 19:31:47.740 DEBUG 4320 --- [restartedMain] b.l.b.mapper.TypeMapper.selectTypeById   : <====      Total: 1
+2021-07-24 19:31:47.740 DEBUG 4320 --- [restartedMain] b.l.b.m.UserMapper.selectUserByUserId    : ====>  Preparing: select * from user where user_id = ? 
+2021-07-24 19:31:47.740 DEBUG 4320 --- [restartedMain] b.l.b.m.UserMapper.selectUserByUserId    : ====> Parameters: 1(String)
+2021-07-24 19:31:47.771 DEBUG 4320 --- [restartedMain] b.l.b.m.UserMapper.selectUserByUserId    : <====      Total: 1
+2021-07-24 19:31:47.771 DEBUG 4320 --- [restartedMain] b.l.b.mapper.TypeMapper.selectTypeById   : ====>  Preparing: select * from type where type_id = ? 
+2021-07-24 19:31:47.771 DEBUG 4320 --- [restartedMain] b.l.b.mapper.TypeMapper.selectTypeById   : ====> Parameters: 16(String)
+2021-07-24 19:31:47.802 DEBUG 4320 --- [restartedMain] b.l.b.mapper.TypeMapper.selectTypeById   : <====      Total: 1
+2021-07-24 19:31:47.802 DEBUG 4320 --- [restartedMain] b.l.b.mapper.TypeMapper.selectTypeById   : ====>  Preparing: select * from type where type_id = ? 
+2021-07-24 19:31:47.802 DEBUG 4320 --- [restartedMain] b.l.b.mapper.TypeMapper.selectTypeById   : ====> Parameters: 4(String)
+2021-07-24 19:31:47.833 DEBUG 4320 --- [restartedMain] b.l.b.mapper.TypeMapper.selectTypeById   : <====      Total: 1
+2021-07-24 19:31:47.833 DEBUG 4320 --- [restartedMain] b.l.blog.mapper.BlogMapper.findBlogAll   : <==      Total: 9
+2021-07-24 19:31:47.927  INFO 4320 --- [restartedMain] io.lettuce.core.EpollProvider            : Starting without optional epoll library
+2021-07-24 19:31:47.943  INFO 4320 --- [restartedMain] io.lettuce.core.KqueueProvider           : Starting without optional kqueue library
+2021-07-24 19:31:49.599  INFO 4320 --- [restartedMain] black.lyg.blog.config.StartupRunner      : 将blog数据添加到redis的AllBlog中，其博客标题为：Java常见关键字final、static、super、abstract、this
+2021-07-24 19:31:49.631  INFO 4320 --- [restartedMain] black.lyg.blog.config.StartupRunner      : 将blog数据添加到redis的AllBlog中，其博客标题为：山东菏泽曹县流弊六六六，卧底宝贝儿
+2021-07-24 19:31:49.661  INFO 4320 --- [restartedMain] black.lyg.blog.config.StartupRunner      : 将blog数据添加到redis的AllBlog中，其博客标题为：随笔
+2021-07-24 19:31:49.692  INFO 4320 --- [restartedMain] black.lyg.blog.config.StartupRunner      : 将blog数据添加到redis的AllBlog中，其博客标题为：欢迎使用 Markdown在线编辑器 MdEditor
+2021-07-24 19:31:49.739  INFO 4320 --- [restartedMain] black.lyg.blog.config.StartupRunner      : 将blog数据添加到redis的AllBlog中，其博客标题为：Java中 equals() 和 hashCode()的关系
+2021-07-24 19:31:49.770  INFO 4320 --- [restartedMain] black.lyg.blog.config.StartupRunner      : 将blog数据添加到redis的AllBlog中，其博客标题为：redis学习笔记（二）：Hash
+2021-07-24 19:31:49.802  INFO 4320 --- [restartedMain] black.lyg.blog.config.StartupRunner      : 将blog数据添加到redis的AllBlog中，其博客标题为：redis学习笔记（一）：String
+2021-07-24 19:31:49.833  INFO 4320 --- [restartedMain] black.lyg.blog.config.StartupRunner      : 将blog数据添加到redis的AllBlog中，其博客标题为：Java合并两个int数组
+2021-07-24 19:31:49.865  INFO 4320 --- [restartedMain] black.lyg.blog.config.StartupRunner      : 将blog数据添加到redis的AllBlog中，其博客标题为：条件注解@Conditional
+2021-07-24 19:31:49.895  INFO 4320 --- [restartedMain] black.lyg.blog.config.StartupRunner      : 初始化redis中blogCount的数量为：9
+2021-07-24 19:32:02.882  INFO 4320 --- [Thread-13] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2021-07-24 19:32:03.007  INFO 4320 --- [Thread-13] com.alibaba.druid.pool.DruidDataSource   : {dataSource-1} closing ...
+2021-07-24 19:32:03.007  INFO 4320 --- [Thread-13] com.alibaba.druid.pool.DruidDataSource   : {dataSource-1} closed
+2021-07-24 19:32:03.852  INFO 4320 --- [restartedMain] black.lyg.blog.BlogApplication           : Starting BlogApplication on Administraror with PID 4320 (D:\Desktop\blog\blog-master\target\classes started by Administrator in D:\Desktop\blog\blog-master)
+2021-07-24 19:32:03.852 DEBUG 4320 --- [restartedMain] black.lyg.blog.BlogApplication           : Running with Spring Boot v2.2.6.RELEASE, Spring v5.2.5.RELEASE
+2021-07-24 19:32:03.852  INFO 4320 --- [restartedMain] black.lyg.blog.BlogApplication           : The following profiles are active: dev
+2021-07-24 19:32:03.993  INFO 4320 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode!
+2021-07-24 19:32:03.993  INFO 4320 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2021-07-24 19:32:04.009  INFO 4320 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 8ms. Found 0 Redis repository interfaces.
+2021-07-24 19:32:04.024  WARN 4320 --- [restartedMain] o.m.s.mapper.ClassPathMapperScanner      : No MyBatis mapper was found in '[black.lyg.blog]' package. Please check your configuration.
+2021-07-24 19:32:04.165  INFO 4320 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2021-07-24 19:32:04.165  INFO 4320 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2021-07-24 19:32:04.165  INFO 4320 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.33]
+2021-07-24 19:32:04.165  INFO 4320 --- [restartedMain] o.a.catalina.core.AprLifecycleListener   : An older version [1.2.14] of the APR based Apache Tomcat Native library is installed, while Tomcat recommends a minimum version of [1.2.23]
+2021-07-24 19:32:04.165  INFO 4320 --- [restartedMain] o.a.catalina.core.AprLifecycleListener   : Loaded APR based Apache Tomcat Native library [1.2.14] using APR version [1.6.2].
+2021-07-24 19:32:04.165  INFO 4320 --- [restartedMain] o.a.catalina.core.AprLifecycleListener   : APR capabilities: IPv6 [true], sendfile [true], accept filters [false], random [true].
+2021-07-24 19:32:04.165  INFO 4320 --- [restartedMain] o.a.catalina.core.AprLifecycleListener   : APR/OpenSSL configuration: useAprConnector [false], useOpenSSL [true]
+2021-07-24 19:32:04.165  INFO 4320 --- [restartedMain] o.a.catalina.core.AprLifecycleListener   : OpenSSL successfully initialized [OpenSSL 1.0.2l  25 May 2017]
+2021-07-24 19:32:04.180  INFO 4320 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2021-07-24 19:32:04.180  INFO 4320 --- [restartedMain] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 328 ms
+2021-07-24 19:32:04.196  INFO 4320 --- [restartedMain] o.s.boot.web.servlet.RegistrationBean    : Filter webStatFilter was not registered (possibly already registered?)
+2021-07-24 19:32:04.665  INFO 4320 --- [restartedMain] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2021-07-24 19:32:04.696  INFO 4320 --- [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2021-07-24 19:32:04.946  INFO 4320 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2021-07-24 19:32:04.961  INFO 4320 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2021-07-24 19:32:04.961  INFO 4320 --- [restartedMain] black.lyg.blog.BlogApplication           : Started BlogApplication in 1.142 seconds (JVM running for 24.022)
+2021-07-24 19:32:04.961  INFO 4320 --- [restartedMain] com.alibaba.druid.pool.DruidDataSource   : {dataSource-2} inited
+2021-07-24 19:32:06.612 DEBUG 4320 --- [restartedMain] b.l.blog.mapper.BlogMapper.findBlogAll   : ==>  Preparing: select * from blog order by update_time desc 
+2021-07-24 19:32:06.612 DEBUG 4320 --- [restartedMain] b.l.blog.mapper.BlogMapper.findBlogAll   : ==> Parameters: 
+2021-07-24 19:32:06.769 DEBUG 4320 --- [restartedMain] b.l.b.mapper.TypeMapper.selectTypeById   : ====>  Preparing: select * from type where type_id = ? 
+2021-07-24 19:32:06.769 DEBUG 4320 --- [restartedMain] b.l.b.mapper.TypeMapper.selectTypeById   : ====> Parameters: 6(String)
+2021-07-24 19:32:06.801 DEBUG 4320 --- [restartedMain] b.l.b.mapper.TypeMapper.selectTypeById   : <====      Total: 1
+2021-07-24 19:32:06.801 DEBUG 4320 --- [restartedMain] b.l.b.m.UserMapper.selectUserByUserId    : ====>  Preparing: select * from user where user_id = ? 
+2021-07-24 19:32:06.801 DEBUG 4320 --- [restartedMain] b.l.b.m.UserMapper.selectUserByUserId    : ====> Parameters: 1(String)
+2021-07-24 19:32:06.831 DEBUG 4320 --- [restartedMain] b.l.b.m.UserMapper.selectUserByUserId    : <====      Total: 1
+2021-07-24 19:32:06.831 DEBUG 4320 --- [restartedMain] b.l.b.mapper.TypeMapper.selectTypeById   : ====>  Preparing: select * from type where type_id = ? 
+2021-07-24 19:32:06.831 DEBUG 4320 --- [restartedMain] b.l.b.mapper.TypeMapper.selectTypeById   : ====> Parameters: 16(String)
+2021-07-24 19:32:06.847 DEBUG 4320 --- [restartedMain] b.l.b.mapper.TypeMapper.selectTypeById   : <====      Total: 1
+2021-07-24 19:32:06.847 DEBUG 4320 --- [restartedMain] b.l.b.mapper.TypeMapper.selectTypeById   : ====>  Preparing: select * from type where type_id = ? 
+2021-07-24 19:32:06.847 DEBUG 4320 --- [restartedMain] b.l.b.mapper.TypeMapper.selectTypeById   : ====> Parameters: 4(String)
+2021-07-24 19:32:06.878 DEBUG 4320 --- [restartedMain] b.l.b.mapper.TypeMapper.selectTypeById   : <====      Total: 1
+2021-07-24 19:32:06.878 DEBUG 4320 --- [restartedMain] b.l.blog.mapper.BlogMapper.findBlogAll   : <==      Total: 9
+2021-07-24 19:32:07.004  INFO 4320 --- [restartedMain] black.lyg.blog.config.StartupRunner      : 将blog数据添加到redis的AllBlog中，其博客标题为：Java常见关键字final、static、super、abstract、this
+2021-07-24 19:32:07.035  INFO 4320 --- [restartedMain] black.lyg.blog.config.StartupRunner      : 将blog数据添加到redis的AllBlog中，其博客标题为：山东菏泽曹县流弊六六六，卧底宝贝儿
+2021-07-24 19:32:07.066  INFO 4320 --- [restartedMain] black.lyg.blog.config.StartupRunner      : 将blog数据添加到redis的AllBlog中，其博客标题为：随笔
+2021-07-24 19:32:07.097  INFO 4320 --- [restartedMain] black.lyg.blog.config.StartupRunner      : 将blog数据添加到redis的AllBlog中，其博客标题为：欢迎使用 Markdown在线编辑器 MdEditor
+2021-07-24 19:32:07.128  INFO 4320 --- [restartedMain] black.lyg.blog.config.StartupRunner      : 将blog数据添加到redis的AllBlog中，其博客标题为：Java中 equals() 和 hashCode()的关系
+2021-07-24 19:32:07.159  INFO 4320 --- [restartedMain] black.lyg.blog.config.StartupRunner      : 将blog数据添加到redis的AllBlog中，其博客标题为：redis学习笔记（二）：Hash
+2021-07-24 19:32:07.190  INFO 4320 --- [restartedMain] black.lyg.blog.config.StartupRunner      : 将blog数据添加到redis的AllBlog中，其博客标题为：redis学习笔记（一）：String
+2021-07-24 19:32:07.238  INFO 4320 --- [restartedMain] black.lyg.blog.config.StartupRunner      : 将blog数据添加到redis的AllBlog中，其博客标题为：Java合并两个int数组
+2021-07-24 19:32:07.269  INFO 4320 --- [restartedMain] black.lyg.blog.config.StartupRunner      : 将blog数据添加到redis的AllBlog中，其博客标题为：条件注解@Conditional
+2021-07-24 19:32:07.300  INFO 4320 --- [restartedMain] black.lyg.blog.config.StartupRunner      : 初始化redis中blogCount的数量为：9
+2021-07-24 19:32:07.300  INFO 4320 --- [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2021-07-24 19:32:13.006  INFO 4320 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2021-07-24 19:32:13.006  INFO 4320 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2021-07-24 19:32:13.022  INFO 4320 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 16 ms
+2021-07-24 19:32:13.037  INFO 4320 --- [http-nio-8080-exec-1] black.lyg.blog.aspect.LogAspect          : Request : RequestLog{url='http://localhost:8080/admin', ip='0:0:0:0:0:0:0:1', classMethod='black.lyg.blog.controller.admin.LoginController.loginPage', args=[]}
+2021-07-24 19:32:13.037  INFO 4320 --- [http-nio-8080-exec-1] black.lyg.blog.aspect.LogAspect          : ////////after/////////
+2021-07-24 19:32:13.037  INFO 4320 --- [http-nio-8080-exec-1] black.lyg.blog.aspect.LogAspect          : result : admin/login 
+2021-07-24 19:32:18.058  INFO 4320 --- [http-nio-8080-exec-8] black.lyg.blog.aspect.LogAspect          : Request : RequestLog{url='http://localhost:8080/admin/add', ip='0:0:0:0:0:0:0:1', classMethod='black.lyg.blog.controller.admin.LoginController.add', args=[]}
+2021-07-24 19:32:18.058  INFO 4320 --- [http-nio-8080-exec-8] black.lyg.blog.aspect.LogAspect          : ////////after/////////
+2021-07-24 19:32:18.058  INFO 4320 --- [http-nio-8080-exec-8] black.lyg.blog.aspect.LogAspect          : result : admin/register 
+2021-07-24 19:32:25.013  INFO 4320 --- [http-nio-8080-exec-3] black.lyg.blog.aspect.LogAspect          : Request : RequestLog{url='http://localhost:8080/admin/register', ip='0:0:0:0:0:0:0:1', classMethod='black.lyg.blog.controller.admin.LoginController.register', args=[admin, 123456, 张三, 123456@qq.com, {}]}
+2021-07-24 19:32:25.015 DEBUG 4320 --- [http-nio-8080-exec-3] b.l.b.m.UserMapper.selectUserByUsername  : ==>  Preparing: select * from user where username = ? 
+2021-07-24 19:32:25.015 DEBUG 4320 --- [http-nio-8080-exec-3] b.l.b.m.UserMapper.selectUserByUsername  : ==> Parameters: admin(String)
+2021-07-24 19:32:25.046 DEBUG 4320 --- [http-nio-8080-exec-3] b.l.b.m.UserMapper.selectUserByUsername  : <==      Total: 1
+2021-07-24 19:32:25.047  INFO 4320 --- [http-nio-8080-exec-3] black.lyg.blog.aspect.LogAspect          : ////////after/////////
+2021-07-24 19:32:25.047  INFO 4320 --- [http-nio-8080-exec-3] black.lyg.blog.aspect.LogAspect          : result : redirect:/admin/add 
+2021-07-24 19:32:25.064  INFO 4320 --- [http-nio-8080-exec-4] black.lyg.blog.aspect.LogAspect          : Request : RequestLog{url='http://localhost:8080/admin/add', ip='0:0:0:0:0:0:0:1', classMethod='black.lyg.blog.controller.admin.LoginController.add', args=[]}
+2021-07-24 19:32:25.065  INFO 4320 --- [http-nio-8080-exec-4] black.lyg.blog.aspect.LogAspect          : ////////after/////////
+2021-07-24 19:32:25.065  INFO 4320 --- [http-nio-8080-exec-4] black.lyg.blog.aspect.LogAspect          : result : admin/register 
+2021-07-24 19:32:38.285  INFO 4320 --- [http-nio-8080-exec-5] black.lyg.blog.aspect.LogAspect          : Request : RequestLog{url='http://localhost:8080/admin/register', ip='0:0:0:0:0:0:0:1', classMethod='black.lyg.blog.controller.admin.LoginController.register', args=[666, 666, 张三, 123456@qq.com, {}]}
+2021-07-24 19:32:38.285 DEBUG 4320 --- [http-nio-8080-exec-5] b.l.b.m.UserMapper.selectUserByUsername  : ==>  Preparing: select * from user where username = ? 
+2021-07-24 19:32:38.286 DEBUG 4320 --- [http-nio-8080-exec-5] b.l.b.m.UserMapper.selectUserByUsername  : ==> Parameters: 666(String)
+2021-07-24 19:32:38.316 DEBUG 4320 --- [http-nio-8080-exec-5] b.l.b.m.UserMapper.selectUserByUsername  : <==      Total: 0
+2021-07-24 19:32:38.319  INFO 4320 --- [http-nio-8080-exec-5] black.lyg.blog.aspect.LogAspect          : ////////after/////////
+2021-07-24 19:32:38.320 ERROR 4320 --- [http-nio-8080-exec-5] b.l.b.h.ControllerExceptionHandler       : Request URL : http://localhost:8080/admin/register, Exception : Invalid bound statement (not found): black.lyg.blog.mapper.UserMapper.insert
+2021-07-24 19:32:38.320  WARN 4320 --- [http-nio-8080-exec-5] .m.m.a.ExceptionHandlerExceptionResolver : Resolved [org.apache.ibatis.binding.BindingException: Invalid bound statement (not found): black.lyg.blog.mapper.UserMapper.insert]
+2021-07-24 19:36:28.230  INFO 11884 --- [restartedMain] black.lyg.blog.BlogApplication           : Starting BlogApplication on Administraror with PID 11884 (D:\Desktop\blog\blog-master\target\classes started by Administrator in D:\Desktop\blog\blog-master)
+2021-07-24 19:36:28.231 DEBUG 11884 --- [restartedMain] black.lyg.blog.BlogApplication           : Running with Spring Boot v2.2.6.RELEASE, Spring v5.2.5.RELEASE
+2021-07-24 19:36:28.232  INFO 11884 --- [restartedMain] black.lyg.blog.BlogApplication           : The following profiles are active: dev
+2021-07-24 19:36:28.269  INFO 11884 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2021-07-24 19:36:28.269  INFO 11884 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2021-07-24 19:36:28.777  INFO 11884 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode!
+2021-07-24 19:36:28.779  INFO 11884 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2021-07-24 19:36:28.801  INFO 11884 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 14ms. Found 0 Redis repository interfaces.
+2021-07-24 19:36:28.889  WARN 11884 --- [restartedMain] o.m.s.mapper.ClassPathMapperScanner      : No MyBatis mapper was found in '[black.lyg.blog]' package. Please check your configuration.
+2021-07-24 19:36:29.385  INFO 11884 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2021-07-24 19:36:29.391  INFO 11884 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2021-07-24 19:36:29.391  INFO 11884 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.33]
+2021-07-24 19:36:29.392  INFO 11884 --- [restartedMain] o.a.catalina.core.AprLifecycleListener   : An older version [1.2.14] of the APR based Apache Tomcat Native library is installed, while Tomcat recommends a minimum version of [1.2.23]
+2021-07-24 19:36:29.393  INFO 11884 --- [restartedMain] o.a.catalina.core.AprLifecycleListener   : Loaded APR based Apache Tomcat Native library [1.2.14] using APR version [1.6.2].
+2021-07-24 19:36:29.393  INFO 11884 --- [restartedMain] o.a.catalina.core.AprLifecycleListener   : APR capabilities: IPv6 [true], sendfile [true], accept filters [false], random [true].
+2021-07-24 19:36:29.393  INFO 11884 --- [restartedMain] o.a.catalina.core.AprLifecycleListener   : APR/OpenSSL configuration: useAprConnector [false], useOpenSSL [true]
+2021-07-24 19:36:30.421  INFO 11884 --- [restartedMain] o.a.catalina.core.AprLifecycleListener   : OpenSSL successfully initialized [OpenSSL 1.0.2l  25 May 2017]
+2021-07-24 19:36:30.539  INFO 11884 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2021-07-24 19:36:30.539  INFO 11884 --- [restartedMain] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 2270 ms
+2021-07-24 19:36:30.575  INFO 11884 --- [restartedMain] o.s.boot.web.servlet.RegistrationBean    : Filter webStatFilter was not registered (possibly already registered?)
+2021-07-24 19:36:31.485  INFO 11884 --- [restartedMain] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2021-07-24 19:36:31.556  INFO 11884 --- [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2021-07-24 19:36:31.927  INFO 11884 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2021-07-24 19:36:31.965  INFO 11884 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2021-07-24 19:36:31.968  INFO 11884 --- [restartedMain] black.lyg.blog.BlogApplication           : Started BlogApplication in 4.058 seconds (JVM running for 5.359)
+2021-07-24 19:36:32.000  INFO 11884 --- [restartedMain] com.alibaba.druid.pool.DruidDataSource   : {dataSource-1} inited
+2021-07-24 19:36:33.381 DEBUG 11884 --- [restartedMain] b.l.blog.mapper.BlogMapper.findBlogAll   : ==>  Preparing: select * from blog order by update_time desc 
+2021-07-24 19:36:33.397 DEBUG 11884 --- [restartedMain] b.l.blog.mapper.BlogMapper.findBlogAll   : ==> Parameters: 
+2021-07-24 19:36:33.570 DEBUG 11884 --- [restartedMain] b.l.b.mapper.TypeMapper.selectTypeById   : ====>  Preparing: select * from type where type_id = ? 
+2021-07-24 19:36:33.571 DEBUG 11884 --- [restartedMain] b.l.b.mapper.TypeMapper.selectTypeById   : ====> Parameters: 6(String)
+2021-07-24 19:36:33.601 DEBUG 11884 --- [restartedMain] b.l.b.mapper.TypeMapper.selectTypeById   : <====      Total: 1
+2021-07-24 19:36:33.602 DEBUG 11884 --- [restartedMain] b.l.b.m.UserMapper.selectUserByUserId    : ====>  Preparing: select * from user where user_id = ? 
+2021-07-24 19:36:33.602 DEBUG 11884 --- [restartedMain] b.l.b.m.UserMapper.selectUserByUserId    : ====> Parameters: 1(String)
+2021-07-24 19:36:33.631 DEBUG 11884 --- [restartedMain] b.l.b.m.UserMapper.selectUserByUserId    : <====      Total: 1
+2021-07-24 19:36:33.632 DEBUG 11884 --- [restartedMain] b.l.b.mapper.TypeMapper.selectTypeById   : ====>  Preparing: select * from type where type_id = ? 
+2021-07-24 19:36:33.632 DEBUG 11884 --- [restartedMain] b.l.b.mapper.TypeMapper.selectTypeById   : ====> Parameters: 16(String)
+2021-07-24 19:36:33.661 DEBUG 11884 --- [restartedMain] b.l.b.mapper.TypeMapper.selectTypeById   : <====      Total: 1
+2021-07-24 19:36:33.662 DEBUG 11884 --- [restartedMain] b.l.b.mapper.TypeMapper.selectTypeById   : ====>  Preparing: select * from type where type_id = ? 
+2021-07-24 19:36:33.662 DEBUG 11884 --- [restartedMain] b.l.b.mapper.TypeMapper.selectTypeById   : ====> Parameters: 4(String)
+2021-07-24 19:36:33.694 DEBUG 11884 --- [restartedMain] b.l.b.mapper.TypeMapper.selectTypeById   : <====      Total: 1
+2021-07-24 19:36:33.697 DEBUG 11884 --- [restartedMain] b.l.blog.mapper.BlogMapper.findBlogAll   : <==      Total: 9
+2021-07-24 19:36:33.791  INFO 11884 --- [restartedMain] io.lettuce.core.EpollProvider            : Starting without optional epoll library
+2021-07-24 19:36:33.792  INFO 11884 --- [restartedMain] io.lettuce.core.KqueueProvider           : Starting without optional kqueue library
+2021-07-24 19:36:35.375  INFO 11884 --- [restartedMain] black.lyg.blog.config.StartupRunner      : 将blog数据添加到redis的AllBlog中，其博客标题为：Java常见关键字final、static、super、abstract、this
+2021-07-24 19:36:35.404  INFO 11884 --- [restartedMain] black.lyg.blog.config.StartupRunner      : 将blog数据添加到redis的AllBlog中，其博客标题为：山东菏泽曹县流弊六六六，卧底宝贝儿
+2021-07-24 19:36:35.436  INFO 11884 --- [restartedMain] black.lyg.blog.config.StartupRunner      : 将blog数据添加到redis的AllBlog中，其博客标题为：随笔
+2021-07-24 19:36:35.470  INFO 11884 --- [restartedMain] black.lyg.blog.config.StartupRunner      : 将blog数据添加到redis的AllBlog中，其博客标题为：欢迎使用 Markdown在线编辑器 MdEditor
+2021-07-24 19:36:35.505  INFO 11884 --- [restartedMain] black.lyg.blog.config.StartupRunner      : 将blog数据添加到redis的AllBlog中，其博客标题为：Java中 equals() 和 hashCode()的关系
+2021-07-24 19:36:35.536  INFO 11884 --- [restartedMain] black.lyg.blog.config.StartupRunner      : 将blog数据添加到redis的AllBlog中，其博客标题为：redis学习笔记（二）：Hash
+2021-07-24 19:36:35.574  INFO 11884 --- [restartedMain] black.lyg.blog.config.StartupRunner      : 将blog数据添加到redis的AllBlog中，其博客标题为：redis学习笔记（一）：String
+2021-07-24 19:36:35.604  INFO 11884 --- [restartedMain] black.lyg.blog.config.StartupRunner      : 将blog数据添加到redis的AllBlog中，其博客标题为：Java合并两个int数组
+2021-07-24 19:36:35.638  INFO 11884 --- [restartedMain] black.lyg.blog.config.StartupRunner      : 将blog数据添加到redis的AllBlog中，其博客标题为：条件注解@Conditional
+2021-07-24 19:36:35.668  INFO 11884 --- [restartedMain] black.lyg.blog.config.StartupRunner      : 初始化redis中blogCount的数量为：9
+2021-07-24 19:36:45.339  INFO 11884 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2021-07-24 19:36:45.339  INFO 11884 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2021-07-24 19:36:45.348  INFO 11884 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 9 ms
+2021-07-24 19:36:45.367  INFO 11884 --- [http-nio-8080-exec-1] black.lyg.blog.aspect.LogAspect          : Request : RequestLog{url='http://localhost:8080/admin/add', ip='0:0:0:0:0:0:0:1', classMethod='black.lyg.blog.controller.admin.LoginController.add', args=[]}
+2021-07-24 19:36:45.371  INFO 11884 --- [http-nio-8080-exec-1] black.lyg.blog.aspect.LogAspect          : ////////after/////////
+2021-07-24 19:36:45.371  INFO 11884 --- [http-nio-8080-exec-1] black.lyg.blog.aspect.LogAspect          : result : admin/register 
+2021-07-24 19:37:08.553  INFO 11884 --- [http-nio-8080-exec-5] black.lyg.blog.aspect.LogAspect          : Request : RequestLog{url='http://localhost:8080/admin/register', ip='0:0:0:0:0:0:0:1', classMethod='black.lyg.blog.controller.admin.LoginController.register', args=[zhangsan, 123456, 张三, 123456@qq.com, {}]}
+2021-07-24 19:37:08.556 DEBUG 11884 --- [http-nio-8080-exec-5] b.l.b.m.UserMapper.selectUserByUsername  : ==>  Preparing: select * from user where username = ? 
+2021-07-24 19:37:08.556 DEBUG 11884 --- [http-nio-8080-exec-5] b.l.b.m.UserMapper.selectUserByUsername  : ==> Parameters: zhangsan(String)
+2021-07-24 19:37:08.586 DEBUG 11884 --- [http-nio-8080-exec-5] b.l.b.m.UserMapper.selectUserByUsername  : <==      Total: 0
+2021-07-24 19:37:08.627 DEBUG 11884 --- [http-nio-8080-exec-5] black.lyg.blog.mapper.UserMapper.insert  : ==>  Preparing: INSERT INTO user ( user_id,nick_name,username,password,email,avatar,type,create_time,update_time ) VALUES( ?,?,?,?,?,?,?,?,? ) 
+2021-07-24 19:37:08.628 DEBUG 11884 --- [http-nio-8080-exec-5] black.lyg.blog.mapper.UserMapper.insert  : ==> Parameters: null, 张三(String), zhangsan(String), E10ADC3949BA59ABBE56E057F20F883E(String), 123456@qq.com(String), null, null, null, null
+2021-07-24 19:37:08.662 DEBUG 11884 --- [http-nio-8080-exec-5] black.lyg.blog.mapper.UserMapper.insert  : <==    Updates: 1
+2021-07-24 19:37:08.665 DEBUG 11884 --- [http-nio-8080-exec-5] b.l.b.m.UserMapper.insert!selectKey      : ==>  Executing: SELECT LAST_INSERT_ID() 
+2021-07-24 19:37:08.699 DEBUG 11884 --- [http-nio-8080-exec-5] b.l.b.m.UserMapper.insert!selectKey      : <==      Total: 1
+2021-07-24 19:37:08.700  INFO 11884 --- [http-nio-8080-exec-5] black.lyg.blog.aspect.LogAspect          : ////////after/////////
+2021-07-24 19:37:08.700  INFO 11884 --- [http-nio-8080-exec-5] black.lyg.blog.aspect.LogAspect          : result : redirect:/admin 
+2021-07-24 19:37:08.716  INFO 11884 --- [http-nio-8080-exec-7] black.lyg.blog.aspect.LogAspect          : Request : RequestLog{url='http://localhost:8080/admin', ip='0:0:0:0:0:0:0:1', classMethod='black.lyg.blog.controller.admin.LoginController.loginPage', args=[]}
+2021-07-24 19:37:08.717  INFO 11884 --- [http-nio-8080-exec-7] black.lyg.blog.aspect.LogAspect          : ////////after/////////
+2021-07-24 19:37:08.717  INFO 11884 --- [http-nio-8080-exec-7] black.lyg.blog.aspect.LogAspect          : result : admin/login 
+2021-07-24 19:37:59.084  INFO 11884 --- [http-nio-8080-exec-2] black.lyg.blog.aspect.LogAspect          : Request : RequestLog{url='http://localhost:8080/admin/login', ip='0:0:0:0:0:0:0:1', classMethod='black.lyg.blog.controller.admin.LoginController.login', args=[zhangsan, 123456, org.apache.catalina.session.StandardSessionFacade@51cded47, {}]}
+2021-07-24 19:37:59.085 DEBUG 11884 --- [http-nio-8080-exec-2] .l.b.m.U.selectUserNameByNameAndPassWord : ==>  Preparing: select * from user where username = ? and password = ? 
+2021-07-24 19:37:59.085 DEBUG 11884 --- [http-nio-8080-exec-2] .l.b.m.U.selectUserNameByNameAndPassWord : ==> Parameters: zhangsan(String), E10ADC3949BA59ABBE56E057F20F883E(String)
+2021-07-24 19:37:59.115 DEBUG 11884 --- [http-nio-8080-exec-2] .l.b.m.U.selectUserNameByNameAndPassWord : <==      Total: 1
+2021-07-24 19:37:59.116  INFO 11884 --- [http-nio-8080-exec-2] black.lyg.blog.aspect.LogAspect          : ////////after/////////
+2021-07-24 19:37:59.116  INFO 11884 --- [http-nio-8080-exec-2] black.lyg.blog.aspect.LogAspect          : result : admin/index 
+2021-07-24 19:37:59.517  INFO 11884 --- [http-nio-8080-exec-6] black.lyg.blog.service.BlogService       : 从redis中获取最新博客
+2021-07-24 19:38:02.907  INFO 11884 --- [http-nio-8080-exec-8] black.lyg.blog.aspect.LogAspect          : Request : RequestLog{url='http://localhost:8080/admin', ip='0:0:0:0:0:0:0:1', classMethod='black.lyg.blog.controller.admin.LoginController.loginPage', args=[]}
+2021-07-24 19:38:02.907  INFO 11884 --- [http-nio-8080-exec-8] black.lyg.blog.aspect.LogAspect          : ////////after/////////
+2021-07-24 19:38:02.907  INFO 11884 --- [http-nio-8080-exec-8] black.lyg.blog.aspect.LogAspect          : result : admin/login 
+2021-07-24 19:38:02.914  INFO 11884 --- [http-nio-8080-exec-8] black.lyg.blog.aspect.LogAspect          : Request : RequestLog{url='http://localhost:8080/admin/blogs', ip='0:0:0:0:0:0:0:1', classMethod='black.lyg.blog.controller.admin.BlogController.blogs', args=[{}, 1]}
+2021-07-24 19:38:02.934 DEBUG 11884 --- [http-nio-8080-exec-8] b.l.b.m.BlogMapper.findBlogAll_COUNT     : ==>  Preparing: SELECT count(0) FROM blog 
+2021-07-24 19:38:02.934 DEBUG 11884 --- [http-nio-8080-exec-8] b.l.b.m.BlogMapper.findBlogAll_COUNT     : ==> Parameters: 
+2021-07-24 19:38:02.962 DEBUG 11884 --- [http-nio-8080-exec-8] b.l.b.m.BlogMapper.findBlogAll_COUNT     : <==      Total: 1
+2021-07-24 19:38:02.963 DEBUG 11884 --- [http-nio-8080-exec-8] b.l.blog.mapper.BlogMapper.findBlogAll   : ==>  Preparing: select * from blog order by update_time desc LIMIT ? 
+2021-07-24 19:38:02.964 DEBUG 11884 --- [http-nio-8080-exec-8] b.l.blog.mapper.BlogMapper.findBlogAll   : ==> Parameters: 8(Integer)
+2021-07-24 19:38:03.062 DEBUG 11884 --- [http-nio-8080-exec-8] b.l.b.mapper.TypeMapper.selectTypeById   : ====>  Preparing: select * from type where type_id = ? 
+2021-07-24 19:38:03.063 DEBUG 11884 --- [http-nio-8080-exec-8] b.l.b.mapper.TypeMapper.selectTypeById   : ====> Parameters: 6(String)
+2021-07-24 19:38:03.093 DEBUG 11884 --- [http-nio-8080-exec-8] b.l.b.mapper.TypeMapper.selectTypeById   : <====      Total: 1
+2021-07-24 19:38:03.094 DEBUG 11884 --- [http-nio-8080-exec-8] b.l.b.m.UserMapper.selectUserByUserId    : ====>  Preparing: select * from user where user_id = ? 
+2021-07-24 19:38:03.094 DEBUG 11884 --- [http-nio-8080-exec-8] b.l.b.m.UserMapper.selectUserByUserId    : ====> Parameters: 1(String)
+2021-07-24 19:38:03.124 DEBUG 11884 --- [http-nio-8080-exec-8] b.l.b.m.UserMapper.selectUserByUserId    : <====      Total: 1
+2021-07-24 19:38:03.125 DEBUG 11884 --- [http-nio-8080-exec-8] b.l.b.mapper.TypeMapper.selectTypeById   : ====>  Preparing: select * from type where type_id = ? 
+2021-07-24 19:38:03.125 DEBUG 11884 --- [http-nio-8080-exec-8] b.l.b.mapper.TypeMapper.selectTypeById   : ====> Parameters: 16(String)
+2021-07-24 19:38:03.155 DEBUG 11884 --- [http-nio-8080-exec-8] b.l.b.mapper.TypeMapper.selectTypeById   : <====      Total: 1
+2021-07-24 19:38:03.156 DEBUG 11884 --- [http-nio-8080-exec-8] b.l.b.mapper.TypeMapper.selectTypeById   : ====>  Preparing: select * from type where type_id = ? 
+2021-07-24 19:38:03.156 DEBUG 11884 --- [http-nio-8080-exec-8] b.l.b.mapper.TypeMapper.selectTypeById   : ====> Parameters: 4(String)
+2021-07-24 19:38:03.190 DEBUG 11884 --- [http-nio-8080-exec-8] b.l.b.mapper.TypeMapper.selectTypeById   : <====      Total: 1
+2021-07-24 19:38:03.192 DEBUG 11884 --- [http-nio-8080-exec-8] b.l.blog.mapper.BlogMapper.findBlogAll   : <==      Total: 8
+2021-07-24 19:38:03.195 DEBUG 11884 --- [http-nio-8080-exec-8] b.lyg.blog.mapper.TypeMapper.selectAll   : ==>  Preparing: SELECT type_id,name FROM type 
+2021-07-24 19:38:03.196 DEBUG 11884 --- [http-nio-8080-exec-8] b.lyg.blog.mapper.TypeMapper.selectAll   : ==> Parameters: 
+2021-07-24 19:38:03.225 DEBUG 11884 --- [http-nio-8080-exec-8] b.lyg.blog.mapper.TypeMapper.selectAll   : <==      Total: 7
+2021-07-24 19:38:03.225  INFO 11884 --- [http-nio-8080-exec-8] black.lyg.blog.aspect.LogAspect          : ////////after/////////
+2021-07-24 19:38:03.225  INFO 11884 --- [http-nio-8080-exec-8] black.lyg.blog.aspect.LogAspect          : result : admin/blogs 
+2021-07-24 19:38:10.834  INFO 11884 --- [http-nio-8080-exec-4] black.lyg.blog.aspect.LogAspect          : Request : RequestLog{url='http://localhost:8080/admin', ip='0:0:0:0:0:0:0:1', classMethod='black.lyg.blog.controller.admin.LoginController.loginPage', args=[]}
+2021-07-24 19:38:10.834  INFO 11884 --- [http-nio-8080-exec-4] black.lyg.blog.aspect.LogAspect          : ////////after/////////
+2021-07-24 19:38:10.834  INFO 11884 --- [http-nio-8080-exec-4] black.lyg.blog.aspect.LogAspect          : result : admin/login 
+2021-07-24 19:38:10.840  INFO 11884 --- [http-nio-8080-exec-4] black.lyg.blog.aspect.LogAspect          : Request : RequestLog{url='http://localhost:8080/admin/types', ip='0:0:0:0:0:0:0:1', classMethod='black.lyg.blog.controller.admin.TypeController.findAllTypes', args=[{}, 1]}
+2021-07-24 19:38:10.876 DEBUG 11884 --- [http-nio-8080-exec-4] b.l.b.mapper.TypeMapper.selectAll_COUNT  : ==>  Preparing: SELECT count(0) FROM type 
+2021-07-24 19:38:10.876 DEBUG 11884 --- [http-nio-8080-exec-4] b.l.b.mapper.TypeMapper.selectAll_COUNT  : ==> Parameters: 
+2021-07-24 19:38:10.906 DEBUG 11884 --- [http-nio-8080-exec-4] b.l.b.mapper.TypeMapper.selectAll_COUNT  : <==      Total: 1
+2021-07-24 19:38:10.907 DEBUG 11884 --- [http-nio-8080-exec-4] b.lyg.blog.mapper.TypeMapper.selectAll   : ==>  Preparing: SELECT type_id,name FROM type LIMIT ? 
+2021-07-24 19:38:10.908 DEBUG 11884 --- [http-nio-8080-exec-4] b.lyg.blog.mapper.TypeMapper.selectAll   : ==> Parameters: 10(Integer)
+2021-07-24 19:38:10.937 DEBUG 11884 --- [http-nio-8080-exec-4] b.lyg.blog.mapper.TypeMapper.selectAll   : <==      Total: 7
+2021-07-24 19:38:11.003  INFO 11884 --- [http-nio-8080-exec-4] black.lyg.blog.aspect.LogAspect          : ////////after/////////
+2021-07-24 19:38:11.003  INFO 11884 --- [http-nio-8080-exec-4] black.lyg.blog.aspect.LogAspect          : result : admin/types 
+2021-07-24 19:38:23.505  INFO 11884 --- [http-nio-8080-exec-9] black.lyg.blog.aspect.LogAspect          : Request : RequestLog{url='http://localhost:8080/admin', ip='0:0:0:0:0:0:0:1', classMethod='black.lyg.blog.controller.admin.LoginController.loginPage', args=[]}
+2021-07-24 19:38:23.505  INFO 11884 --- [http-nio-8080-exec-9] black.lyg.blog.aspect.LogAspect          : ////////after/////////
+2021-07-24 19:38:23.505  INFO 11884 --- [http-nio-8080-exec-9] black.lyg.blog.aspect.LogAspect          : result : admin/login 
+2021-07-24 19:38:23.511  INFO 11884 --- [http-nio-8080-exec-9] black.lyg.blog.aspect.LogAspect          : Request : RequestLog{url='http://localhost:8080/admin/blogs', ip='0:0:0:0:0:0:0:1', classMethod='black.lyg.blog.controller.admin.BlogController.blogs', args=[{}, 1]}
+2021-07-24 19:38:23.512 DEBUG 11884 --- [http-nio-8080-exec-9] b.l.b.m.BlogMapper.findBlogAll_COUNT     : ==>  Preparing: SELECT count(0) FROM blog 
+2021-07-24 19:38:23.512 DEBUG 11884 --- [http-nio-8080-exec-9] b.l.b.m.BlogMapper.findBlogAll_COUNT     : ==> Parameters: 
+2021-07-24 19:38:23.542 DEBUG 11884 --- [http-nio-8080-exec-9] b.l.b.m.BlogMapper.findBlogAll_COUNT     : <==      Total: 1
+2021-07-24 19:38:23.542 DEBUG 11884 --- [http-nio-8080-exec-9] b.l.blog.mapper.BlogMapper.findBlogAll   : ==>  Preparing: select * from blog order by update_time desc LIMIT ? 
+2021-07-24 19:38:23.542 DEBUG 11884 --- [http-nio-8080-exec-9] b.l.blog.mapper.BlogMapper.findBlogAll   : ==> Parameters: 8(Integer)
+2021-07-24 19:38:23.645 DEBUG 11884 --- [http-nio-8080-exec-9] b.l.b.mapper.TypeMapper.selectTypeById   : ====>  Preparing: select * from type where type_id = ? 
+2021-07-24 19:38:23.645 DEBUG 11884 --- [http-nio-8080-exec-9] b.l.b.mapper.TypeMapper.selectTypeById   : ====> Parameters: 6(String)
+2021-07-24 19:38:23.675 DEBUG 11884 --- [http-nio-8080-exec-9] b.l.b.mapper.TypeMapper.selectTypeById   : <====      Total: 1
+2021-07-24 19:38:23.675 DEBUG 11884 --- [http-nio-8080-exec-9] b.l.b.m.UserMapper.selectUserByUserId    : ====>  Preparing: select * from user where user_id = ? 
+2021-07-24 19:38:23.676 DEBUG 11884 --- [http-nio-8080-exec-9] b.l.b.m.UserMapper.selectUserByUserId    : ====> Parameters: 1(String)
+2021-07-24 19:38:23.704 DEBUG 11884 --- [http-nio-8080-exec-9] b.l.b.m.UserMapper.selectUserByUserId    : <====      Total: 1
+2021-07-24 19:38:23.705 DEBUG 11884 --- [http-nio-8080-exec-9] b.l.b.mapper.TypeMapper.selectTypeById   : ====>  Preparing: select * from type where type_id = ? 
+2021-07-24 19:38:23.705 DEBUG 11884 --- [http-nio-8080-exec-9] b.l.b.mapper.TypeMapper.selectTypeById   : ====> Parameters: 16(String)
+2021-07-24 19:38:23.734 DEBUG 11884 --- [http-nio-8080-exec-9] b.l.b.mapper.TypeMapper.selectTypeById   : <====      Total: 1
+2021-07-24 19:38:23.735 DEBUG 11884 --- [http-nio-8080-exec-9] b.l.b.mapper.TypeMapper.selectTypeById   : ====>  Preparing: select * from type where type_id = ? 
+2021-07-24 19:38:23.735 DEBUG 11884 --- [http-nio-8080-exec-9] b.l.b.mapper.TypeMapper.selectTypeById   : ====> Parameters: 4(String)
+2021-07-24 19:38:23.766 DEBUG 11884 --- [http-nio-8080-exec-9] b.l.b.mapper.TypeMapper.selectTypeById   : <====      Total: 1
+2021-07-24 19:38:23.767 DEBUG 11884 --- [http-nio-8080-exec-9] b.l.blog.mapper.BlogMapper.findBlogAll   : <==      Total: 8
+2021-07-24 19:38:23.767 DEBUG 11884 --- [http-nio-8080-exec-9] b.lyg.blog.mapper.TypeMapper.selectAll   : ==>  Preparing: SELECT type_id,name FROM type 
+2021-07-24 19:38:23.768 DEBUG 11884 --- [http-nio-8080-exec-9] b.lyg.blog.mapper.TypeMapper.selectAll   : ==> Parameters: 
+2021-07-24 19:38:23.801 DEBUG 11884 --- [http-nio-8080-exec-9] b.lyg.blog.mapper.TypeMapper.selectAll   : <==      Total: 7
+2021-07-24 19:38:23.802  INFO 11884 --- [http-nio-8080-exec-9] black.lyg.blog.aspect.LogAspect          : ////////after/////////
+2021-07-24 19:38:23.802  INFO 11884 --- [http-nio-8080-exec-9] black.lyg.blog.aspect.LogAspect          : result : admin/blogs 
+2021-07-24 19:38:39.204  INFO 11884 --- [http-nio-8080-exec-3] black.lyg.blog.aspect.LogAspect          : Request : RequestLog{url='http://localhost:8080/admin', ip='0:0:0:0:0:0:0:1', classMethod='black.lyg.blog.controller.admin.LoginController.loginPage', args=[]}
+2021-07-24 19:38:39.204  INFO 11884 --- [http-nio-8080-exec-3] black.lyg.blog.aspect.LogAspect          : ////////after/////////
+2021-07-24 19:38:39.204  INFO 11884 --- [http-nio-8080-exec-3] black.lyg.blog.aspect.LogAspect          : result : admin/login 
+2021-07-24 19:38:39.208  INFO 11884 --- [http-nio-8080-exec-3] black.lyg.blog.aspect.LogAspect          : Request : RequestLog{url='http://localhost:8080/admin/types', ip='0:0:0:0:0:0:0:1', classMethod='black.lyg.blog.controller.admin.TypeController.findAllTypes', args=[{}, 1]}
+2021-07-24 19:38:39.239 DEBUG 11884 --- [http-nio-8080-exec-3] b.l.b.mapper.TypeMapper.selectAll_COUNT  : ==>  Preparing: SELECT count(0) FROM type 
+2021-07-24 19:38:39.239 DEBUG 11884 --- [http-nio-8080-exec-3] b.l.b.mapper.TypeMapper.selectAll_COUNT  : ==> Parameters: 
+2021-07-24 19:38:39.279 DEBUG 11884 --- [http-nio-8080-exec-3] b.l.b.mapper.TypeMapper.selectAll_COUNT  : <==      Total: 1
+2021-07-24 19:38:39.280 DEBUG 11884 --- [http-nio-8080-exec-3] b.lyg.blog.mapper.TypeMapper.selectAll   : ==>  Preparing: SELECT type_id,name FROM type LIMIT ? 
+2021-07-24 19:38:39.280 DEBUG 11884 --- [http-nio-8080-exec-3] b.lyg.blog.mapper.TypeMapper.selectAll   : ==> Parameters: 10(Integer)
+2021-07-24 19:38:39.312 DEBUG 11884 --- [http-nio-8080-exec-3] b.lyg.blog.mapper.TypeMapper.selectAll   : <==      Total: 7
+2021-07-24 19:38:39.370  INFO 11884 --- [http-nio-8080-exec-3] black.lyg.blog.aspect.LogAspect          : ////////after/////////
+2021-07-24 19:38:39.370  INFO 11884 --- [http-nio-8080-exec-3] black.lyg.blog.aspect.LogAspect          : result : admin/types 
+2021-07-24 19:38:44.482  INFO 11884 --- [http-nio-8080-exec-1] black.lyg.blog.aspect.LogAspect          : Request : RequestLog{url='http://localhost:8080/admin/logout', ip='0:0:0:0:0:0:0:1', classMethod='black.lyg.blog.controller.admin.LoginController.logout', args=[org.apache.catalina.session.StandardSessionFacade@51cded47]}
+2021-07-24 19:38:44.483  INFO 11884 --- [http-nio-8080-exec-1] black.lyg.blog.aspect.LogAspect          : ////////after/////////
+2021-07-24 19:38:44.483  INFO 11884 --- [http-nio-8080-exec-1] black.lyg.blog.aspect.LogAspect          : result : redirect:admin 
+2021-07-24 19:38:44.489  INFO 11884 --- [http-nio-8080-exec-5] black.lyg.blog.aspect.LogAspect          : Request : RequestLog{url='http://localhost:8080/admin', ip='0:0:0:0:0:0:0:1', classMethod='black.lyg.blog.controller.admin.LoginController.loginPage', args=[]}
+2021-07-24 19:38:44.489  INFO 11884 --- [http-nio-8080-exec-5] black.lyg.blog.aspect.LogAspect          : ////////after/////////
+2021-07-24 19:38:44.489  INFO 11884 --- [http-nio-8080-exec-5] black.lyg.blog.aspect.LogAspect          : result : admin/login 
+2021-07-24 19:38:44.500 ERROR 11884 --- [http-nio-8080-exec-5] o.a.c.c.C.[.[.[/].[dispatcherServlet]    : Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed; nested exception is java.lang.IllegalStateException: Cannot call sendError() after the response has been committed] with root cause
+
+java.lang.IllegalStateException: Cannot call sendError() after the response has been committed
+	at org.apache.catalina.connector.ResponseFacade.sendError(ResponseFacade.java:472) ~[tomcat-embed-core-9.0.33.jar:9.0.33]
+	at javax.servlet.http.HttpServletResponseWrapper.sendError(HttpServletResponseWrapper.java:129) ~[tomcat-embed-core-9.0.33.jar:9.0.33]
+	at com.alibaba.druid.support.http.WebStatFilter$StatHttpServletResponseWrapper.sendError(WebStatFilter.java:343) ~[druid-1.1.16.jar:1.1.16]
+	at org.springframework.web.servlet.resource.ResourceHttpRequestHandler.handleRequest(ResourceHttpRequestHandler.java:488) ~[spring-webmvc-5.2.5.RELEASE.jar:5.2.5.RELEASE]
+	at org.springframework.web.servlet.mvc.HttpRequestHandlerAdapter.handle(HttpRequestHandlerAdapter.java:53) ~[spring-webmvc-5.2.5.RELEASE.jar:5.2.5.RELEASE]
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1040) ~[spring-webmvc-5.2.5.RELEASE.jar:5.2.5.RELEASE]
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:943) ~[spring-webmvc-5.2.5.RELEASE.jar:5.2.5.RELEASE]
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1006) ~[spring-webmvc-5.2.5.RELEASE.jar:5.2.5.RELEASE]
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:898) ~[spring-webmvc-5.2.5.RELEASE.jar:5.2.5.RELEASE]
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:634) ~[tomcat-embed-core-9.0.33.jar:9.0.33]
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:883) ~[spring-webmvc-5.2.5.RELEASE.jar:5.2.5.RELEASE]
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:741) ~[tomcat-embed-core-9.0.33.jar:9.0.33]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:231) ~[tomcat-embed-core-9.0.33.jar:9.0.33]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) ~[tomcat-embed-core-9.0.33.jar:9.0.33]
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53) ~[tomcat-embed-websocket-9.0.33.jar:9.0.33]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) ~[tomcat-embed-core-9.0.33.jar:9.0.33]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) ~[tomcat-embed-core-9.0.33.jar:9.0.33]
+	at com.alibaba.druid.support.http.WebStatFilter.doFilter(WebStatFilter.java:124) ~[druid-1.1.16.jar:1.1.16]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) ~[tomcat-embed-core-9.0.33.jar:9.0.33]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) ~[tomcat-embed-core-9.0.33.jar:9.0.33]
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100) ~[spring-web-5.2.5.RELEASE.jar:5.2.5.RELEASE]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119) ~[spring-web-5.2.5.RELEASE.jar:5.2.5.RELEASE]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) ~[tomcat-embed-core-9.0.33.jar:9.0.33]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) ~[tomcat-embed-core-9.0.33.jar:9.0.33]
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93) ~[spring-web-5.2.5.RELEASE.jar:5.2.5.RELEASE]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119) ~[spring-web-5.2.5.RELEASE.jar:5.2.5.RELEASE]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) ~[tomcat-embed-core-9.0.33.jar:9.0.33]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) ~[tomcat-embed-core-9.0.33.jar:9.0.33]
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201) ~[spring-web-5.2.5.RELEASE.jar:5.2.5.RELEASE]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119) ~[spring-web-5.2.5.RELEASE.jar:5.2.5.RELEASE]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) ~[tomcat-embed-core-9.0.33.jar:9.0.33]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) ~[tomcat-embed-core-9.0.33.jar:9.0.33]
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:202) ~[tomcat-embed-core-9.0.33.jar:9.0.33]
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:96) [tomcat-embed-core-9.0.33.jar:9.0.33]
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:541) [tomcat-embed-core-9.0.33.jar:9.0.33]
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:139) [tomcat-embed-core-9.0.33.jar:9.0.33]
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92) [tomcat-embed-core-9.0.33.jar:9.0.33]
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74) [tomcat-embed-core-9.0.33.jar:9.0.33]
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:343) [tomcat-embed-core-9.0.33.jar:9.0.33]
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:373) [tomcat-embed-core-9.0.33.jar:9.0.33]
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65) [tomcat-embed-core-9.0.33.jar:9.0.33]
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:868) [tomcat-embed-core-9.0.33.jar:9.0.33]
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1594) [tomcat-embed-core-9.0.33.jar:9.0.33]
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49) [tomcat-embed-core-9.0.33.jar:9.0.33]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149) [na:1.8.0_221]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624) [na:1.8.0_221]
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61) [tomcat-embed-core-9.0.33.jar:9.0.33]
+	at java.lang.Thread.run(Thread.java:748) [na:1.8.0_221]
+
+2021-07-24 19:38:44.505 ERROR 11884 --- [http-nio-8080-exec-5] s.e.ErrorMvcAutoConfiguration$StaticView : Cannot render error page for request [/admin/admin] and exception [Cannot call sendError() after the response has been committed] as the response has already been committed. As a result, the response may have the wrong status code.
+2021-07-24 19:38:50.083  INFO 11884 --- [http-nio-8080-exec-7] black.lyg.blog.aspect.LogAspect          : Request : RequestLog{url='http://localhost:8080/admin/login', ip='0:0:0:0:0:0:0:1', classMethod='black.lyg.blog.controller.admin.LoginController.login', args=[admin, lyg0918, org.apache.catalina.session.StandardSessionFacade@51cded47, {}]}
+2021-07-24 19:38:50.083 DEBUG 11884 --- [http-nio-8080-exec-7] .l.b.m.U.selectUserNameByNameAndPassWord : ==>  Preparing: select * from user where username = ? and password = ? 
+2021-07-24 19:38:50.084 DEBUG 11884 --- [http-nio-8080-exec-7] .l.b.m.U.selectUserNameByNameAndPassWord : ==> Parameters: admin(String), 89446CF944BBA2485A8562075A0E0BB7(String)
+2021-07-24 19:38:50.112 DEBUG 11884 --- [http-nio-8080-exec-7] .l.b.m.U.selectUserNameByNameAndPassWord : <==      Total: 1
+2021-07-24 19:38:50.113  INFO 11884 --- [http-nio-8080-exec-7] black.lyg.blog.aspect.LogAspect          : ////////after/////////
+2021-07-24 19:38:50.113  INFO 11884 --- [http-nio-8080-exec-7] black.lyg.blog.aspect.LogAspect          : result : admin/index 
+2021-07-24 19:38:50.446  INFO 11884 --- [http-nio-8080-exec-10] black.lyg.blog.service.BlogService       : 从redis中获取最新博客
+2021-07-24 19:38:51.265  INFO 11884 --- [http-nio-8080-exec-2] black.lyg.blog.aspect.LogAspect          : Request : RequestLog{url='http://localhost:8080/admin', ip='0:0:0:0:0:0:0:1', classMethod='black.lyg.blog.controller.admin.LoginController.loginPage', args=[]}
+2021-07-24 19:38:51.266  INFO 11884 --- [http-nio-8080-exec-2] black.lyg.blog.aspect.LogAspect          : ////////after/////////
+2021-07-24 19:38:51.266  INFO 11884 --- [http-nio-8080-exec-2] black.lyg.blog.aspect.LogAspect          : result : admin/login 
+2021-07-24 19:38:51.270  INFO 11884 --- [http-nio-8080-exec-2] black.lyg.blog.aspect.LogAspect          : Request : RequestLog{url='http://localhost:8080/admin/types', ip='0:0:0:0:0:0:0:1', classMethod='black.lyg.blog.controller.admin.TypeController.findAllTypes', args=[{}, 1]}
+2021-07-24 19:38:51.298 DEBUG 11884 --- [http-nio-8080-exec-2] b.l.b.mapper.TypeMapper.selectAll_COUNT  : ==>  Preparing: SELECT count(0) FROM type 
+2021-07-24 19:38:51.298 DEBUG 11884 --- [http-nio-8080-exec-2] b.l.b.mapper.TypeMapper.selectAll_COUNT  : ==> Parameters: 
+2021-07-24 19:38:51.325 DEBUG 11884 --- [http-nio-8080-exec-2] b.l.b.mapper.TypeMapper.selectAll_COUNT  : <==      Total: 1
+2021-07-24 19:38:51.326 DEBUG 11884 --- [http-nio-8080-exec-2] b.lyg.blog.mapper.TypeMapper.selectAll   : ==>  Preparing: SELECT type_id,name FROM type LIMIT ? 
+2021-07-24 19:38:51.326 DEBUG 11884 --- [http-nio-8080-exec-2] b.lyg.blog.mapper.TypeMapper.selectAll   : ==> Parameters: 10(Integer)
+2021-07-24 19:38:51.354 DEBUG 11884 --- [http-nio-8080-exec-2] b.lyg.blog.mapper.TypeMapper.selectAll   : <==      Total: 7
+2021-07-24 19:38:51.408  INFO 11884 --- [http-nio-8080-exec-2] black.lyg.blog.aspect.LogAspect          : ////////after/////////
+2021-07-24 19:38:51.409  INFO 11884 --- [http-nio-8080-exec-2] black.lyg.blog.aspect.LogAspect          : result : admin/types 
+2021-07-24 19:38:54.322  INFO 11884 --- [http-nio-8080-exec-6] black.lyg.blog.aspect.LogAspect          : Request : RequestLog{url='http://localhost:8080/admin', ip='0:0:0:0:0:0:0:1', classMethod='black.lyg.blog.controller.admin.LoginController.loginPage', args=[]}
+2021-07-24 19:38:54.322  INFO 11884 --- [http-nio-8080-exec-6] black.lyg.blog.aspect.LogAspect          : ////////after/////////
+2021-07-24 19:38:54.322  INFO 11884 --- [http-nio-8080-exec-6] black.lyg.blog.aspect.LogAspect          : result : admin/login 
+2021-07-24 19:38:54.327  INFO 11884 --- [http-nio-8080-exec-6] black.lyg.blog.aspect.LogAspect          : Request : RequestLog{url='http://localhost:8080/admin/tags', ip='0:0:0:0:0:0:0:1', classMethod='black.lyg.blog.controller.admin.TagController.tags', args=[1, {}]}
+2021-07-24 19:38:54.330 DEBUG 11884 --- [http-nio-8080-exec-6] b.l.b.mapper.TagMapper.selectAll_COUNT   : ==>  Preparing: SELECT count(0) FROM tag 
+2021-07-24 19:38:54.330 DEBUG 11884 --- [http-nio-8080-exec-6] b.l.b.mapper.TagMapper.selectAll_COUNT   : ==> Parameters: 
+2021-07-24 19:38:54.367 DEBUG 11884 --- [http-nio-8080-exec-6] b.l.b.mapper.TagMapper.selectAll_COUNT   : <==      Total: 1
+2021-07-24 19:38:54.368 DEBUG 11884 --- [http-nio-8080-exec-6] b.lyg.blog.mapper.TagMapper.selectAll    : ==>  Preparing: SELECT tag_id,name FROM tag LIMIT ? 
+2021-07-24 19:38:54.368 DEBUG 11884 --- [http-nio-8080-exec-6] b.lyg.blog.mapper.TagMapper.selectAll    : ==> Parameters: 10(Integer)
+2021-07-24 19:38:54.435 DEBUG 11884 --- [http-nio-8080-exec-6] b.lyg.blog.mapper.TagMapper.selectAll    : <==      Total: 7
+2021-07-24 19:38:54.436  INFO 11884 --- [http-nio-8080-exec-6] black.lyg.blog.aspect.LogAspect          : ////////after/////////
+2021-07-24 19:38:54.436  INFO 11884 --- [http-nio-8080-exec-6] black.lyg.blog.aspect.LogAspect          : result : admin/tags 
+2021-07-24 19:44:47.391  INFO 11884 --- [Thread-13] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2021-07-24 19:44:47.512  INFO 11884 --- [Thread-13] com.alibaba.druid.pool.DruidDataSource   : {dataSource-1} closing ...
+2021-07-24 19:44:47.517  INFO 11884 --- [Thread-13] com.alibaba.druid.pool.DruidDataSource   : {dataSource-1} closed
+2021-07-24 19:44:48.402  INFO 11884 --- [restartedMain] black.lyg.blog.BlogApplication           : Starting BlogApplication on Administraror with PID 11884 (D:\Desktop\blog\blog-master\target\classes started by Administrator in D:\Desktop\blog\blog-master)
+2021-07-24 19:44:48.402 DEBUG 11884 --- [restartedMain] black.lyg.blog.BlogApplication           : Running with Spring Boot v2.2.6.RELEASE, Spring v5.2.5.RELEASE
+2021-07-24 19:44:48.402  INFO 11884 --- [restartedMain] black.lyg.blog.BlogApplication           : The following profiles are active: dev
+2021-07-24 19:44:48.558  INFO 11884 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode!
+2021-07-24 19:44:48.558  INFO 11884 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2021-07-24 19:44:48.568  INFO 11884 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 10ms. Found 0 Redis repository interfaces.
+2021-07-24 19:44:48.596  WARN 11884 --- [restartedMain] o.m.s.mapper.ClassPathMapperScanner      : No MyBatis mapper was found in '[black.lyg.blog]' package. Please check your configuration.
+2021-07-24 19:44:48.729  INFO 11884 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2021-07-24 19:44:48.729  INFO 11884 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2021-07-24 19:44:48.729  INFO 11884 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.33]
+2021-07-24 19:44:48.729  INFO 11884 --- [restartedMain] o.a.catalina.core.AprLifecycleListener   : An older version [1.2.14] of the APR based Apache Tomcat Native library is installed, while Tomcat recommends a minimum version of [1.2.23]
+2021-07-24 19:44:48.730  INFO 11884 --- [restartedMain] o.a.catalina.core.AprLifecycleListener   : Loaded APR based Apache Tomcat Native library [1.2.14] using APR version [1.6.2].
+2021-07-24 19:44:48.730  INFO 11884 --- [restartedMain] o.a.catalina.core.AprLifecycleListener   : APR capabilities: IPv6 [true], sendfile [true], accept filters [false], random [true].
+2021-07-24 19:44:48.730  INFO 11884 --- [restartedMain] o.a.catalina.core.AprLifecycleListener   : APR/OpenSSL configuration: useAprConnector [false], useOpenSSL [true]
+2021-07-24 19:44:48.730  INFO 11884 --- [restartedMain] o.a.catalina.core.AprLifecycleListener   : OpenSSL successfully initialized [OpenSSL 1.0.2l  25 May 2017]
+2021-07-24 19:44:48.745  INFO 11884 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2021-07-24 19:44:48.745  INFO 11884 --- [restartedMain] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 340 ms
+2021-07-24 19:44:48.765  INFO 11884 --- [restartedMain] o.s.boot.web.servlet.RegistrationBean    : Filter webStatFilter was not registered (possibly already registered?)
+2021-07-24 19:44:49.249  INFO 11884 --- [restartedMain] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2021-07-24 19:44:49.286  INFO 11884 --- [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2021-07-24 19:44:49.542  INFO 11884 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2021-07-24 19:44:49.558  INFO 11884 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2021-07-24 19:44:49.559  INFO 11884 --- [restartedMain] black.lyg.blog.BlogApplication           : Started BlogApplication in 1.18 seconds (JVM running for 502.95)
+2021-07-24 19:44:49.563  INFO 11884 --- [restartedMain] com.alibaba.druid.pool.DruidDataSource   : {dataSource-2} inited
+2021-07-24 19:44:50.853 DEBUG 11884 --- [restartedMain] b.l.blog.mapper.BlogMapper.findBlogAll   : ==>  Preparing: select * from blog order by update_time desc 
+2021-07-24 19:44:50.854 DEBUG 11884 --- [restartedMain] b.l.blog.mapper.BlogMapper.findBlogAll   : ==> Parameters: 
+2021-07-24 19:44:50.974 DEBUG 11884 --- [restartedMain] b.l.b.mapper.TypeMapper.selectTypeById   : ====>  Preparing: select * from type where type_id = ? 
+2021-07-24 19:44:50.975 DEBUG 11884 --- [restartedMain] b.l.b.mapper.TypeMapper.selectTypeById   : ====> Parameters: 6(String)
+2021-07-24 19:44:51.005 DEBUG 11884 --- [restartedMain] b.l.b.mapper.TypeMapper.selectTypeById   : <====      Total: 1
+2021-07-24 19:44:51.006 DEBUG 11884 --- [restartedMain] b.l.b.m.UserMapper.selectUserByUserId    : ====>  Preparing: select * from user where user_id = ? 
+2021-07-24 19:44:51.006 DEBUG 11884 --- [restartedMain] b.l.b.m.UserMapper.selectUserByUserId    : ====> Parameters: 1(String)
+2021-07-24 19:44:51.037 DEBUG 11884 --- [restartedMain] b.l.b.m.UserMapper.selectUserByUserId    : <====      Total: 1
+2021-07-24 19:44:51.038 DEBUG 11884 --- [restartedMain] b.l.b.mapper.TypeMapper.selectTypeById   : ====>  Preparing: select * from type where type_id = ? 
+2021-07-24 19:44:51.038 DEBUG 11884 --- [restartedMain] b.l.b.mapper.TypeMapper.selectTypeById   : ====> Parameters: 16(String)
+2021-07-24 19:44:51.066 DEBUG 11884 --- [restartedMain] b.l.b.mapper.TypeMapper.selectTypeById   : <====      Total: 1
+2021-07-24 19:44:51.067 DEBUG 11884 --- [restartedMain] b.l.b.mapper.TypeMapper.selectTypeById   : ====>  Preparing: select * from type where type_id = ? 
+2021-07-24 19:44:51.067 DEBUG 11884 --- [restartedMain] b.l.b.mapper.TypeMapper.selectTypeById   : ====> Parameters: 4(String)
+2021-07-24 19:44:51.095 DEBUG 11884 --- [restartedMain] b.l.b.mapper.TypeMapper.selectTypeById   : <====      Total: 1
+2021-07-24 19:44:51.096 DEBUG 11884 --- [restartedMain] b.l.blog.mapper.BlogMapper.findBlogAll   : <==      Total: 9
+2021-07-24 19:44:51.197  INFO 11884 --- [restartedMain] black.lyg.blog.config.StartupRunner      : 将blog数据添加到redis的AllBlog中，其博客标题为：Java常见关键字final、static、super、abstract、this
+2021-07-24 19:44:51.227  INFO 11884 --- [restartedMain] black.lyg.blog.config.StartupRunner      : 将blog数据添加到redis的AllBlog中，其博客标题为：山东菏泽曹县流弊六六六，卧底宝贝儿
+2021-07-24 19:44:51.256  INFO 11884 --- [restartedMain] black.lyg.blog.config.StartupRunner      : 将blog数据添加到redis的AllBlog中，其博客标题为：随笔
+2021-07-24 19:44:51.288  INFO 11884 --- [restartedMain] black.lyg.blog.config.StartupRunner      : 将blog数据添加到redis的AllBlog中，其博客标题为：欢迎使用 Markdown在线编辑器 MdEditor
+2021-07-24 19:44:51.319  INFO 11884 --- [restartedMain] black.lyg.blog.config.StartupRunner      : 将blog数据添加到redis的AllBlog中，其博客标题为：Java中 equals() 和 hashCode()的关系
+2021-07-24 19:44:51.348  INFO 11884 --- [restartedMain] black.lyg.blog.config.StartupRunner      : 将blog数据添加到redis的AllBlog中，其博客标题为：redis学习笔记（二）：Hash
+2021-07-24 19:44:51.378  INFO 11884 --- [restartedMain] black.lyg.blog.config.StartupRunner      : 将blog数据添加到redis的AllBlog中，其博客标题为：redis学习笔记（一）：String
+2021-07-24 19:44:51.407  INFO 11884 --- [restartedMain] black.lyg.blog.config.StartupRunner      : 将blog数据添加到redis的AllBlog中，其博客标题为：Java合并两个int数组
+2021-07-24 19:44:51.437  INFO 11884 --- [restartedMain] black.lyg.blog.config.StartupRunner      : 将blog数据添加到redis的AllBlog中，其博客标题为：条件注解@Conditional
+2021-07-24 19:44:51.465  INFO 11884 --- [restartedMain] black.lyg.blog.config.StartupRunner      : 初始化redis中blogCount的数量为：9
+2021-07-24 19:44:51.466  INFO 11884 --- [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2021-07-24 19:44:56.715  INFO 11884 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2021-07-24 19:44:56.715  INFO 11884 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2021-07-24 19:44:56.724  INFO 11884 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 9 ms
+2021-07-24 19:44:56.727  INFO 11884 --- [http-nio-8080-exec-1] black.lyg.blog.aspect.LogAspect          : Request : RequestLog{url='http://localhost:8080/admin/login', ip='0:0:0:0:0:0:0:1', classMethod='black.lyg.blog.controller.admin.LoginController.login', args=[admin, lyg0918, org.apache.catalina.session.StandardSessionFacade@4a1b4e54, {}]}
+2021-07-24 19:44:56.730 DEBUG 11884 --- [http-nio-8080-exec-1] .l.b.m.U.selectUserNameByNameAndPassWord : ==>  Preparing: select * from user where username = ? and password = ? 
+2021-07-24 19:44:56.730 DEBUG 11884 --- [http-nio-8080-exec-1] .l.b.m.U.selectUserNameByNameAndPassWord : ==> Parameters: admin(String), 89446CF944BBA2485A8562075A0E0BB7(String)
+2021-07-24 19:44:56.762 DEBUG 11884 --- [http-nio-8080-exec-1] .l.b.m.U.selectUserNameByNameAndPassWord : <==      Total: 1
+2021-07-24 19:44:56.763  INFO 11884 --- [http-nio-8080-exec-1] black.lyg.blog.aspect.LogAspect          : ////////after/////////
+2021-07-24 19:44:56.763  INFO 11884 --- [http-nio-8080-exec-1] black.lyg.blog.aspect.LogAspect          : result : admin/index 
+2021-07-24 19:44:57.131  INFO 11884 --- [http-nio-8080-exec-4] black.lyg.blog.service.BlogService       : 从redis中获取最新博客
+2021-07-24 19:45:00.163  INFO 11884 --- [http-nio-8080-exec-3] black.lyg.blog.aspect.LogAspect          : Request : RequestLog{url='http://localhost:8080/admin', ip='0:0:0:0:0:0:0:1', classMethod='black.lyg.blog.controller.admin.LoginController.loginPage', args=[]}
+2021-07-24 19:45:00.163  INFO 11884 --- [http-nio-8080-exec-3] black.lyg.blog.aspect.LogAspect          : ////////after/////////
+2021-07-24 19:45:00.163  INFO 11884 --- [http-nio-8080-exec-3] black.lyg.blog.aspect.LogAspect          : result : admin/login 
+2021-07-24 19:45:00.167  INFO 11884 --- [http-nio-8080-exec-3] black.lyg.blog.aspect.LogAspect          : Request : RequestLog{url='http://localhost:8080/admin/blogs', ip='0:0:0:0:0:0:0:1', classMethod='black.lyg.blog.controller.admin.BlogController.blogs', args=[{}, 1]}
+2021-07-24 19:45:00.170 DEBUG 11884 --- [http-nio-8080-exec-3] b.l.b.m.BlogMapper.findBlogAll_COUNT     : ==>  Preparing: SELECT count(0) FROM blog 
+2021-07-24 19:45:00.170 DEBUG 11884 --- [http-nio-8080-exec-3] b.l.b.m.BlogMapper.findBlogAll_COUNT     : ==> Parameters: 
+2021-07-24 19:45:00.198 DEBUG 11884 --- [http-nio-8080-exec-3] b.l.b.m.BlogMapper.findBlogAll_COUNT     : <==      Total: 1
+2021-07-24 19:45:00.199 DEBUG 11884 --- [http-nio-8080-exec-3] b.l.blog.mapper.BlogMapper.findBlogAll   : ==>  Preparing: select * from blog order by update_time desc LIMIT ? 
+2021-07-24 19:45:00.199 DEBUG 11884 --- [http-nio-8080-exec-3] b.l.blog.mapper.BlogMapper.findBlogAll   : ==> Parameters: 8(Integer)
+2021-07-24 19:45:00.287 DEBUG 11884 --- [http-nio-8080-exec-3] b.l.b.mapper.TypeMapper.selectTypeById   : ====>  Preparing: select * from type where type_id = ? 
+2021-07-24 19:45:00.288 DEBUG 11884 --- [http-nio-8080-exec-3] b.l.b.mapper.TypeMapper.selectTypeById   : ====> Parameters: 6(String)
+2021-07-24 19:45:00.315 DEBUG 11884 --- [http-nio-8080-exec-3] b.l.b.mapper.TypeMapper.selectTypeById   : <====      Total: 1
+2021-07-24 19:45:00.315 DEBUG 11884 --- [http-nio-8080-exec-3] b.l.b.m.UserMapper.selectUserByUserId    : ====>  Preparing: select * from user where user_id = ? 
+2021-07-24 19:45:00.315 DEBUG 11884 --- [http-nio-8080-exec-3] b.l.b.m.UserMapper.selectUserByUserId    : ====> Parameters: 1(String)
+2021-07-24 19:45:00.343 DEBUG 11884 --- [http-nio-8080-exec-3] b.l.b.m.UserMapper.selectUserByUserId    : <====      Total: 1
+2021-07-24 19:45:00.344 DEBUG 11884 --- [http-nio-8080-exec-3] b.l.b.mapper.TypeMapper.selectTypeById   : ====>  Preparing: select * from type where type_id = ? 
+2021-07-24 19:45:00.344 DEBUG 11884 --- [http-nio-8080-exec-3] b.l.b.mapper.TypeMapper.selectTypeById   : ====> Parameters: 16(String)
+2021-07-24 19:45:00.376 DEBUG 11884 --- [http-nio-8080-exec-3] b.l.b.mapper.TypeMapper.selectTypeById   : <====      Total: 1
+2021-07-24 19:45:00.377 DEBUG 11884 --- [http-nio-8080-exec-3] b.l.b.mapper.TypeMapper.selectTypeById   : ====>  Preparing: select * from type where type_id = ? 
+2021-07-24 19:45:00.377 DEBUG 11884 --- [http-nio-8080-exec-3] b.l.b.mapper.TypeMapper.selectTypeById   : ====> Parameters: 4(String)
+2021-07-24 19:45:00.407 DEBUG 11884 --- [http-nio-8080-exec-3] b.l.b.mapper.TypeMapper.selectTypeById   : <====      Total: 1
+2021-07-24 19:45:00.409 DEBUG 11884 --- [http-nio-8080-exec-3] b.l.blog.mapper.BlogMapper.findBlogAll   : <==      Total: 8
+2021-07-24 19:45:00.412 DEBUG 11884 --- [http-nio-8080-exec-3] b.lyg.blog.mapper.TypeMapper.selectAll   : ==>  Preparing: SELECT type_id,name FROM type 
+2021-07-24 19:45:00.412 DEBUG 11884 --- [http-nio-8080-exec-3] b.lyg.blog.mapper.TypeMapper.selectAll   : ==> Parameters: 
+2021-07-24 19:45:00.440 DEBUG 11884 --- [http-nio-8080-exec-3] b.lyg.blog.mapper.TypeMapper.selectAll   : <==      Total: 7
+2021-07-24 19:45:00.441  INFO 11884 --- [http-nio-8080-exec-3] black.lyg.blog.aspect.LogAspect          : ////////after/////////
+2021-07-24 19:45:00.441  INFO 11884 --- [http-nio-8080-exec-3] black.lyg.blog.aspect.LogAspect          : result : admin/blogs 
+2021-07-24 19:45:08.706  INFO 11884 --- [http-nio-8080-exec-2] black.lyg.blog.aspect.LogAspect          : Request : RequestLog{url='http://localhost:8080/admin/login', ip='0:0:0:0:0:0:0:1', classMethod='black.lyg.blog.controller.admin.LoginController.login', args=[admin, lyg0918, org.apache.catalina.session.StandardSessionFacade@4a1b4e54, {}]}
+2021-07-24 19:45:08.707 DEBUG 11884 --- [http-nio-8080-exec-2] .l.b.m.U.selectUserNameByNameAndPassWord : ==>  Preparing: select * from user where username = ? and password = ? 
+2021-07-24 19:45:08.707 DEBUG 11884 --- [http-nio-8080-exec-2] .l.b.m.U.selectUserNameByNameAndPassWord : ==> Parameters: admin(String), 89446CF944BBA2485A8562075A0E0BB7(String)
+2021-07-24 19:45:08.736 DEBUG 11884 --- [http-nio-8080-exec-2] .l.b.m.U.selectUserNameByNameAndPassWord : <==      Total: 1
+2021-07-24 19:45:08.737  INFO 11884 --- [http-nio-8080-exec-2] black.lyg.blog.aspect.LogAspect          : ////////after/////////
+2021-07-24 19:45:08.737  INFO 11884 --- [http-nio-8080-exec-2] black.lyg.blog.aspect.LogAspect          : result : admin/index 
+2021-07-24 19:45:09.039  INFO 11884 --- [http-nio-8080-exec-5] black.lyg.blog.service.BlogService       : 从redis中获取最新博客
+2021-07-24 19:45:13.576  INFO 11884 --- [http-nio-8080-exec-6] black.lyg.blog.aspect.LogAspect          : Request : RequestLog{url='http://localhost:8080/admin', ip='0:0:0:0:0:0:0:1', classMethod='black.lyg.blog.controller.admin.LoginController.loginPage', args=[]}
+2021-07-24 19:45:13.576  INFO 11884 --- [http-nio-8080-exec-6] black.lyg.blog.aspect.LogAspect          : ////////after/////////
+2021-07-24 19:45:13.576  INFO 11884 --- [http-nio-8080-exec-6] black.lyg.blog.aspect.LogAspect          : result : admin/login 
+2021-07-24 19:45:13.580  INFO 11884 --- [http-nio-8080-exec-6] black.lyg.blog.aspect.LogAspect          : Request : RequestLog{url='http://localhost:8080/admin/types', ip='0:0:0:0:0:0:0:1', classMethod='black.lyg.blog.controller.admin.TypeController.findAllTypes', args=[{}, 1]}
+2021-07-24 19:45:13.621 DEBUG 11884 --- [http-nio-8080-exec-6] b.l.b.mapper.TypeMapper.selectAll_COUNT  : ==>  Preparing: SELECT count(0) FROM type 
+2021-07-24 19:45:13.621 DEBUG 11884 --- [http-nio-8080-exec-6] b.l.b.mapper.TypeMapper.selectAll_COUNT  : ==> Parameters: 
+2021-07-24 19:45:13.652 DEBUG 11884 --- [http-nio-8080-exec-6] b.l.b.mapper.TypeMapper.selectAll_COUNT  : <==      Total: 1
+2021-07-24 19:45:13.653 DEBUG 11884 --- [http-nio-8080-exec-6] b.lyg.blog.mapper.TypeMapper.selectAll   : ==>  Preparing: SELECT type_id,name FROM type LIMIT ? 
+2021-07-24 19:45:13.653 DEBUG 11884 --- [http-nio-8080-exec-6] b.lyg.blog.mapper.TypeMapper.selectAll   : ==> Parameters: 10(Integer)
+2021-07-24 19:45:13.686 DEBUG 11884 --- [http-nio-8080-exec-6] b.lyg.blog.mapper.TypeMapper.selectAll   : <==      Total: 7
+2021-07-24 19:45:13.753  INFO 11884 --- [http-nio-8080-exec-6] black.lyg.blog.aspect.LogAspect          : ////////after/////////
+2021-07-24 19:45:13.753  INFO 11884 --- [http-nio-8080-exec-6] black.lyg.blog.aspect.LogAspect          : result : admin/types 
+2021-07-24 19:45:16.344  INFO 11884 --- [http-nio-8080-exec-7] black.lyg.blog.service.BlogService       : 从redis中获取Blog的数据，标题为Java常见关键字final、static、super、abstract、this
+2021-07-24 19:45:16.345 DEBUG 11884 --- [http-nio-8080-exec-7] b.l.b.m.B.updateByPrimaryKeySelective    : ==>  Preparing: UPDATE blog SET title = ?,content = ?,first_picture = ?,flag = ?,description = ?,views = ?,appreciation = ?,share_statement = ?,comment = ?,publish = ?,recommend = ?,create_time = ?,update_time = ? WHERE blog_id = ? 
+2021-07-24 19:45:16.348 DEBUG 11884 --- [http-nio-8080-exec-7] b.l.b.m.B.updateByPrimaryKeySelective    : ==> Parameters: Java常见关键字final、static、super、abstract、this(String), 用此blog记录我学习的过程，文中若有不恰当的地方，还望友情指出互相学习。
+***
+Java有超过50多个关键字，这篇文章主要讲解一些常见的几个关键字，有兴趣的同学还可以[点此查看更多关键字](https://data-flair.training/blogs/java-keywords/)，下面进入正题：
+# final
+final关键字主要有三种用法：修饰类、修饰方法、修饰成员变量
+* **修饰类**
+    * 如果一个类被final修饰，则这个类不能被继承，例如：
+    ```java
+    final class A {
+    }
+    ```
+    下面的代码则无法编译：
+    ```java
+    class B extends A {    //编译错误
+    }
+    ```
+
+* **修饰方法**
+    * 当final关键字修饰在方法上时，这表明此方法不能被重写，例如：
+    ```java
+    class A {
+    	final void method(){}
+    }
+    ```
+    下面的代码则无法编译
+    ```java
+    class B extends A{
+    	void method(){}          //编译错误
+    }
+    ```
+* **修饰成员变量**
+    * 对于基本类型 final使其数值不变
+    * 对于引用类型 final使其引用不变
+    ```java
+    final String message = "hello";
+    message = "world";  //cannot assign value to final variable 'message'
+    ```
+****注意：一个类不能同时被final和abstract修饰。因为被final修饰的类不能被继承；而被abstract修饰的类本身没有实现，必须通过子类来实现，也就是说要被继承****
+***
+# static
+static关键字主要有三种用法：静态内部类、静态变量、静态方法、静态导包
+* **静态内部类与非静态内部类**
+    * 非静态内部类依赖于外部类的实例，也就是说要先创建外部类的实例，才能用这个实例去创建非静态内部类，而静态内部类不需要
+    * 静态内部类可以声明静态成员变量和方法，而非静态内部类不行
+    * 非静态内部类可以随意访问外部类的成员变量和方法（静态+非静态），而静态内部类只能访问外部类的静态成员变量和方法
+```java
+public class OuterClass {
+
+    public String name;
+    public static Integer number;
+
+    /**
+     * 非静态内部类
+     */
+    public class InnerClass{
+        //static Integer age; //非静态内部类不可以声明静态方法或变量
+        Integer age;
+
+        public void method() {
+            System.out.println(name);  //非静态内部类可以随意访问外部类的成员变量和方法
+        }
+    }
+
+    /**
+     * 静态内部类
+     */
+    public static class StaticInnerClass{
+        static Integer age;    //静态内部类可以声明静态成员变量和方法
+        public void method(){
+            System.out.println(number);   //静态内部类可以访问外部类的静态成员变量和方法，但不能访问外部类的非静态的成员变量和方法
+        }
+    }
+
+    public static void main(String[] args) {
+        OuterClass outerClass = new OuterClass();
+        InnerClass innerClass = outerClass.new InnerClass();
+        StaticInnerClass staticInnerClass = new StaticInnerClass();
+    }
+}
+```
+* **静态方法与静态成员变量**
+    * 静态方法与静态变量可以通过类名去访问
+```java
+public class A  {
+
+    static String phone;
+
+    static void staticMethod(){
+    }
+
+    void NonStaticMethod(){
+    }
+
+    public static void main(String[] args) {
+        A.phone = "123456";
+        A.staticMethod();
+        
+        A a = new A();
+        a.NonStaticMethod();
+    }
+}
+```
+ * **静态导包**
+ 格式为：import static 这两个关键字连用可以指定导入某个类中的指定静态资源，并且不需要使用类名调用类中静态成员，可以直接使用类中静态成员变量和成员方法
+***
+# super
+当派生类和基类具有相同的成员变量和方法时，在这种情况下，可能存在歧义，可以使用super关键字来解决，下面通过具体例子讲解：
+```java
+class Vehicle {
+    int maxSpeed = 100;
+    void stop(){
+    	System.out.println("Vehicle stop"); 
+    }
+}
+	
+class Car extends Vehicle{
+	int maxSpeed = 120;
+	void display() { 
+	    /* print maxSpeed of base class (vehicle) */
+	    System.out.println("Maximum Speed: " + super.maxSpeed); 
+    }
+    void stop(){
+    	super.stop();
+    } 
+}
+	
+class Test { 
+	public static void main(String[] args) { 
+	     Car car= new Car(); 
+	     car.display();
+	     car.stop(); 
+	} 
+} 
+```
+输出结果：
+```java
+Maximum Speed: 100
+Vehicle stop
+```
+***
+# abstract
+* abstract关键字可以修饰类或方法
+* abstract类可以扩展，但不能直接实例化，抽象类的目的是由派生类继承
+* abstract方法不在声明他的类中实现，但必须在某个子类中重写
+* 抽象类既可以有抽象方法又可以拥有非抽象方法
+* 当一个类中某个方法被abstract修饰，则该类也必须被abstract修饰
+
+举例说明：
+```java
+abstract class A  
+{ 
+    abstract void m1();  //abstract方法不在声明他的类中实现
+      
+    // 抽象类既可以有抽象方法又可以拥有非抽象方法 
+    void m2() 
+    { 
+        System.out.println("This is a concrete method."); 
+    } 
+} 
+   
+class B extends A  
+{  
+    // B必须重写A中的抽象方法m1()
+    void m1() { 
+        System.out.println("B's implementation of m2."); 
+    } 
+} 
+  
+public class AbstractDemo  
+{ 
+    public static void main(String args[])  
+    { 
+        B b = new B(); 
+        b.m1(); 
+        b.m2(); 
+    } 
+} 
+```
+输出结果：
+
+```java
+B's implementation of m2.
+This is a concrete method.
+```
+***
+# this
+基本上，this关键字用于引用类的当前实例。例如：
+
+```java
+class Manager {
+    Employees[] employees;
+     
+    void manageEmployees() {
+        int totalEmp = this.employees.length;
+        System.out.println("Total employees: " + totalEmp);
+        this.report();
+    }
+     
+    void report() { }
+}
+```
+在上面的例子中，this关键字用在了两个地方：
+* this.employees.length:用于获取类Manager当前实例的变量
+* this.report(): 调用类Manager当前实例的方法
+
+**注意：不能使用this关键字访问静态变量或方法，因为静态成员属于静态类实例而不是对象实例**(String), https://gimg2.baidu.com/image_search/src=http%3A%2F%2Fwx2.sinaimg.cn%2Fmw690%2F006fbYi5gy1grn996vnl4j30cg08jt8y.jpg&refer=http%3A%2F%2Fwx2.sinaimg.cn&app=2002&size=f9999,10000&q=a80&n=0&g=0n&fmt=jpeg?sec=1629702944&t=ec6a8e6906bcd690caa37b4551211d5b(String), 原创(String), Java有超过50多个关键字，这篇文章主要讲解一些常见的几个关键字，有兴趣的同学还可以点此查看更多关键字，下面进入正题：(String), 4557(Integer), true(Boolean), true(Boolean), true(Boolean), true(Boolean), true(Boolean), 2020-04-11 15:19:08.0(Timestamp), 2021-07-24 15:16:04.0(Timestamp), 18(Integer)
+2021-07-24 19:45:16.402 DEBUG 11884 --- [http-nio-8080-exec-7] b.l.b.m.B.updateByPrimaryKeySelective    : <==    Updates: 1
+2021-07-24 19:45:16.440  INFO 11884 --- [http-nio-8080-exec-7] black.lyg.blog.service.BlogService       : 更新redis中AllBlog的博客标题为：Java常见关键字final、static、super、abstract、this的views为：4557
+2021-07-24 19:45:16.491 ERROR 11884 --- [http-nio-8080-exec-7] b.l.b.h.ControllerExceptionHandler       : Request URL : http://localhost:8080/blog/18, Exception : 无法获取实体类black.lyg.blog.po.BlogTag对应的表名!
+2021-07-24 19:45:16.492  WARN 11884 --- [http-nio-8080-exec-7] .m.m.a.ExceptionHandlerExceptionResolver : Resolved [tk.mybatis.mapper.MapperException: 无法获取实体类black.lyg.blog.po.BlogTag对应的表名!]
+2021-07-24 19:46:38.202  INFO 804 --- [restartedMain] black.lyg.blog.BlogApplication           : Starting BlogApplication on Administraror with PID 804 (D:\Desktop\blog\blog-master\target\classes started by Administrator in D:\Desktop\blog\blog-master)
+2021-07-24 19:46:38.204 DEBUG 804 --- [restartedMain] black.lyg.blog.BlogApplication           : Running with Spring Boot v2.2.6.RELEASE, Spring v5.2.5.RELEASE
+2021-07-24 19:46:38.205  INFO 804 --- [restartedMain] black.lyg.blog.BlogApplication           : The following profiles are active: dev
+2021-07-24 19:46:38.241  INFO 804 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2021-07-24 19:46:38.241  INFO 804 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2021-07-24 19:46:38.762  INFO 804 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode!
+2021-07-24 19:46:38.763  INFO 804 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2021-07-24 19:46:38.787  INFO 804 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 15ms. Found 0 Redis repository interfaces.
+2021-07-24 19:46:38.876  WARN 804 --- [restartedMain] o.m.s.mapper.ClassPathMapperScanner      : No MyBatis mapper was found in '[black.lyg.blog]' package. Please check your configuration.
+2021-07-24 19:46:39.373  INFO 804 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2021-07-24 19:46:39.380  INFO 804 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2021-07-24 19:46:39.380  INFO 804 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.33]
+2021-07-24 19:46:39.382  INFO 804 --- [restartedMain] o.a.catalina.core.AprLifecycleListener   : An older version [1.2.14] of the APR based Apache Tomcat Native library is installed, while Tomcat recommends a minimum version of [1.2.23]
+2021-07-24 19:46:39.382  INFO 804 --- [restartedMain] o.a.catalina.core.AprLifecycleListener   : Loaded APR based Apache Tomcat Native library [1.2.14] using APR version [1.6.2].
+2021-07-24 19:46:39.382  INFO 804 --- [restartedMain] o.a.catalina.core.AprLifecycleListener   : APR capabilities: IPv6 [true], sendfile [true], accept filters [false], random [true].
+2021-07-24 19:46:39.382  INFO 804 --- [restartedMain] o.a.catalina.core.AprLifecycleListener   : APR/OpenSSL configuration: useAprConnector [false], useOpenSSL [true]
+2021-07-24 19:46:40.405  INFO 804 --- [restartedMain] o.a.catalina.core.AprLifecycleListener   : OpenSSL successfully initialized [OpenSSL 1.0.2l  25 May 2017]
+2021-07-24 19:46:40.506  INFO 804 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2021-07-24 19:46:40.506  INFO 804 --- [restartedMain] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 2264 ms
+2021-07-24 19:46:40.542  INFO 804 --- [restartedMain] o.s.boot.web.servlet.RegistrationBean    : Filter webStatFilter was not registered (possibly already registered?)
+2021-07-24 19:46:41.478  INFO 804 --- [restartedMain] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2021-07-24 19:46:41.547  INFO 804 --- [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2021-07-24 19:46:41.928  INFO 804 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2021-07-24 19:46:41.968  INFO 804 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2021-07-24 19:46:41.970  INFO 804 --- [restartedMain] black.lyg.blog.BlogApplication           : Started BlogApplication in 4.081 seconds (JVM running for 5.372)
+2021-07-24 19:46:42.002  INFO 804 --- [restartedMain] com.alibaba.druid.pool.DruidDataSource   : {dataSource-1} inited
+2021-07-24 19:46:43.322 DEBUG 804 --- [restartedMain] b.l.blog.mapper.BlogMapper.findBlogAll   : ==>  Preparing: select * from blog order by update_time desc 
+2021-07-24 19:46:43.339 DEBUG 804 --- [restartedMain] b.l.blog.mapper.BlogMapper.findBlogAll   : ==> Parameters: 
+2021-07-24 19:46:43.480 DEBUG 804 --- [restartedMain] b.l.b.mapper.TypeMapper.selectTypeById   : ====>  Preparing: select * from type where type_id = ? 
+2021-07-24 19:46:43.481 DEBUG 804 --- [restartedMain] b.l.b.mapper.TypeMapper.selectTypeById   : ====> Parameters: 6(String)
+2021-07-24 19:46:43.511 DEBUG 804 --- [restartedMain] b.l.b.mapper.TypeMapper.selectTypeById   : <====      Total: 1
+2021-07-24 19:46:43.512 DEBUG 804 --- [restartedMain] b.l.b.m.UserMapper.selectUserByUserId    : ====>  Preparing: select * from user where user_id = ? 
+2021-07-24 19:46:43.512 DEBUG 804 --- [restartedMain] b.l.b.m.UserMapper.selectUserByUserId    : ====> Parameters: 1(String)
+2021-07-24 19:46:43.541 DEBUG 804 --- [restartedMain] b.l.b.m.UserMapper.selectUserByUserId    : <====      Total: 1
+2021-07-24 19:46:43.542 DEBUG 804 --- [restartedMain] b.l.b.mapper.TypeMapper.selectTypeById   : ====>  Preparing: select * from type where type_id = ? 
+2021-07-24 19:46:43.543 DEBUG 804 --- [restartedMain] b.l.b.mapper.TypeMapper.selectTypeById   : ====> Parameters: 16(String)
+2021-07-24 19:46:43.571 DEBUG 804 --- [restartedMain] b.l.b.mapper.TypeMapper.selectTypeById   : <====      Total: 1
+2021-07-24 19:46:43.573 DEBUG 804 --- [restartedMain] b.l.b.mapper.TypeMapper.selectTypeById   : ====>  Preparing: select * from type where type_id = ? 
+2021-07-24 19:46:43.573 DEBUG 804 --- [restartedMain] b.l.b.mapper.TypeMapper.selectTypeById   : ====> Parameters: 4(String)
+2021-07-24 19:46:43.600 DEBUG 804 --- [restartedMain] b.l.b.mapper.TypeMapper.selectTypeById   : <====      Total: 1
+2021-07-24 19:46:43.603 DEBUG 804 --- [restartedMain] b.l.blog.mapper.BlogMapper.findBlogAll   : <==      Total: 9
+2021-07-24 19:46:43.703  INFO 804 --- [restartedMain] io.lettuce.core.EpollProvider            : Starting without optional epoll library
+2021-07-24 19:46:43.703  INFO 804 --- [restartedMain] io.lettuce.core.KqueueProvider           : Starting without optional kqueue library
+2021-07-24 19:46:45.250  INFO 804 --- [restartedMain] black.lyg.blog.config.StartupRunner      : 将blog数据添加到redis的AllBlog中，其博客标题为：Java常见关键字final、static、super、abstract、this
+2021-07-24 19:46:45.281  INFO 804 --- [restartedMain] black.lyg.blog.config.StartupRunner      : 将blog数据添加到redis的AllBlog中，其博客标题为：山东菏泽曹县流弊六六六，卧底宝贝儿
+2021-07-24 19:46:45.312  INFO 804 --- [restartedMain] black.lyg.blog.config.StartupRunner      : 将blog数据添加到redis的AllBlog中，其博客标题为：随笔
+2021-07-24 19:46:45.349  INFO 804 --- [restartedMain] black.lyg.blog.config.StartupRunner      : 将blog数据添加到redis的AllBlog中，其博客标题为：欢迎使用 Markdown在线编辑器 MdEditor
+2021-07-24 19:46:45.384  INFO 804 --- [restartedMain] black.lyg.blog.config.StartupRunner      : 将blog数据添加到redis的AllBlog中，其博客标题为：Java中 equals() 和 hashCode()的关系
+2021-07-24 19:46:45.415  INFO 804 --- [restartedMain] black.lyg.blog.config.StartupRunner      : 将blog数据添加到redis的AllBlog中，其博客标题为：redis学习笔记（二）：Hash
+2021-07-24 19:46:45.446  INFO 804 --- [restartedMain] black.lyg.blog.config.StartupRunner      : 将blog数据添加到redis的AllBlog中，其博客标题为：redis学习笔记（一）：String
+2021-07-24 19:46:45.477  INFO 804 --- [restartedMain] black.lyg.blog.config.StartupRunner      : 将blog数据添加到redis的AllBlog中，其博客标题为：Java合并两个int数组
+2021-07-24 19:46:45.510  INFO 804 --- [restartedMain] black.lyg.blog.config.StartupRunner      : 将blog数据添加到redis的AllBlog中，其博客标题为：条件注解@Conditional
+2021-07-24 19:46:45.540  INFO 804 --- [restartedMain] black.lyg.blog.config.StartupRunner      : 初始化redis中blogCount的数量为：9
+2021-07-24 19:46:50.491  INFO 804 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2021-07-24 19:46:50.491  INFO 804 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2021-07-24 19:46:50.502  INFO 804 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 11 ms
+2021-07-24 19:46:50.520  INFO 804 --- [http-nio-8080-exec-1] black.lyg.blog.aspect.LogAspect          : Request : RequestLog{url='http://localhost:8080/admin', ip='0:0:0:0:0:0:0:1', classMethod='black.lyg.blog.controller.admin.LoginController.loginPage', args=[]}
+2021-07-24 19:46:50.523  INFO 804 --- [http-nio-8080-exec-1] black.lyg.blog.aspect.LogAspect          : ////////after/////////
+2021-07-24 19:46:50.523  INFO 804 --- [http-nio-8080-exec-1] black.lyg.blog.aspect.LogAspect          : result : admin/login 
+2021-07-24 19:46:58.806  INFO 804 --- [http-nio-8080-exec-5] black.lyg.blog.aspect.LogAspect          : Request : RequestLog{url='http://localhost:8080/admin/login', ip='0:0:0:0:0:0:0:1', classMethod='black.lyg.blog.controller.admin.LoginController.login', args=[admin, lyg0918, org.apache.catalina.session.StandardSessionFacade@22171f66, {}]}
+2021-07-24 19:46:58.808 DEBUG 804 --- [http-nio-8080-exec-5] .l.b.m.U.selectUserNameByNameAndPassWord : ==>  Preparing: select * from user where username = ? and password = ? 
+2021-07-24 19:46:58.808 DEBUG 804 --- [http-nio-8080-exec-5] .l.b.m.U.selectUserNameByNameAndPassWord : ==> Parameters: admin(String), 89446CF944BBA2485A8562075A0E0BB7(String)
+2021-07-24 19:46:58.837 DEBUG 804 --- [http-nio-8080-exec-5] .l.b.m.U.selectUserNameByNameAndPassWord : <==      Total: 1
+2021-07-24 19:46:58.838  INFO 804 --- [http-nio-8080-exec-5] black.lyg.blog.aspect.LogAspect          : ////////after/////////
+2021-07-24 19:46:58.838  INFO 804 --- [http-nio-8080-exec-5] black.lyg.blog.aspect.LogAspect          : result : admin/index 
+2021-07-24 19:46:59.196  INFO 804 --- [http-nio-8080-exec-10] black.lyg.blog.service.BlogService       : 从redis中获取最新博客
+2021-07-24 19:47:00.812  INFO 804 --- [http-nio-8080-exec-4] black.lyg.blog.aspect.LogAspect          : Request : RequestLog{url='http://localhost:8080/admin/types', ip='0:0:0:0:0:0:0:1', classMethod='black.lyg.blog.controller.admin.TypeController.findAllTypes', args=[{}, 1]}
+2021-07-24 19:47:00.876 DEBUG 804 --- [http-nio-8080-exec-4] b.l.b.mapper.TypeMapper.selectAll_COUNT  : ==>  Preparing: SELECT count(0) FROM type 
+2021-07-24 19:47:00.877 DEBUG 804 --- [http-nio-8080-exec-4] b.l.b.mapper.TypeMapper.selectAll_COUNT  : ==> Parameters: 
+2021-07-24 19:47:00.905 DEBUG 804 --- [http-nio-8080-exec-4] b.l.b.mapper.TypeMapper.selectAll_COUNT  : <==      Total: 1
+2021-07-24 19:47:00.906 DEBUG 804 --- [http-nio-8080-exec-4] b.lyg.blog.mapper.TypeMapper.selectAll   : ==>  Preparing: SELECT type_id,name FROM type LIMIT ? 
+2021-07-24 19:47:00.907 DEBUG 804 --- [http-nio-8080-exec-4] b.lyg.blog.mapper.TypeMapper.selectAll   : ==> Parameters: 10(Integer)
+2021-07-24 19:47:00.937 DEBUG 804 --- [http-nio-8080-exec-4] b.lyg.blog.mapper.TypeMapper.selectAll   : <==      Total: 7
+2021-07-24 19:47:00.995  INFO 804 --- [http-nio-8080-exec-4] black.lyg.blog.aspect.LogAspect          : ////////after/////////
+2021-07-24 19:47:00.995  INFO 804 --- [http-nio-8080-exec-4] black.lyg.blog.aspect.LogAspect          : result : admin/types 
+2021-07-24 19:47:01.316  INFO 804 --- [http-nio-8080-exec-6] black.lyg.blog.service.BlogService       : 从redis中获取最新博客
+2021-07-24 19:47:04.723  INFO 804 --- [http-nio-8080-exec-2] black.lyg.blog.aspect.LogAspect          : Request : RequestLog{url='http://localhost:8080/admin/blogs', ip='0:0:0:0:0:0:0:1', classMethod='black.lyg.blog.controller.admin.BlogController.blogs', args=[{}, 1]}
+2021-07-24 19:47:04.726 DEBUG 804 --- [http-nio-8080-exec-2] b.l.b.m.BlogMapper.findBlogAll_COUNT     : ==>  Preparing: SELECT count(0) FROM blog 
+2021-07-24 19:47:04.726 DEBUG 804 --- [http-nio-8080-exec-2] b.l.b.m.BlogMapper.findBlogAll_COUNT     : ==> Parameters: 
+2021-07-24 19:47:04.755 DEBUG 804 --- [http-nio-8080-exec-2] b.l.b.m.BlogMapper.findBlogAll_COUNT     : <==      Total: 1
+2021-07-24 19:47:04.756 DEBUG 804 --- [http-nio-8080-exec-2] b.l.blog.mapper.BlogMapper.findBlogAll   : ==>  Preparing: select * from blog order by update_time desc LIMIT ? 
+2021-07-24 19:47:04.756 DEBUG 804 --- [http-nio-8080-exec-2] b.l.blog.mapper.BlogMapper.findBlogAll   : ==> Parameters: 8(Integer)
+2021-07-24 19:47:04.849 DEBUG 804 --- [http-nio-8080-exec-2] b.l.b.mapper.TypeMapper.selectTypeById   : ====>  Preparing: select * from type where type_id = ? 
+2021-07-24 19:47:04.849 DEBUG 804 --- [http-nio-8080-exec-2] b.l.b.mapper.TypeMapper.selectTypeById   : ====> Parameters: 6(String)
+2021-07-24 19:47:04.876 DEBUG 804 --- [http-nio-8080-exec-2] b.l.b.mapper.TypeMapper.selectTypeById   : <====      Total: 1
+2021-07-24 19:47:04.877 DEBUG 804 --- [http-nio-8080-exec-2] b.l.b.m.UserMapper.selectUserByUserId    : ====>  Preparing: select * from user where user_id = ? 
+2021-07-24 19:47:04.877 DEBUG 804 --- [http-nio-8080-exec-2] b.l.b.m.UserMapper.selectUserByUserId    : ====> Parameters: 1(String)
+2021-07-24 19:47:04.905 DEBUG 804 --- [http-nio-8080-exec-2] b.l.b.m.UserMapper.selectUserByUserId    : <====      Total: 1
+2021-07-24 19:47:04.906 DEBUG 804 --- [http-nio-8080-exec-2] b.l.b.mapper.TypeMapper.selectTypeById   : ====>  Preparing: select * from type where type_id = ? 
+2021-07-24 19:47:04.907 DEBUG 804 --- [http-nio-8080-exec-2] b.l.b.mapper.TypeMapper.selectTypeById   : ====> Parameters: 16(String)
+2021-07-24 19:47:04.936 DEBUG 804 --- [http-nio-8080-exec-2] b.l.b.mapper.TypeMapper.selectTypeById   : <====      Total: 1
+2021-07-24 19:47:04.936 DEBUG 804 --- [http-nio-8080-exec-2] b.l.b.mapper.TypeMapper.selectTypeById   : ====>  Preparing: select * from type where type_id = ? 
+2021-07-24 19:47:04.936 DEBUG 804 --- [http-nio-8080-exec-2] b.l.b.mapper.TypeMapper.selectTypeById   : ====> Parameters: 4(String)
+2021-07-24 19:47:04.965 DEBUG 804 --- [http-nio-8080-exec-2] b.l.b.mapper.TypeMapper.selectTypeById   : <====      Total: 1
+2021-07-24 19:47:04.967 DEBUG 804 --- [http-nio-8080-exec-2] b.l.blog.mapper.BlogMapper.findBlogAll   : <==      Total: 8
+2021-07-24 19:47:04.968 DEBUG 804 --- [http-nio-8080-exec-2] b.lyg.blog.mapper.TypeMapper.selectAll   : ==>  Preparing: SELECT type_id,name FROM type 
+2021-07-24 19:47:04.968 DEBUG 804 --- [http-nio-8080-exec-2] b.lyg.blog.mapper.TypeMapper.selectAll   : ==> Parameters: 
+2021-07-24 19:47:04.998 DEBUG 804 --- [http-nio-8080-exec-2] b.lyg.blog.mapper.TypeMapper.selectAll   : <==      Total: 7
+2021-07-24 19:47:04.998  INFO 804 --- [http-nio-8080-exec-2] black.lyg.blog.aspect.LogAspect          : ////////after/////////
+2021-07-24 19:47:04.998  INFO 804 --- [http-nio-8080-exec-2] black.lyg.blog.aspect.LogAspect          : result : admin/blogs 
+2021-07-24 19:47:05.316  INFO 804 --- [http-nio-8080-exec-7] black.lyg.blog.service.BlogService       : 从redis中获取最新博客
+2021-07-24 19:47:10.652  INFO 804 --- [http-nio-8080-exec-8] black.lyg.blog.aspect.LogAspect          : Request : RequestLog{url='http://localhost:8080/admin/logout', ip='0:0:0:0:0:0:0:1', classMethod='black.lyg.blog.controller.admin.LoginController.logout', args=[org.apache.catalina.session.StandardSessionFacade@22171f66]}
+2021-07-24 19:47:10.653  INFO 804 --- [http-nio-8080-exec-8] black.lyg.blog.aspect.LogAspect          : ////////after/////////
+2021-07-24 19:47:10.653  INFO 804 --- [http-nio-8080-exec-8] black.lyg.blog.aspect.LogAspect          : result : redirect:admin 
+2021-07-24 19:47:10.671  INFO 804 --- [http-nio-8080-exec-9] black.lyg.blog.aspect.LogAspect          : Request : RequestLog{url='http://localhost:8080/admin', ip='0:0:0:0:0:0:0:1', classMethod='black.lyg.blog.controller.admin.LoginController.loginPage', args=[]}
+2021-07-24 19:47:10.671  INFO 804 --- [http-nio-8080-exec-9] black.lyg.blog.aspect.LogAspect          : ////////after/////////
+2021-07-24 19:47:10.671  INFO 804 --- [http-nio-8080-exec-9] black.lyg.blog.aspect.LogAspect          : result : admin/login 
+2021-07-24 19:47:10.683 ERROR 804 --- [http-nio-8080-exec-9] o.a.c.c.C.[.[.[/].[dispatcherServlet]    : Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed; nested exception is java.lang.IllegalStateException: Cannot call sendError() after the response has been committed] with root cause
+
+java.lang.IllegalStateException: Cannot call sendError() after the response has been committed
+	at org.apache.catalina.connector.ResponseFacade.sendError(ResponseFacade.java:472) ~[tomcat-embed-core-9.0.33.jar:9.0.33]
+	at javax.servlet.http.HttpServletResponseWrapper.sendError(HttpServletResponseWrapper.java:129) ~[tomcat-embed-core-9.0.33.jar:9.0.33]
+	at com.alibaba.druid.support.http.WebStatFilter$StatHttpServletResponseWrapper.sendError(WebStatFilter.java:343) ~[druid-1.1.16.jar:1.1.16]
+	at org.springframework.web.servlet.resource.ResourceHttpRequestHandler.handleRequest(ResourceHttpRequestHandler.java:488) ~[spring-webmvc-5.2.5.RELEASE.jar:5.2.5.RELEASE]
+	at org.springframework.web.servlet.mvc.HttpRequestHandlerAdapter.handle(HttpRequestHandlerAdapter.java:53) ~[spring-webmvc-5.2.5.RELEASE.jar:5.2.5.RELEASE]
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1040) ~[spring-webmvc-5.2.5.RELEASE.jar:5.2.5.RELEASE]
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:943) ~[spring-webmvc-5.2.5.RELEASE.jar:5.2.5.RELEASE]
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1006) ~[spring-webmvc-5.2.5.RELEASE.jar:5.2.5.RELEASE]
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:898) ~[spring-webmvc-5.2.5.RELEASE.jar:5.2.5.RELEASE]
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:634) ~[tomcat-embed-core-9.0.33.jar:9.0.33]
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:883) ~[spring-webmvc-5.2.5.RELEASE.jar:5.2.5.RELEASE]
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:741) ~[tomcat-embed-core-9.0.33.jar:9.0.33]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:231) ~[tomcat-embed-core-9.0.33.jar:9.0.33]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) ~[tomcat-embed-core-9.0.33.jar:9.0.33]
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53) ~[tomcat-embed-websocket-9.0.33.jar:9.0.33]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) ~[tomcat-embed-core-9.0.33.jar:9.0.33]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) ~[tomcat-embed-core-9.0.33.jar:9.0.33]
+	at com.alibaba.druid.support.http.WebStatFilter.doFilter(WebStatFilter.java:124) ~[druid-1.1.16.jar:1.1.16]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) ~[tomcat-embed-core-9.0.33.jar:9.0.33]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) ~[tomcat-embed-core-9.0.33.jar:9.0.33]
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100) ~[spring-web-5.2.5.RELEASE.jar:5.2.5.RELEASE]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119) ~[spring-web-5.2.5.RELEASE.jar:5.2.5.RELEASE]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) ~[tomcat-embed-core-9.0.33.jar:9.0.33]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) ~[tomcat-embed-core-9.0.33.jar:9.0.33]
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93) ~[spring-web-5.2.5.RELEASE.jar:5.2.5.RELEASE]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119) ~[spring-web-5.2.5.RELEASE.jar:5.2.5.RELEASE]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) ~[tomcat-embed-core-9.0.33.jar:9.0.33]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) ~[tomcat-embed-core-9.0.33.jar:9.0.33]
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201) ~[spring-web-5.2.5.RELEASE.jar:5.2.5.RELEASE]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119) ~[spring-web-5.2.5.RELEASE.jar:5.2.5.RELEASE]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) ~[tomcat-embed-core-9.0.33.jar:9.0.33]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) ~[tomcat-embed-core-9.0.33.jar:9.0.33]
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:202) ~[tomcat-embed-core-9.0.33.jar:9.0.33]
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:96) [tomcat-embed-core-9.0.33.jar:9.0.33]
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:541) [tomcat-embed-core-9.0.33.jar:9.0.33]
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:139) [tomcat-embed-core-9.0.33.jar:9.0.33]
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92) [tomcat-embed-core-9.0.33.jar:9.0.33]
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74) [tomcat-embed-core-9.0.33.jar:9.0.33]
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:343) [tomcat-embed-core-9.0.33.jar:9.0.33]
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:373) [tomcat-embed-core-9.0.33.jar:9.0.33]
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65) [tomcat-embed-core-9.0.33.jar:9.0.33]
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:868) [tomcat-embed-core-9.0.33.jar:9.0.33]
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1594) [tomcat-embed-core-9.0.33.jar:9.0.33]
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49) [tomcat-embed-core-9.0.33.jar:9.0.33]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149) [na:1.8.0_221]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624) [na:1.8.0_221]
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61) [tomcat-embed-core-9.0.33.jar:9.0.33]
+	at java.lang.Thread.run(Thread.java:748) [na:1.8.0_221]
+
+2021-07-24 19:47:10.689 ERROR 804 --- [http-nio-8080-exec-9] s.e.ErrorMvcAutoConfiguration$StaticView : Cannot render error page for request [/admin/admin] and exception [Cannot call sendError() after the response has been committed] as the response has already been committed. As a result, the response may have the wrong status code.
+2021-07-24 19:47:13.765  INFO 804 --- [http-nio-8080-exec-3] black.lyg.blog.aspect.LogAspect          : Request : RequestLog{url='http://localhost:8080/admin/add', ip='0:0:0:0:0:0:0:1', classMethod='black.lyg.blog.controller.admin.LoginController.add', args=[]}
+2021-07-24 19:47:13.765  INFO 804 --- [http-nio-8080-exec-3] black.lyg.blog.aspect.LogAspect          : ////////after/////////
+2021-07-24 19:47:13.766  INFO 804 --- [http-nio-8080-exec-3] black.lyg.blog.aspect.LogAspect          : result : admin/register 
+2021-07-24 19:47:14.747  INFO 804 --- [http-nio-8080-exec-1] black.lyg.blog.aspect.LogAspect          : Request : RequestLog{url='http://localhost:8080/admin', ip='0:0:0:0:0:0:0:1', classMethod='black.lyg.blog.controller.admin.LoginController.loginPage', args=[]}
+2021-07-24 19:47:14.748  INFO 804 --- [http-nio-8080-exec-1] black.lyg.blog.aspect.LogAspect          : ////////after/////////
+2021-07-24 19:47:14.748  INFO 804 --- [http-nio-8080-exec-1] black.lyg.blog.aspect.LogAspect          : result : admin/login 
+2021-07-24 19:47:20.641  INFO 804 --- [http-nio-8080-exec-5] black.lyg.blog.aspect.LogAspect          : Request : RequestLog{url='http://localhost:8080/admin/login', ip='0:0:0:0:0:0:0:1', classMethod='black.lyg.blog.controller.admin.LoginController.login', args=[zhangsan, 123456, org.apache.catalina.session.StandardSessionFacade@22171f66, {}]}
+2021-07-24 19:47:20.642 DEBUG 804 --- [http-nio-8080-exec-5] .l.b.m.U.selectUserNameByNameAndPassWord : ==>  Preparing: select * from user where username = ? and password = ? 
+2021-07-24 19:47:20.643 DEBUG 804 --- [http-nio-8080-exec-5] .l.b.m.U.selectUserNameByNameAndPassWord : ==> Parameters: zhangsan(String), E10ADC3949BA59ABBE56E057F20F883E(String)
+2021-07-24 19:47:20.675 DEBUG 804 --- [http-nio-8080-exec-5] .l.b.m.U.selectUserNameByNameAndPassWord : <==      Total: 1
+2021-07-24 19:47:20.676  INFO 804 --- [http-nio-8080-exec-5] black.lyg.blog.aspect.LogAspect          : ////////after/////////
+2021-07-24 19:47:20.676  INFO 804 --- [http-nio-8080-exec-5] black.lyg.blog.aspect.LogAspect          : result : admin/index 
+2021-07-24 19:47:20.979  INFO 804 --- [http-nio-8080-exec-10] black.lyg.blog.service.BlogService       : 从redis中获取最新博客
+2021-07-24 19:47:23.472  INFO 804 --- [http-nio-8080-exec-4] black.lyg.blog.aspect.LogAspect          : Request : RequestLog{url='http://localhost:8080/admin/types', ip='0:0:0:0:0:0:0:1', classMethod='black.lyg.blog.controller.admin.TypeController.findAllTypes', args=[{}, 1]}
+2021-07-24 19:47:23.500 DEBUG 804 --- [http-nio-8080-exec-4] b.l.b.mapper.TypeMapper.selectAll_COUNT  : ==>  Preparing: SELECT count(0) FROM type 
+2021-07-24 19:47:23.500 DEBUG 804 --- [http-nio-8080-exec-4] b.l.b.mapper.TypeMapper.selectAll_COUNT  : ==> Parameters: 
+2021-07-24 19:47:23.528 DEBUG 804 --- [http-nio-8080-exec-4] b.l.b.mapper.TypeMapper.selectAll_COUNT  : <==      Total: 1
+2021-07-24 19:47:23.529 DEBUG 804 --- [http-nio-8080-exec-4] b.lyg.blog.mapper.TypeMapper.selectAll   : ==>  Preparing: SELECT type_id,name FROM type LIMIT ? 
+2021-07-24 19:47:23.530 DEBUG 804 --- [http-nio-8080-exec-4] b.lyg.blog.mapper.TypeMapper.selectAll   : ==> Parameters: 10(Integer)
+2021-07-24 19:47:23.561 DEBUG 804 --- [http-nio-8080-exec-4] b.lyg.blog.mapper.TypeMapper.selectAll   : <==      Total: 7
+2021-07-24 19:47:23.616  INFO 804 --- [http-nio-8080-exec-4] black.lyg.blog.aspect.LogAspect          : ////////after/////////
+2021-07-24 19:47:23.616  INFO 804 --- [http-nio-8080-exec-4] black.lyg.blog.aspect.LogAspect          : result : admin/types 
+2021-07-24 19:47:23.913  INFO 804 --- [http-nio-8080-exec-6] black.lyg.blog.service.BlogService       : 从redis中获取最新博客
+2021-07-24 19:47:24.823  INFO 804 --- [http-nio-8080-exec-2] black.lyg.blog.aspect.LogAspect          : Request : RequestLog{url='http://localhost:8080/admin/blogs', ip='0:0:0:0:0:0:0:1', classMethod='black.lyg.blog.controller.admin.BlogController.blogs', args=[{}, 1]}
+2021-07-24 19:47:24.823 DEBUG 804 --- [http-nio-8080-exec-2] b.l.b.m.BlogMapper.findBlogAll_COUNT     : ==>  Preparing: SELECT count(0) FROM blog 
+2021-07-24 19:47:24.824 DEBUG 804 --- [http-nio-8080-exec-2] b.l.b.m.BlogMapper.findBlogAll_COUNT     : ==> Parameters: 
+2021-07-24 19:47:24.853 DEBUG 804 --- [http-nio-8080-exec-2] b.l.b.m.BlogMapper.findBlogAll_COUNT     : <==      Total: 1
+2021-07-24 19:47:24.853 DEBUG 804 --- [http-nio-8080-exec-2] b.l.blog.mapper.BlogMapper.findBlogAll   : ==>  Preparing: select * from blog order by update_time desc LIMIT ? 
+2021-07-24 19:47:24.853 DEBUG 804 --- [http-nio-8080-exec-2] b.l.blog.mapper.BlogMapper.findBlogAll   : ==> Parameters: 8(Integer)
+2021-07-24 19:47:24.914 DEBUG 804 --- [http-nio-8080-exec-2] b.l.b.mapper.TypeMapper.selectTypeById   : ====>  Preparing: select * from type where type_id = ? 
+2021-07-24 19:47:24.914 DEBUG 804 --- [http-nio-8080-exec-2] b.l.b.mapper.TypeMapper.selectTypeById   : ====> Parameters: 6(String)
+2021-07-24 19:47:24.947 DEBUG 804 --- [http-nio-8080-exec-2] b.l.b.mapper.TypeMapper.selectTypeById   : <====      Total: 1
+2021-07-24 19:47:24.948 DEBUG 804 --- [http-nio-8080-exec-2] b.l.b.m.UserMapper.selectUserByUserId    : ====>  Preparing: select * from user where user_id = ? 
+2021-07-24 19:47:24.948 DEBUG 804 --- [http-nio-8080-exec-2] b.l.b.m.UserMapper.selectUserByUserId    : ====> Parameters: 1(String)
+2021-07-24 19:47:24.976 DEBUG 804 --- [http-nio-8080-exec-2] b.l.b.m.UserMapper.selectUserByUserId    : <====      Total: 1
+2021-07-24 19:47:24.977 DEBUG 804 --- [http-nio-8080-exec-2] b.l.b.mapper.TypeMapper.selectTypeById   : ====>  Preparing: select * from type where type_id = ? 
+2021-07-24 19:47:24.978 DEBUG 804 --- [http-nio-8080-exec-2] b.l.b.mapper.TypeMapper.selectTypeById   : ====> Parameters: 16(String)
+2021-07-24 19:47:25.005 DEBUG 804 --- [http-nio-8080-exec-2] b.l.b.mapper.TypeMapper.selectTypeById   : <====      Total: 1
+2021-07-24 19:47:25.006 DEBUG 804 --- [http-nio-8080-exec-2] b.l.b.mapper.TypeMapper.selectTypeById   : ====>  Preparing: select * from type where type_id = ? 
+2021-07-24 19:47:25.007 DEBUG 804 --- [http-nio-8080-exec-2] b.l.b.mapper.TypeMapper.selectTypeById   : ====> Parameters: 4(String)
+2021-07-24 19:47:25.036 DEBUG 804 --- [http-nio-8080-exec-2] b.l.b.mapper.TypeMapper.selectTypeById   : <====      Total: 1
+2021-07-24 19:47:25.037 DEBUG 804 --- [http-nio-8080-exec-2] b.l.blog.mapper.BlogMapper.findBlogAll   : <==      Total: 8
+2021-07-24 19:47:25.038 DEBUG 804 --- [http-nio-8080-exec-2] b.lyg.blog.mapper.TypeMapper.selectAll   : ==>  Preparing: SELECT type_id,name FROM type 
+2021-07-24 19:47:25.038 DEBUG 804 --- [http-nio-8080-exec-2] b.lyg.blog.mapper.TypeMapper.selectAll   : ==> Parameters: 
+2021-07-24 19:47:25.066 DEBUG 804 --- [http-nio-8080-exec-2] b.lyg.blog.mapper.TypeMapper.selectAll   : <==      Total: 7
+2021-07-24 19:47:25.067  INFO 804 --- [http-nio-8080-exec-2] black.lyg.blog.aspect.LogAspect          : ////////after/////////
+2021-07-24 19:47:25.067  INFO 804 --- [http-nio-8080-exec-2] black.lyg.blog.aspect.LogAspect          : result : admin/blogs 
+2021-07-24 19:47:25.399  INFO 804 --- [http-nio-8080-exec-7] black.lyg.blog.service.BlogService       : 从redis中获取最新博客
+2021-07-24 19:47:28.473  INFO 804 --- [http-nio-8080-exec-8] black.lyg.blog.aspect.LogAspect          : Request : RequestLog{url='http://localhost:8080/admin/blogs/18/edit', ip='0:0:0:0:0:0:0:1', classMethod='black.lyg.blog.controller.admin.BlogController.editPage', args=[{}, 18]}
+2021-07-24 19:47:28.503  INFO 804 --- [http-nio-8080-exec-8] black.lyg.blog.service.BlogService       : 从redis中获取Blog的数据，标题为Java常见关键字final、static、super、abstract、this
+2021-07-24 19:47:28.526 DEBUG 804 --- [http-nio-8080-exec-8] b.l.b.m.BlogTagMapper.selectByExample    : ==>  Preparing: SELECT blog_tag_id,blog_id,tag_id FROM blog_tag WHERE ( ( blog_id = ? ) ) 
+2021-07-24 19:47:28.526 DEBUG 804 --- [http-nio-8080-exec-8] b.l.b.m.BlogTagMapper.selectByExample    : ==> Parameters: 18(Integer)
+2021-07-24 19:47:28.554 DEBUG 804 --- [http-nio-8080-exec-8] b.l.b.m.BlogTagMapper.selectByExample    : <==      Total: 1
+2021-07-24 19:47:28.555 DEBUG 804 --- [http-nio-8080-exec-8] b.lyg.blog.mapper.TypeMapper.selectAll   : ==>  Preparing: SELECT type_id,name FROM type 
+2021-07-24 19:47:28.555 DEBUG 804 --- [http-nio-8080-exec-8] b.lyg.blog.mapper.TypeMapper.selectAll   : ==> Parameters: 
+2021-07-24 19:47:28.585 DEBUG 804 --- [http-nio-8080-exec-8] b.lyg.blog.mapper.TypeMapper.selectAll   : <==      Total: 7
+2021-07-24 19:47:28.585 DEBUG 804 --- [http-nio-8080-exec-8] b.lyg.blog.mapper.TagMapper.selectAll    : ==>  Preparing: SELECT tag_id,name FROM tag 
+2021-07-24 19:47:28.585 DEBUG 804 --- [http-nio-8080-exec-8] b.lyg.blog.mapper.TagMapper.selectAll    : ==> Parameters: 
+2021-07-24 19:47:28.615 DEBUG 804 --- [http-nio-8080-exec-8] b.lyg.blog.mapper.TagMapper.selectAll    : <==      Total: 7
+2021-07-24 19:47:28.615  INFO 804 --- [http-nio-8080-exec-8] black.lyg.blog.aspect.LogAspect          : ////////after/////////
+2021-07-24 19:47:28.616  INFO 804 --- [http-nio-8080-exec-8] black.lyg.blog.aspect.LogAspect          : result : admin/blogs-input 
+2021-07-24 19:47:28.937  INFO 804 --- [http-nio-8080-exec-9] black.lyg.blog.service.BlogService       : 从redis中获取最新博客
+2021-07-24 19:48:00.766  INFO 804 --- [http-nio-8080-exec-4] black.lyg.blog.aspect.LogAspect          : Request : RequestLog{url='http://localhost:8080/admin/logout', ip='0:0:0:0:0:0:0:1', classMethod='black.lyg.blog.controller.admin.LoginController.logout', args=[org.apache.catalina.session.StandardSessionFacade@22171f66]}
+2021-07-24 19:48:00.766  INFO 804 --- [http-nio-8080-exec-4] black.lyg.blog.aspect.LogAspect          : ////////after/////////
+2021-07-24 19:48:00.766  INFO 804 --- [http-nio-8080-exec-4] black.lyg.blog.aspect.LogAspect          : result : redirect:admin 
+2021-07-24 19:48:00.770  INFO 804 --- [http-nio-8080-exec-1] black.lyg.blog.aspect.LogAspect          : Request : RequestLog{url='http://localhost:8080/admin', ip='0:0:0:0:0:0:0:1', classMethod='black.lyg.blog.controller.admin.LoginController.loginPage', args=[]}
+2021-07-24 19:48:00.770  INFO 804 --- [http-nio-8080-exec-1] black.lyg.blog.aspect.LogAspect          : ////////after/////////
+2021-07-24 19:48:00.770  INFO 804 --- [http-nio-8080-exec-1] black.lyg.blog.aspect.LogAspect          : result : admin/login 
+2021-07-24 19:48:00.774 ERROR 804 --- [http-nio-8080-exec-1] o.a.c.c.C.[.[.[/].[dispatcherServlet]    : Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed; nested exception is java.lang.IllegalStateException: Cannot call sendError() after the response has been committed] with root cause
+
+java.lang.IllegalStateException: Cannot call sendError() after the response has been committed
+	at org.apache.catalina.connector.ResponseFacade.sendError(ResponseFacade.java:472) ~[tomcat-embed-core-9.0.33.jar:9.0.33]
+	at javax.servlet.http.HttpServletResponseWrapper.sendError(HttpServletResponseWrapper.java:129) ~[tomcat-embed-core-9.0.33.jar:9.0.33]
+	at com.alibaba.druid.support.http.WebStatFilter$StatHttpServletResponseWrapper.sendError(WebStatFilter.java:343) ~[druid-1.1.16.jar:1.1.16]
+	at org.springframework.web.servlet.resource.ResourceHttpRequestHandler.handleRequest(ResourceHttpRequestHandler.java:488) ~[spring-webmvc-5.2.5.RELEASE.jar:5.2.5.RELEASE]
+	at org.springframework.web.servlet.mvc.HttpRequestHandlerAdapter.handle(HttpRequestHandlerAdapter.java:53) ~[spring-webmvc-5.2.5.RELEASE.jar:5.2.5.RELEASE]
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1040) ~[spring-webmvc-5.2.5.RELEASE.jar:5.2.5.RELEASE]
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:943) ~[spring-webmvc-5.2.5.RELEASE.jar:5.2.5.RELEASE]
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1006) ~[spring-webmvc-5.2.5.RELEASE.jar:5.2.5.RELEASE]
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:898) ~[spring-webmvc-5.2.5.RELEASE.jar:5.2.5.RELEASE]
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:634) ~[tomcat-embed-core-9.0.33.jar:9.0.33]
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:883) ~[spring-webmvc-5.2.5.RELEASE.jar:5.2.5.RELEASE]
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:741) ~[tomcat-embed-core-9.0.33.jar:9.0.33]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:231) ~[tomcat-embed-core-9.0.33.jar:9.0.33]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) ~[tomcat-embed-core-9.0.33.jar:9.0.33]
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53) ~[tomcat-embed-websocket-9.0.33.jar:9.0.33]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) ~[tomcat-embed-core-9.0.33.jar:9.0.33]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) ~[tomcat-embed-core-9.0.33.jar:9.0.33]
+	at com.alibaba.druid.support.http.WebStatFilter.doFilter(WebStatFilter.java:124) ~[druid-1.1.16.jar:1.1.16]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) ~[tomcat-embed-core-9.0.33.jar:9.0.33]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) ~[tomcat-embed-core-9.0.33.jar:9.0.33]
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100) ~[spring-web-5.2.5.RELEASE.jar:5.2.5.RELEASE]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119) ~[spring-web-5.2.5.RELEASE.jar:5.2.5.RELEASE]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) ~[tomcat-embed-core-9.0.33.jar:9.0.33]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) ~[tomcat-embed-core-9.0.33.jar:9.0.33]
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93) ~[spring-web-5.2.5.RELEASE.jar:5.2.5.RELEASE]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119) ~[spring-web-5.2.5.RELEASE.jar:5.2.5.RELEASE]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) ~[tomcat-embed-core-9.0.33.jar:9.0.33]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) ~[tomcat-embed-core-9.0.33.jar:9.0.33]
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201) ~[spring-web-5.2.5.RELEASE.jar:5.2.5.RELEASE]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119) ~[spring-web-5.2.5.RELEASE.jar:5.2.5.RELEASE]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) ~[tomcat-embed-core-9.0.33.jar:9.0.33]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) ~[tomcat-embed-core-9.0.33.jar:9.0.33]
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:202) ~[tomcat-embed-core-9.0.33.jar:9.0.33]
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:96) [tomcat-embed-core-9.0.33.jar:9.0.33]
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:541) [tomcat-embed-core-9.0.33.jar:9.0.33]
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:139) [tomcat-embed-core-9.0.33.jar:9.0.33]
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92) [tomcat-embed-core-9.0.33.jar:9.0.33]
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74) [tomcat-embed-core-9.0.33.jar:9.0.33]
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:343) [tomcat-embed-core-9.0.33.jar:9.0.33]
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:373) [tomcat-embed-core-9.0.33.jar:9.0.33]
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65) [tomcat-embed-core-9.0.33.jar:9.0.33]
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:868) [tomcat-embed-core-9.0.33.jar:9.0.33]
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1594) [tomcat-embed-core-9.0.33.jar:9.0.33]
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49) [tomcat-embed-core-9.0.33.jar:9.0.33]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149) [na:1.8.0_221]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624) [na:1.8.0_221]
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61) [tomcat-embed-core-9.0.33.jar:9.0.33]
+	at java.lang.Thread.run(Thread.java:748) [na:1.8.0_221]
+
+2021-07-24 19:48:00.777 ERROR 804 --- [http-nio-8080-exec-1] s.e.ErrorMvcAutoConfiguration$StaticView : Cannot render error page for request [/admin/admin] and exception [Cannot call sendError() after the response has been committed] as the response has already been committed. As a result, the response may have the wrong status code.
+2021-07-24 19:48:02.119  INFO 804 --- [http-nio-8080-exec-3] black.lyg.blog.aspect.LogAspect          : Request : RequestLog{url='http://localhost:8080/admin/add', ip='0:0:0:0:0:0:0:1', classMethod='black.lyg.blog.controller.admin.LoginController.add', args=[]}
+2021-07-24 19:48:02.119  INFO 804 --- [http-nio-8080-exec-3] black.lyg.blog.aspect.LogAspect          : ////////after/////////
+2021-07-24 19:48:02.119  INFO 804 --- [http-nio-8080-exec-3] black.lyg.blog.aspect.LogAspect          : result : admin/register 
+2021-07-24 19:48:18.176  INFO 804 --- [http-nio-8080-exec-10] black.lyg.blog.aspect.LogAspect          : Request : RequestLog{url='http://localhost:8080/admin/register', ip='0:0:0:0:0:0:0:1', classMethod='black.lyg.blog.controller.admin.LoginController.register', args=[lisi, 123456, 李四, lisi@qq.com, {}]}
+2021-07-24 19:48:18.178 DEBUG 804 --- [http-nio-8080-exec-10] b.l.b.m.UserMapper.selectUserByUsername  : ==>  Preparing: select * from user where username = ? 
+2021-07-24 19:48:18.178 DEBUG 804 --- [http-nio-8080-exec-10] b.l.b.m.UserMapper.selectUserByUsername  : ==> Parameters: lisi(String)
+2021-07-24 19:48:18.764 DEBUG 804 --- [http-nio-8080-exec-10] b.l.b.m.UserMapper.selectUserByUsername  : <==      Total: 0
+2021-07-24 19:48:18.767 DEBUG 804 --- [http-nio-8080-exec-10] black.lyg.blog.mapper.UserMapper.insert  : ==>  Preparing: INSERT INTO user ( user_id,nick_name,username,password,email,avatar,type,create_time,update_time ) VALUES( ?,?,?,?,?,?,?,?,? ) 
+2021-07-24 19:48:18.769 DEBUG 804 --- [http-nio-8080-exec-10] black.lyg.blog.mapper.UserMapper.insert  : ==> Parameters: null, 李四(String), lisi(String), E10ADC3949BA59ABBE56E057F20F883E(String), lisi@qq.com(String), null, null, null, null
+2021-07-24 19:48:18.802 DEBUG 804 --- [http-nio-8080-exec-10] black.lyg.blog.mapper.UserMapper.insert  : <==    Updates: 1
+2021-07-24 19:48:18.805 DEBUG 804 --- [http-nio-8080-exec-10] b.l.b.m.UserMapper.insert!selectKey      : ==>  Executing: SELECT LAST_INSERT_ID() 
+2021-07-24 19:48:18.832 DEBUG 804 --- [http-nio-8080-exec-10] b.l.b.m.UserMapper.insert!selectKey      : <==      Total: 1
+2021-07-24 19:48:18.833  INFO 804 --- [http-nio-8080-exec-10] black.lyg.blog.aspect.LogAspect          : ////////after/////////
+2021-07-24 19:48:18.833  INFO 804 --- [http-nio-8080-exec-10] black.lyg.blog.aspect.LogAspect          : result : redirect:/admin 
+2021-07-24 19:48:18.838  INFO 804 --- [http-nio-8080-exec-6] black.lyg.blog.aspect.LogAspect          : Request : RequestLog{url='http://localhost:8080/admin', ip='0:0:0:0:0:0:0:1', classMethod='black.lyg.blog.controller.admin.LoginController.loginPage', args=[]}
+2021-07-24 19:48:18.838  INFO 804 --- [http-nio-8080-exec-6] black.lyg.blog.aspect.LogAspect          : ////////after/////////
+2021-07-24 19:48:18.838  INFO 804 --- [http-nio-8080-exec-6] black.lyg.blog.aspect.LogAspect          : result : admin/login 
+2021-07-24 19:48:25.190  INFO 804 --- [http-nio-8080-exec-2] black.lyg.blog.aspect.LogAspect          : Request : RequestLog{url='http://localhost:8080/admin/login', ip='0:0:0:0:0:0:0:1', classMethod='black.lyg.blog.controller.admin.LoginController.login', args=[lisi, 123456, org.apache.catalina.session.StandardSessionFacade@22171f66, {}]}
+2021-07-24 19:48:25.190 DEBUG 804 --- [http-nio-8080-exec-2] .l.b.m.U.selectUserNameByNameAndPassWord : ==>  Preparing: select * from user where username = ? and password = ? 
+2021-07-24 19:48:25.191 DEBUG 804 --- [http-nio-8080-exec-2] .l.b.m.U.selectUserNameByNameAndPassWord : ==> Parameters: lisi(String), E10ADC3949BA59ABBE56E057F20F883E(String)
+2021-07-24 19:48:25.220 DEBUG 804 --- [http-nio-8080-exec-2] .l.b.m.U.selectUserNameByNameAndPassWord : <==      Total: 1
+2021-07-24 19:48:25.220  INFO 804 --- [http-nio-8080-exec-2] black.lyg.blog.aspect.LogAspect          : ////////after/////////
+2021-07-24 19:48:25.220  INFO 804 --- [http-nio-8080-exec-2] black.lyg.blog.aspect.LogAspect          : result : admin/index 
+2021-07-24 19:48:25.610  INFO 804 --- [http-nio-8080-exec-9] black.lyg.blog.service.BlogService       : 从redis中获取最新博客
