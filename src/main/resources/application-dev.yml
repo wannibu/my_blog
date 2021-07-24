@@ -1,0 +1,37 @@
+spring:
+  datasource:
+    username: root
+    password: lyg0918
+    url: jdbc:mysql://106.54.72.253:3306/blog?useUnicode=true&characterEncoding=utf-8&serverTimezone=UTC
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    type: com.alibaba.druid.pool.DruidDataSource
+    # 数据源
+    druid:
+      initialSize: 5
+      minIdle: 5
+      maxActive: 30
+      maxWait: 60000
+      timeBetweenEvictionRunsMillis: 60000
+      minEvictableIdleTimeMillis: 300000
+      validationQuery: SELECT 1
+      testWhileIdle: true
+      testOnBorrow: false
+      testOnReturn: false
+      filters: stat,wall,log4j
+      web-stat-filter.enabled: true
+  #redis配置
+  redis:
+    host: 106.54.72.253
+    port: 6379
+    database: 1
+    password:
+    timeout: 10000
+# 日志设置
+logging:
+  level:
+    root: info
+    black.lyg.blog: debug
+  file:
+    name: log/bolg-dev.log
+server:
+  port: 8080
