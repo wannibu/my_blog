@@ -6,6 +6,7 @@ import black.lyg.blog.po.User;
 import black.lyg.blog.service.BlogService;
 import black.lyg.blog.service.TagService;
 import black.lyg.blog.service.TypeService;
+import black.lyg.blog.service.UserService;
 import com.github.pagehelper.Page;
 import com.github.pagehelper.PageHelper;
 import com.github.pagehelper.PageInfo;
@@ -36,10 +37,15 @@ public class BlogController {
     @Autowired
     private TagService tagService;
 
+    @Autowired
+    private UserService userService;
+
     @GetMapping("blogs")
     public String blogs(Model model, @RequestParam(required = false, defaultValue = "1") String page) {
         PageHelper.startPage(Integer.parseInt(page), 8);
-        List<Blog> allBlogByPage = blogService.findAllBlogByPage();
+
+        User user1 = userService.checkUserByName("zhangsan");
+        List<Blog> allBlogByPage = blogService.findBlogByUserId(user1.getUserId());
         PageInfo<Blog> pageInfo = new PageInfo<>(allBlogByPage);
         model.addAttribute("pageInfo", pageInfo);
         List<Type> types = typeService.allType();

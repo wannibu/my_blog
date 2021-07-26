@@ -28,6 +28,8 @@ public interface BlogService {
 
     List<Blog> findBlogByTagId(Integer tagId);
 
+    List<Blog> findBlogByUserId(Integer userId);
+
     Map<String, List<Blog>> findArchiveBlog();
 
     Integer findBlogCount();

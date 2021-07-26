@@ -9,4 +9,5 @@ public interface UserService {
     User checkUserByName(String username);
 
     int addUser(User user);
+
 }

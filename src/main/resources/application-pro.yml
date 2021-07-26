@@ -1,8 +1,8 @@
 spring:
   datasource:
     username: root
-    password: lyg0918
-    url: jdbc:mysql://106.54.72.253:3306/blog?useUnicode=true&characterEncoding=utf-8&serverTimezone=UTC
+    password: 123456
+    url: jdbc:mysql://127.0.0.1:3306/blog1?useUnicode=true&characterEncoding=utf-8&serverTimezone=UTC
     driver-class-name: com.mysql.cj.jdbc.Driver
     type: com.alibaba.druid.pool.DruidDataSource
     # 数据源
@@ -22,10 +22,10 @@ spring:
 
   #redis配置
   redis:
-    host: 106.54.72.253
+    host: 127.0.0.1
     port: 6379
     database: 1
-    password:
+    password: lyg0918
     timeout: 10000
 # 日志设置
 logging:

@@ -1,15 +1,13 @@
 package black.lyg.blog.service.impl;
 
-import black.lyg.blog.po.Blog;
-import black.lyg.blog.po.BlogTag;
-import black.lyg.blog.po.Comment;
-import black.lyg.blog.po.Tag;
+import black.lyg.blog.po.*;
 import black.lyg.blog.service.TagService;
 import black.lyg.blog.mapper.BlogMapper;
 import black.lyg.blog.mapper.BlogTagMapper;
 import black.lyg.blog.mapper.CommentMapper;
 import black.lyg.blog.modelEntity.TypeTops;
 import black.lyg.blog.service.BlogService;
+import black.lyg.blog.service.UserService;
 import black.lyg.blog.util.RedisKeyUtils;
 import com.github.pagehelper.Page;
 import org.slf4j.Logger;
@@ -234,6 +232,12 @@ public class BlogServiceImpl implements BlogService {
             blog.setTags(tags);
             blogList.add(blog);
         }
+        return blogList;
+    }
+
+    @Override
+    public List<Blog> findBlogByUserId(Integer userId) {
+        List<Blog> blogList = blogMapper.selectBlogByUserId(userId);
         return blogList;
     }
 
