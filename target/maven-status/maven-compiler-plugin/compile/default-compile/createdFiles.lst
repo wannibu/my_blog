@@ -20,6 +20,7 @@ black\lyg\blog\controller\AboutController.class
 black\lyg\blog\util\MarkDownUtils$1.class
 black\lyg\blog\util\RedisKeyUtils.class
 black\lyg\blog\mapper\TagMapper.class
+black\lyg\blog\util\DateUtil.class
 black\lyg\blog\controller\admin\LoginController.class
 black\lyg\blog\config\MybatisConfig.class
 black\lyg\blog\controller\ArchivesController.class
@@ -36,6 +37,7 @@ black\lyg\blog\util\MD5Util.class
 black\lyg\blog\service\TagService.class
 black\lyg\blog\controller\admin\TypeController.class
 black\lyg\blog\config\StartupRunner.class
+black\lyg\blog\controller\admin\PersonalController.class
 black\lyg\blog\service\impl\TypeServiceImpl.class
 black\lyg\blog\po\User.class
 black\lyg\blog\po\Type.class

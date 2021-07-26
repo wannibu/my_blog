@@ -48,10 +48,12 @@
             </div>
           </div>
           <div class="field">
-            <button type="button" id="search-btn" class="ui mini teal basic button"><i class="search icon"></i>搜索</button>
+            <button type="button" id="search-btn" class="ui mini teal basic button">
+              <i class="search icon"></i>搜索</button>
           </div>
           <div class="field">
-            <a th:href="@{/admin/blogs}" type="button" id="all-btn" class="ui mini teal basic button"><i class="search icon"></i>全部</a>
+            <a th:href="@{/admin/blogs/{username}(username=${session.user.username})}" type="button" id="all-btn" class="ui mini teal basic button">
+              <i class="search icon"></i>全部</a>
           </div>
         </div>
       </div>
@@ -122,11 +124,7 @@
           <div class="header">提示：</div>
           <p th:text="${message}">恭喜，操作成功！</p>
         </div>
-
-
       </div>
-
-
     </div>
   </div>
 
@@ -168,10 +166,11 @@
     });
 
     function loadData() {
-      $("#table-container").load(/*[[@{/admin/blogs/search}]]*/"/admin/blogs/search", {
+      $("#table-container").load("/admin/blogs/search", {
         title: $("[name='title']").val(),
         typeId: $("[name='typeId']").val(),
         recommend: $("[name='recommend']").prop('checked'),
+        username: '[[${session.user.username}]]'.toString(),
         page: $("[name='page']").val()
       });
     }

@@ -40,12 +40,11 @@ public class BlogController {
     @Autowired
     private UserService userService;
 
-    @GetMapping("blogs")
-    public String blogs(Model model, @RequestParam(required = false, defaultValue = "1") String page) {
+    @GetMapping("blogs/{username}")
+    public String blogs(Model model, @PathVariable String username, @RequestParam(required = false, defaultValue = "1") String page) {
         PageHelper.startPage(Integer.parseInt(page), 8);
-
-        User user1 = userService.checkUserByName("zhangsan");
-        List<Blog> allBlogByPage = blogService.findBlogByUserId(user1.getUserId());
+        User user = userService.checkUserByName(username);
+        List<Blog> allBlogByPage = blogService.findBlogByUserId(user.getUserId());
         PageInfo<Blog> pageInfo = new PageInfo<>(allBlogByPage);
         model.addAttribute("pageInfo", pageInfo);
         List<Type> types = typeService.allType();
@@ -56,8 +55,11 @@ public class BlogController {
 
     @PostMapping("blogs/search")
     public String search(Model model, @RequestParam(required = false, defaultValue = "1") String page,
-                         String title, String typeId, Boolean recommend) {
+                         String title, String typeId, Boolean recommend,  String username) {
         PageHelper.startPage(Integer.parseInt(page), 8);
+        User user = userService.checkUserByName(username);
+//        System.out.println(user.getUserId());
+
         Page<Blog> blogPage = blogService.selectBlogByKeyWords(title.equalsIgnoreCase("") ? null : title
                 , typeId.equalsIgnoreCase("") ? null : typeId, recommend ? "1" : null);
         PageInfo<Blog> pageInfo = new PageInfo<>(blogPage);
@@ -77,7 +79,6 @@ public class BlogController {
         model.addAttribute("tags", tagService.finaAllTags());
         return INPUT;
     }
-
 
     /**
      * 跳转到修改博客页面

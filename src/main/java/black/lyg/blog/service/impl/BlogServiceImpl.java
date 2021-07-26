@@ -159,6 +159,12 @@ public class BlogServiceImpl implements BlogService {
     @Override
     public Page<Blog> selectBlogByKeyWords(String title, String typeId, String recommend) {
         List<Blog> blogs = blogMapper.findBlogByKeyWords(title, typeId, recommend);
+//        List<Blog> blogss = null;
+//        for(Blog blog:blogs){
+//            if(blog.getUserId()==integer){
+//                blogss.add(blog);
+//            }
+//        }
         return (Page<Blog>) blogs;
     }
 
