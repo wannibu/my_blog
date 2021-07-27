@@ -57,7 +57,8 @@ public class BlogController {
     public String search(Model model, @RequestParam(required = false, defaultValue = "1") String page,
                          String title, String typeId, Boolean recommend,  String username) {
         PageHelper.startPage(Integer.parseInt(page), 8);
-        User user = userService.checkUserByName(username);
+
+//        User user = userService.checkUserByName(username);
 //        System.out.println(user.getUserId());
 
         Page<Blog> blogPage = blogService.selectBlogByKeyWords(title.equalsIgnoreCase("") ? null : title

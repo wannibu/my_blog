@@ -19,10 +19,14 @@
   <div class="ui container">
     <div class="ui inverted secondary stackable menu">
       <h2 class="ui teal header item">管理后台</h2>
-      <a href="#" th:href="@{/admin/blogs/{username}(username=${session.user.username})}" class=" m-item item m-mobile-hide" th:classappend="${n==1} ? 'active'"><i class="mini home icon"></i>博客</a>
-      <a href="#" th:href="@{/admin/types}" class=" m-item item m-mobile-hide" th:classappend="${n==2} ? 'active'"><i class="mini idea icon"></i>分类</a>
-      <a href="#" th:href="@{/admin/tags}" class="m-item item m-mobile-hide" th:classappend="${n==3} ? 'active'"><i class="mini tags icon"></i>标签</a>
-      <a href="#" th:href="@{/admin/personal}" class="m-item item m-mobile-hide" th:classappend="${n==4} ? 'active'"><i class="mini info icon"></i>个人信息</a>
+      <a href="#" th:href="@{/admin/blogs/{username}(username=${session.user.username})}" class=" m-item item m-mobile-hide" th:classappend="${n==1} ? 'active'">
+        <i class="mini home icon"></i>博客</a>
+      <a href="#" th:href="@{/admin/types}" class=" m-item item m-mobile-hide" th:classappend="${n==2} ? 'active'">
+        <i class="mini idea icon"></i>分类</a>
+      <a href="#" th:href="@{/admin/tags}" class="m-item item m-mobile-hide" th:classappend="${n==3} ? 'active'">
+        <i class="mini tags icon"></i>标签</a>
+      <a href="#" th:href="@{/admin/personal/{username}(username=${session.user.username})}" class="m-item item m-mobile-hide" th:classappend="${n==4} ? 'active'">
+        <i class="mini info icon"></i>个人信息</a>
       <div class="right m-item m-mobile-hide menu">
         <div class="ui dropdown  item">
           <div class="text">
@@ -42,8 +46,6 @@
   </a>
 </nav>
 <!--导航-->
-
-
 
 <!--底部footer-->
 <footer th:fragment="footer" class="ui inverted vertical segment m-padded-tb-massive">

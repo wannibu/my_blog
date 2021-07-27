@@ -10,4 +10,5 @@ public interface UserService {
 
     int addUser(User user);
 
+    void updateInfo(User user);
 }
