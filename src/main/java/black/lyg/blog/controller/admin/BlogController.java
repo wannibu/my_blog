@@ -23,11 +23,6 @@ import java.util.List;
 @RequestMapping(value = "/admin")
 public class BlogController {
 
-    private static final String INPUT = "admin/blogs-input";
-    private static final String LIST = "admin/blogs";
-    private static final String REDIRECT = "redirect:/admin/blogs";
-
-
     @Autowired
     private BlogService blogService;
 
@@ -50,21 +45,22 @@ public class BlogController {
         List<Type> types = typeService.allType();
         model.addAttribute("types", types);
         model.addAttribute("flag", 1);
-        return LIST;
+        return "admin/blogs";
     }
 
     @PostMapping("blogs/search")
     public String search(Model model, @RequestParam(required = false, defaultValue = "1") String page,
-                         String title, String typeId, Boolean recommend,  String username) {
+                         String title, String typeId, Boolean recommend, String username) {
         PageHelper.startPage(Integer.parseInt(page), 8);
-
-//        User user = userService.checkUserByName(username);
-//        System.out.println(user.getUserId());
-
-        Page<Blog> blogPage = blogService.selectBlogByKeyWords(title.equalsIgnoreCase("") ? null : title
-                , typeId.equalsIgnoreCase("") ? null : typeId, recommend ? "1" : null);
-        PageInfo<Blog> pageInfo = new PageInfo<>(blogPage);
-        model.addAttribute("pageInfo", pageInfo);
+        if(title.isEmpty() && typeId.isEmpty() ){
+            return "admin/blogs/"+username;
+        }
+        else{
+            Page<Blog> blogPage = blogService.selectBlogByKeyWords(title.equalsIgnoreCase("") ? null : title
+                    , typeId.equalsIgnoreCase("") ? null : typeId, recommend ? "1" : null, username);
+            PageInfo<Blog> pageInfo = new PageInfo<>(blogPage);
+            model.addAttribute("pageInfo", pageInfo);
+        }
         return "admin/blogs :: blogList";
     }
 
@@ -78,7 +74,7 @@ public class BlogController {
         model.addAttribute("blog",new Blog());
         model.addAttribute("types", typeService.allType());
         model.addAttribute("tags", tagService.finaAllTags());
-        return INPUT;
+        return "admin/blogs-input";
     }
 
     /**
@@ -96,7 +92,7 @@ public class BlogController {
         model.addAttribute("tagIds",blogService.findTagsByBlogId(Integer.valueOf(id)));
         model.addAttribute("types", typeService.allType());
         model.addAttribute("tags", tagService.finaAllTags());
-        return INPUT;
+        return "admin/blogs-input";
     }
 
     /**
@@ -106,16 +102,15 @@ public class BlogController {
      */
     @GetMapping(value = "blogs/{id}/delete")
     public String deleteBlog(@PathVariable String id,RedirectAttributes attributes){
+        User user = blogService.findUserByBlogId(id);
         Integer integer = blogService.deleteBlog(Integer.valueOf(id));
         if (integer==1){
             attributes.addFlashAttribute("message","删除成功");
         }else {
             attributes.addFlashAttribute("message","删除失败");
         }
-        return REDIRECT;
-
+        return "redirect:/admin/blogs/"+user.getUsername();
     }
-
 
     /**
      * 添加(修改并用)博客
@@ -143,7 +138,7 @@ public class BlogController {
         } else {
             attributes.addFlashAttribute("message", "操作失败");
         }
-        return "redirect:/admin/blogs";
+        return "redirect:/admin/blogs/"+user.getUsername();
     }
 
 

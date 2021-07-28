@@ -3,6 +3,7 @@ package black.lyg.blog.controller.admin;
 import black.lyg.blog.po.Blog;
 import black.lyg.blog.po.User;
 import black.lyg.blog.service.UserService;
+import black.lyg.blog.util.DateUtil;
 import black.lyg.blog.util.MD5Util;
 import com.github.pagehelper.PageHelper;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -52,6 +53,7 @@ public class PersonalController {
             else{
                 user.setPassword(MD5Util.md5(password));
             }
+            user.setUpdateTime(DateUtil.getNowDate());
             userService.updateInfo(user);
             return "redirect:/admin/personal/"+user.getUsername();
         }

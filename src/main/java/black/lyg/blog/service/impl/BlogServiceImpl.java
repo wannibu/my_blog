@@ -8,6 +8,7 @@ import black.lyg.blog.mapper.CommentMapper;
 import black.lyg.blog.modelEntity.TypeTops;
 import black.lyg.blog.service.BlogService;
 import black.lyg.blog.service.UserService;
+import black.lyg.blog.util.DateUtil;
 import black.lyg.blog.util.RedisKeyUtils;
 import com.github.pagehelper.Page;
 import org.slf4j.Logger;
@@ -38,7 +39,16 @@ public class BlogServiceImpl implements BlogService {
     private TagService tagService;
 
     @Autowired
+    private UserService userService;
+
+    @Autowired
     private RedisTemplate<String, Object> redisTemplate;
+
+    @Override
+    public User findUserByBlogId(String id) {
+        Blog blog = blogMapper.selectBlogByBlogId(id);
+        return blog.getUser();
+    }
 
     @Override
     public Blog findBlogByBlogId(Integer id) {
@@ -62,8 +72,8 @@ public class BlogServiceImpl implements BlogService {
         int flag ;
         //新增
         if (blog.getBlogId()==null) {
-            blog.setCreateTime(new Date());
-            blog.setUpdateTime(new Date());
+            blog.setCreateTime(DateUtil.getNowDate());
+            blog.setUpdateTime(DateUtil.getNowDate());
             blog.setViews(0);
             flag = blogMapper.insert(blog);
             if (flag == 1) {
@@ -80,7 +90,7 @@ public class BlogServiceImpl implements BlogService {
                 }
             }
         }else {   //编辑
-            blog.setUpdateTime(new Date());
+            blog.setUpdateTime(DateUtil.getNowDate());
             flag = blogMapper.updateByPrimaryKeySelective(blog);
             //删除原有的Blog对应的标签值
             Example example = new Example(BlogTag.class);
@@ -157,14 +167,13 @@ public class BlogServiceImpl implements BlogService {
     }
 
     @Override
-    public Page<Blog> selectBlogByKeyWords(String title, String typeId, String recommend) {
+    public Page<Blog> selectBlogByKeyWords(String title, String typeId, String recommend, String username) {
         List<Blog> blogs = blogMapper.findBlogByKeyWords(title, typeId, recommend);
-//        List<Blog> blogss = null;
-//        for(Blog blog:blogs){
-//            if(blog.getUserId()==integer){
-//                blogss.add(blog);
-//            }
-//        }
+        for(Blog blog:blogs){
+            if(!blog.getUser().getUsername().equals(username)){
+                blogs.remove(blog);
+            }
+        }
         return (Page<Blog>) blogs;
     }
 

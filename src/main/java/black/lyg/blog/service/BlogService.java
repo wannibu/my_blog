@@ -1,6 +1,7 @@
 package black.lyg.blog.service;
 
 import black.lyg.blog.po.Blog;
+import black.lyg.blog.po.User;
 import com.github.pagehelper.Page;
 
 import java.util.List;
@@ -16,7 +17,7 @@ public interface BlogService {
 
     Integer deleteBlog(Integer id);
 
-    Page<Blog> selectBlogByKeyWords(String title, String typeId, String recommend);
+    Page<Blog> selectBlogByKeyWords(String title, String typeId, String recommend, String username);
 
     String findTagsByBlogId(Integer blogId);
 
@@ -35,4 +36,6 @@ public interface BlogService {
     Integer findBlogCount();
 
     void addBlogViews(Blog blog);
+
+    User findUserByBlogId(String id);
 }
